@@ -1,0 +1,32 @@
+strictness: veryhigh
+doc-warnings: true
+max-line-length: 110
+
+pylint:
+  disable:
+    - wrong-import-order
+    - too-many-arguments
+    - too-many-branches
+    - too-many-locals
+    - too-many-statements
+    - too-many-nested-blocks
+    - too-many-return-statements
+    - too-many-lines
+    - too-few-public-methods
+    - no-else-return
+
+pep8:
+  disable:
+    - E203 # whitespace before ':'
+    - E501 # line too long
+
+mypy:
+  run: true
+
+bandit:
+  run: true
+  options:
+    config: .bandit.yaml
+
+mccabe:
+  run: false

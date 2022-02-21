@@ -1,0 +1,31 @@
+---
+name: Audit
+
+on:
+  schedule:
+    - cron: '30 2 * * *'
+
+jobs:
+  audit:
+    runs-on: ubuntu-20.04
+    name: Audit
+    timeout-minutes: 10
+
+    strategy:
+      fail-fast: false
+      matrix:
+        branch:
+          - master
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ matrix.branch }}
+
+      - run: echo "${HOME}/.local/bin" >> ${GITHUB_PATH}
+      - run: python3 -m pip install --user c2cciutils
+
+      - name: Audit
+        run: c2cciutils-audit --branch=${{ matrix.branch }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
