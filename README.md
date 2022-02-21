@@ -2,12 +2,12 @@
 
 ## British Petroleum (BP)
 
-It parse sheet like 'Primary Energy Consumption' (not like 'Primary Energy - Cons by fuel').
+It parse sheet like `Primary Energy Consumption` (not like `Primary Energy - Cons by fuel`).
 
 Open: http://www.bp.com/statisticalreview
 or https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html
 
-Download 'Statistical Review of World Energy – all data'.
+Download `Statistical Review of World Energy – all data`.
 
 Use:
 
@@ -25,9 +25,9 @@ df
 From https://www.bfs.admin.ch/bfs/fr/home/services/recherche/stat-tab-donnees-interactives.html
 create a stat table.
 
-Click on 'À propos du tableau'
+Click on `À propos du tableau`
 
-Click on 'Rendez ce tableau disponible dans votre application'
+Click on `Rendez ce tableau disponible dans votre application`
 
 Use:
 
@@ -46,3 +46,25 @@ And replace `<URL>` and `<Requête Json>` with the content of the fields of the 
 
 - [Parc de motocycles par caractéristiques techniques et émissions](https://www.pxweb.bfs.admin.ch/pxweb/fr/px-x-1103020100_165/-/px-x-1103020100_165.px/)
 - [Bilan démographique selon l'âge et le canton](https://www.pxweb.bfs.admin.ch/pxweb/fr/px-x-0102020000_104/-/px-x-0102020000_104.px/)
+
+## Our World in Data
+
+Select a publication.
+
+Click `Download`.
+
+Click `Full data (CSV)`.
+
+Use:
+
+```python
+import pandas as pd
+
+df = pd.read_csv("<file name>")
+df
+```
+
+### Interesting sources
+
+- [GDP, 1820 to 2018](https://ourworldindata.org/grapher/gdp-world-regions-stacked-area)
+- [Population, 1800 to 2021](https://ourworldindata.org/grapher/population-since-1800)
