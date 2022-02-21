@@ -6,3 +6,6 @@ checks:
   codespell:
     ignore_re:
       - poetry.lock
+  black:
+    ignore_patterns_re:
+      - README\.md
