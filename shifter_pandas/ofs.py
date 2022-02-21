@@ -6,6 +6,7 @@ import pandas as pd
 import requests
 
 
+# https://www.bfs.admin.ch/bfs/fr/home/services/recherche/api/api-pxweb.html
 class OFSDatasource:
     """Datasource builder for data from the swiss Office Federal of Statistics."""
 
@@ -41,13 +42,15 @@ class OFSDatasource:
             current_length = len(dimension["category"]["index"])
             number = int(total_length / (length * current_length))
 
-            value = list(json["dataset"]["value"])
+            dimension_value = list(json["dataset"]["value"])
             for index_x in range(length):
                 for index_y, value in enumerate(dimension["category"]["label"].values()):
                     for index_z in range(number):
-                        value[index_x * current_length * number + index_y * number + index_z] = value
+                        dimension_value[
+                            index_x * current_length * number + index_y * number + index_z
+                        ] = value
 
-            values[dimension["label"]] = value
+            values[dimension["label"]] = dimension_value
 
             length *= current_length
 

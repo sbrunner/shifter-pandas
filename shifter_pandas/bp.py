@@ -5,6 +5,34 @@ from typing import Any, Dict, List, Optional
 import openpyxl
 import pandas as pd
 
+UNITS_ENERGY = [
+    "Exajoules",
+    "Petajoules",
+    "Exajoules (input-equivalent)",
+    "Exajoules (input-equivalent)*",
+    "Terawatt-hours",
+]
+UNITS_VOLUME = [
+    "Thousand barrels of oil equivalent per day",
+    "Thousand barrels daily",
+    "Billion cubic feet per day",
+    "Trillion cubic metres",
+    "Thousand million barrels",
+    "Thousand barrels daily*",
+    "Billion cubic metres",
+]
+UNITS_MASS = [
+    "Thousand tonnes1",
+    "Million tonnes",
+    "Million tonnes",
+    "Million tonnes of carbon dioxide",
+    "Thousand tonnes",
+    "Thousand tonnes of Lithium content",
+]
+UNITS_ENERGY_CAPITA = [
+    "Gigajoule per capita",
+]
+
 
 class BPDatasource:
     """Datasource builder for data from British Petroleum."""
@@ -16,14 +44,21 @@ class BPDatasource:
     def metadata(self) -> List[Dict[str, Any]]:
         """Get the metadata."""
         metadata: List[Dict[str, Any]] = []
-        for index, value in enumerate(self.xlsx.sheetnames):
-            if isinstance(self.xlsx.worksheets[index].cell(3, 2).value, int):
+        for type_index, type_value in enumerate(self.xlsx.sheetnames):
+            if type_value.endswith(" - TWh"):
+                type_value = type_value[:-6]
+            if type_value.endswith(" - EJ"):
+                type_value = type_value[:-5]
+            if type_value.endswith(" - PJ"):
+                type_value = type_value[:-5]
+
+            if isinstance(self.xlsx.worksheets[type_index].cell(3, 2).value, int):
                 # Year
                 years = []
                 index = 2
                 while True:
-                    value = self.xlsx.worksheets[index].cell(3, index).value
-                    if self.xlsx.worksheets[index].cell(2, index).value is not None:
+                    value = self.xlsx.worksheets[type_index].cell(3, index).value
+                    if self.xlsx.worksheets[type_index].cell(2, index).value is not None:
                         break
                     years.append({"label": value, "index": index})
                     index += 1
@@ -31,20 +66,23 @@ class BPDatasource:
                 # Country
                 regions = []
                 index = 5
+                nb_empty_cells = 0
                 while True:
-                    value = self.xlsx.worksheets[index].cell(index, 1).value
-                    if value is not None and value == "Switzerland":
+                    value = self.xlsx.worksheets[type_index].cell(index, 1).value
+                    if value is not None:
+                        nb_empty_cells = 0
                         regions.append({"label": value, "index": index})
-                    if value == "Total World":
+                    nb_empty_cells += 1
+                    if nb_empty_cells > 5:
                         break
                     index += 1
                 metadata.append(
                     {
-                        "label": value,
-                        "index": index,
-                        "unit": self.xlsx.worksheets[index].cell(3, 1).value,
+                        "label": type_value,
+                        "index": type_index,
+                        "unit": self.xlsx.worksheets[type_index].cell(3, 1).value.strip(),
                         "years": years,
-                        "refions": regions,
+                        "regions": regions,
                     }
                 )
 
@@ -54,6 +92,7 @@ class BPDatasource:
         self,
         types_filter: Optional[List[str]] = None,
         regions_filter: Optional[List[str]] = None,
+        units_filter: Optional[List[str]] = None,
         years_filter: Optional[List[str]] = None,
         years_factor: Optional[int] = None,
         coherent_units: bool = True,
@@ -65,13 +104,6 @@ class BPDatasource:
             type_label = type_["label"]
             years = type_["years"]
             regions = type_["regions"]
-
-            if type_label.endswith(" - TWh"):
-                type_label = type_label[:-6]
-            if type_label.endswith(" - EJ"):
-                type_label = type_label[:-5]
-            if type_label.endswith(" - PJ"):
-                type_label = type_label[:-5]
 
             if types_filter is not None and type_label not in types_filter:
                 continue
@@ -89,6 +121,9 @@ class BPDatasource:
                         continue
 
                     unit = self.xlsx.worksheets[type_index].cell(3, 1).value
+
+                    if units_filter is not None and unit not in units_filter:
+                        continue
                     if coherent_units:
                         if unit == "Terawatt-hours":
                             value = value * 3.6

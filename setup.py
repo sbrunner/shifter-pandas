@@ -2,27 +2,28 @@
 Package setup.
 """
 
+import configparser
 import os
 import re
 import site
 import sys
 
 from setuptools import find_packages, setup
-import toml
 
 site.ENABLE_USER_SITE = "--user" in sys.argv[1:]
 
 VERSION = os.environ.get("VERSION", "1.0.0")
 HERE = os.path.abspath(os.path.dirname(__file__))
 
-config = toml.load("pyproject.toml")
+config = configparser.ConfigParser()
+config.read("pyproject.toml")
 INSTALL_REQUIRES = []
 _re = re.compile(r"^[0-9]")
-for p, v in config["tool"]["poetry"]["dependencies"].items():
-    p = p.strip("'")
+for p, v in config["tool.poetry.dependencies"].items():
+    p = p.strip("'\"")
     if p == "python":
         continue
-    v = v.strip("'")
+    v = v.strip("'\"")
     if _re.match(v):
         INSTALL_REQUIRES.append(f"{p}=={v}")
     else:
