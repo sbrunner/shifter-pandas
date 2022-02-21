@@ -41,7 +41,7 @@ def long_description() -> str:
 
 
 setup(
-    name="shifter-panda",
+    name="shifter-pandas",
     version=VERSION,
     description="Convert some data into Panda DataFrames",
     long_description=long_description(),
@@ -57,11 +57,11 @@ setup(
         "License :: OSI Approved :: BSD License",
         "Typing :: Typed",
     ],
-    keywords="shifter panda",
+    keywords="shifter pandas",
     author="Stéphane Brunner",
     author_email="stephane.brunner@gmail.com",
-    url="https://github.com/sbrunner/shifter-panda",
+    url="https://github.com/sbrunner/shifter-pandas",
     packages=find_packages(exclude=["tests", "docs"]),
     install_requires=INSTALL_REQUIRES,
-    package_data={"shifter_panda": ["py.typed", "*.json"]},
+    package_data={"shifter_pandas": ["py.typed", "*.json"]},
 )
