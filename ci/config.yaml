@@ -3,8 +3,6 @@
 checks:
   versions:
     rebuild: False
-
-publish:
-  docker:
-    images:
-      - name: camptocamp/jsonschema-gentypes
+  codespell:
+    ignore_re:
+      - poetry.lock
