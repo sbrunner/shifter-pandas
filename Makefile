@@ -21,4 +21,4 @@ prospector: requirements-dev.txt
 .PHONY: pyprest
 pytest: requirements-dev.txt
 	@echo not implemented yet
-	#./.venv/bin/pytest --verbose --cov=shifter_panda -vv --cov-report=term-missing
+	#./.venv/bin/pytest --verbose --cov=shifter_pandas -vv --cov-report=term-missing
