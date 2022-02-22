@@ -68,3 +68,28 @@ df
 
 - [GDP, 1820 to 2018](https://ourworldindata.org/grapher/gdp-world-regions-stacked-area)
 - [Population, 1800 to 2021](https://ourworldindata.org/grapher/population-since-1800)
+
+## Wikipedia
+
+By providing the `wikidata_*` parameters, you can ass some data from WikiData.
+
+You can also get the country list with population and ISO 2 code with:
+
+```python
+from shifter_pandas.wikidata_ import (
+    ELEMENT_COUNTRY,
+    PROPERTY_ISO_3166_1_ALPHA_2,
+    PROPERTY_POPULATION,
+    WikidataDatasource,
+)
+
+shifter_ds = WikidataDatasource()
+df = shifter_ds.datasource(
+    instance_of=ELEMENT_COUNTRY,
+    with_id=True,
+    with_name=True,
+    properties=[PROPERTY_ISO_3166_1_ALPHA_2, PROPERTY_POPULATION],
+    limit=1000,
+)
+df
+```
