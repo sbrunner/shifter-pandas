@@ -38,8 +38,8 @@ class OFSDatasource:
 
         if wikidata_properties is None:
             wikidata_properties = []
+        wikidata = wikidata_id or wikidata_name or wikidata_properties
 
-        wikidata = (wikidata_id or wikidata_name or wikidata_properties) and wikidata_dimension
         response = requests.post(self.url, json=query)
         if not response.ok:
             print(f"Error on query {self.url}: {response.status_code}")

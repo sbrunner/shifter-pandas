@@ -69,7 +69,29 @@ df
 - [GDP, 1820 to 2018](https://ourworldindata.org/grapher/gdp-world-regions-stacked-area)
 - [Population, 1800 to 2021](https://ourworldindata.org/grapher/population-since-1800)
 
-## Wikipedia
+## World Bank
+
+Open https://data.worldbank.org/
+
+Find a chart
+
+In `Download` click `CSV`
+
+Use:
+
+```python
+from shifter_pandas.worldbank import wbDatasource
+
+df = wbDatasource("<file name>")
+df
+```
+
+### Interesting sources
+
+- [GDP (current US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)
+- [GDP (constant 2015 US$)](https://data.worldbank.org/indicator/NY.GDP.MKTP.KD)
+
+## Wikidata
 
 By providing the `wikidata_*` parameters, you can ass some data from WikiData.
 
