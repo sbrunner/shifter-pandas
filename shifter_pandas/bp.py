@@ -109,9 +109,9 @@ class BPDatasource:
 
         if wikidata_properties is None:
             wikidata_properties = []
+        wikidata = wikidata_id or wikidata_name or wikidata_properties
 
         columns = ["Value", "Type", "Unit", "TypeUnit", "Year", "Region"]
-        wikidata = wikidata_id or wikidata_name or wikidata_properties
         if wikidata:
             if wikidata_id:
                 columns.append("WikidataId")
