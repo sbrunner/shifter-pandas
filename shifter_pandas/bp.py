@@ -5,6 +5,9 @@ from typing import Any, Dict, List, Optional
 import openpyxl
 import pandas as pd
 
+from shifter_pandas import standardize_property
+from shifter_pandas.wikidata_ import ELEMENT_CONTINENT, ELEMENT_COUNTRY, WikidataDatasource
+
 UNITS_ENERGY = [
     "Exajoules",
     "Petajoules",
@@ -40,6 +43,7 @@ class BPDatasource:
     def __init__(self, file_name: str) -> None:
         """Initialize the datasource builder."""
         self.xlsx = openpyxl.load_workbook(file_name)
+        self.wdds = WikidataDatasource()
 
     def metadata(self) -> List[Dict[str, Any]]:
         """Get the metadata."""
@@ -96,9 +100,30 @@ class BPDatasource:
         years_filter: Optional[List[str]] = None,
         years_factor: Optional[int] = None,
         coherent_units: bool = True,
+        wikidata_id: bool = False,
+        wikidata_type: bool = False,
+        wikidata_name: bool = False,
+        wikidata_properties: Optional[List[str]] = None,
     ) -> pd.DataFrame:
-        """Get the Datasource ad DataFrame."""
-        data_frame = pd.DataFrame(columns=["value", "type", "unit", "type unit", "year", "region"])
+        """Get the Datasource as DataFrame."""
+
+        if wikidata_properties is None:
+            wikidata_properties = []
+
+        columns = ["Value", "Type", "Unit", "TypeUnit", "Year", "Region"]
+        wikidata = wikidata_id or wikidata_name or wikidata_properties
+        if wikidata:
+            if wikidata_id:
+                columns.append("WikidataId")
+            if wikidata_name:
+                columns.append("WikidataName")
+            if wikidata_type:
+                columns.append("WikidataType")
+            for wikidata_property in wikidata_properties:
+                columns.append(
+                    f"Wikidata{standardize_property(self.wdds.get_property_name(wikidata_property))}"
+                )
+        data_frame = pd.DataFrame(columns=columns)
         for type_ in self.metadata():
             type_index = type_["index"]
             type_label = type_["label"]
@@ -135,16 +160,34 @@ class BPDatasource:
                             value = value * 1000
                             unit = "Petajoules (input-equivalent)"
 
-                    data_frame = data_frame.append(
-                        {
-                            "value": value,
-                            "year": year["label"],
-                            "region": region["label"],
-                            "type": type_label,
-                            "unit": unit,
-                            "type unit": f"{type_label} [{unit}]",
-                        },
-                        ignore_index=True,
-                    )
+                    element = {
+                        "Value": value,
+                        "Year": year["label"],
+                        "Region": region["label"],
+                        "Type": type_label,
+                        "Unit": unit,
+                        "TypeUnit": f"{type_label} [{unit}]",
+                    }
+                    if wikidata:
+                        element_ids = self.wdds.get_from_alias(ELEMENT_COUNTRY, region["label"])
+
+                        if element_ids:
+                            if wikidata_type:
+                                element["WikidataType"] = "country"
+                        else:
+                            element_ids = self.wdds.get_from_alias(ELEMENT_CONTINENT, region["label"])
+                            if element_ids and wikidata_type:
+                                element["WikidataType"] = "continent"
+                        if element_ids:
+                            element.update(
+                                self.wdds.get_item(
+                                    element_ids[0]["id"],
+                                    with_name=wikidata_name,
+                                    with_id=wikidata_id,
+                                    properties=wikidata_properties,
+                                    prefix="Wikidata",
+                                )
+                            )
+                    data_frame = data_frame.append(element, ignore_index=True)
 
         return data_frame
