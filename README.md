@@ -59,8 +59,12 @@ Use:
 
 ```python
 import pandas as pd
+from shifter_pandas.wikidata_ import WikidataDatasource
 
-df = pd.read_csv("<file name>")
+df_owid = pd.read_csv("<file name>")
+wdds = WikidataDatasource()
+df_wd = wdds.datasource_code(wikidata_id=True, wikidata_name=True, wikidata_type=True)
+df = pd.merge(df_owid, df_wd, how="inner", left_on='iso_code', right_on='Code')
 df
 ```
 
@@ -94,6 +98,9 @@ df
 ## Wikidata
 
 By providing the `wikidata_*` parameters, you can ass some data from WikiData.
+
+Careful, the WikiData is relatively slow then the first time you run it il will be slow.
+We use a cache to make it fast the next times.
 
 You can also get the country list with population and ISO 2 code with:
 

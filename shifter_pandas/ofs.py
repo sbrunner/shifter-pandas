@@ -70,6 +70,7 @@ class OFSDatasource:
             length *= current_length
 
         if wikidata and wikidata_dimension:
+
             def _get_values(canton: str) -> Dict[str, Any]:
                 element_ids = self.wdds.get_from_alias(ELEMENT_CANTON_CH, canton)
 
