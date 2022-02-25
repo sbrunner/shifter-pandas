@@ -6,7 +6,7 @@ import openpyxl
 import pandas as pd
 
 from shifter_pandas import standardize_property
-from shifter_pandas.wikidata_ import ELEMENT_CONTINENT, ELEMENT_COUNTRY, WikidataDatasource
+from shifter_pandas.wikidata_ import WikidataDatasource
 
 UNITS_ENERGY = [
     "Exajoules",
@@ -44,6 +44,7 @@ class BPDatasource:
         """Initialize the datasource builder."""
         self.xlsx = openpyxl.load_workbook(file_name)
         self.wdds = WikidataDatasource()
+        self.wdds.set_alias("World", "World", "Q16502", "World")
 
     def metadata(self) -> List[Dict[str, Any]]:
         """Get the metadata."""
@@ -169,25 +170,20 @@ class BPDatasource:
                         "TypeUnit": f"{type_label} [{unit}]",
                     }
                     if wikidata:
-                        element_ids = self.wdds.get_from_alias(ELEMENT_COUNTRY, region["label"])
-
-                        if element_ids:
-                            if wikidata_type:
-                                element["WikidataType"] = "country"
-                        else:
-                            element_ids = self.wdds.get_from_alias(ELEMENT_CONTINENT, region["label"])
-                            if element_ids and wikidata_type:
-                                element["WikidataType"] = "continent"
-                        if element_ids:
-                            element.update(
-                                self.wdds.get_item(
-                                    element_ids[0]["id"],
-                                    with_name=wikidata_name,
-                                    with_id=wikidata_id,
-                                    properties=wikidata_properties,
-                                    prefix="Wikidata",
-                                )
+                        region_label = region["label"]
+                        if region_label.startswith("Total "):
+                            region_label = region_label[6:]
+                        element_id = self.wdds.get_region(region_label)
+                        element["WikidataType"] = element_id['type'] if element_id else None
+                        element.update(
+                            self.wdds.get_item(
+                                element_id["id"] if element_id else None,
+                                with_name=wikidata_name,
+                                with_id=wikidata_id,
+                                properties=wikidata_properties,
+                                prefix="Wikidata",
                             )
+                        )
                     data_frame = data_frame.append(element, ignore_index=True)
 
         return data_frame

@@ -13,6 +13,7 @@ requirements.txt: .ci.requirements pyproject.toml poetry.lock
 requirements-dev.txt: .ci.requirements pyproject.toml poetry.lock
 	poetry export --dev --output=$@
 	./.venv/bin/pip install --requirement=$@
+	./.venv/bin/pip install --editable .
 
 .PHONY: prospector
 prospector: requirements-dev.txt
@@ -20,5 +21,4 @@ prospector: requirements-dev.txt
 
 .PHONY: pyprest
 pytest: requirements-dev.txt
-	@echo not implemented yet
-	#./.venv/bin/pytest --verbose --cov=shifter_pandas -vv --cov-report=term-missing
+	./.venv/bin/pytest --verbose tests

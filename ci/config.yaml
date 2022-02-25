@@ -5,7 +5,9 @@ checks:
     rebuild: False
   codespell:
     ignore_re:
-      - poetry.lock
+      - poetry\.lock
+      - shifter_pandas/wikidata_\.py
+      - tests/test_get_region\.py
   black:
     ignore_patterns_re:
       - README\.md
