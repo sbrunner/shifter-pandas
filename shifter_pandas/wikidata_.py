@@ -16,6 +16,11 @@ from shifter_pandas import standardize_property
 ELEMENT_COUNTRY = "Q6256"
 ELEMENT_CONTINENT = "Q5107"
 ELEMENT_CANTON_CH = "Q23058"
+ELEMENT_SUBCONTINENT = "Q855697"
+ELEMENT_GEOPOLITICAL_REGION = "Q82794"
+ELEMENT_SUBREGION = "Q7631958"
+ELEMENT_ELECTORAL_DISTRICT = "Q192611"
+ELEMENT_POLITICAL_TERRITORY_ENTITY = "Q1048835"
 PROPERTY_INSTANCE_OF = "P31"
 PROPERTY_ISO_3166_1_ALPHA_2 = "P297"
 PROPERTY_ISO_3166_1_ALPHA_3 = "P298"
@@ -387,11 +392,11 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         categories = [
             (ELEMENT_CONTINENT, "continent"),
             (ELEMENT_COUNTRY, "country"),
-            ("Q855697", "subcontinent"),
-            ("Q82794", "geographic region"),
-            ("Q7631958", "subregion"),
-            ("Q192611", "electoral district"),
-            ("Q1048835", "political territorial entity"),
+            (ELEMENT_SUBCONTINENT, "subcontinent"),
+            (ELEMENT_GEOPOLITICAL_REGION, "geographic region"),
+            (ELEMENT_SUBREGION, "subregion"),
+            (ELEMENT_ELECTORAL_DISTRICT, "electoral district"),
+            (ELEMENT_POLITICAL_TERRITORY_ENTITY, "political territorial entity"),
         ]
 
         for instance_of, type_value in categories:
