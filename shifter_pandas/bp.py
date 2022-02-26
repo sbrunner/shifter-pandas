@@ -336,7 +336,7 @@ class BPDatasource:
                     if not isinstance(value, int) and not isinstance(value, float):
                         continue
 
-                    unit_definition = type_["index"]["unit"]
+                    unit_definition = type_["unit"]
                     unit_postfix = ""
                     if units == "normalized":
                         unit = unit_definition["normalized"]

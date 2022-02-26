@@ -35,8 +35,10 @@ class WikidataDatasource:
         self.endpoint_url = endpoint_url
         self.headers = {"User-Agent": "shifter_pandas - stephane.brunner@gmail.com"}
 
-        if os.path.exists(".wikidata-cache.json"):
-            with open(".wikidata-cache.json", encoding="utf-8") as file:
+        if os.path.exists(os.environ.get("WIKIDATA_CACHE_FILE", ".wikidata-cache.json")):
+            with open(
+                os.environ.get("WIKIDATA_CACHE_FILE", ".wikidata-cache.json"), encoding="utf-8"
+            ) as file:
                 self.cache = json.load(file)
         else:
             self.cache = {}
@@ -49,7 +51,7 @@ class WikidataDatasource:
     def _save_cache(self) -> None:
         with open(".wikidata-cache.json.new", "w", encoding="utf-8") as file:
             file.write(json.dumps(self.cache, indent=2))
-        shutil.move(".wikidata-cache.json.new", ".wikidata-cache.json")
+        shutil.move(".wikidata-cache.json.new", os.environ.get("WIKIDATA_CACHE_FILE", ".wikidata-cache.json"))
 
     def run_query(self, query: str) -> Dict[str, Any]:
         """
@@ -87,7 +89,7 @@ class WikidataDatasource:
             "id": item_id,
             "url": f"http://www.wikidata.org/entity/{item_id}",
             "label": label,
-            "instance_of": instance_of,
+            "type": instance_of,
         }
 
     def set_alias_code(self, instance_of: str, code: str, item_id: str, label: str = "") -> None:
@@ -285,7 +287,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
                     "id": item["item"]["value"].split("/")[-1],
                     "url": item["item"]["value"],
                     "label": item["itemLabel"]["value"],
-                    "type": type_value,
+                    "type": "other",
                 }
                 for item in self.run_query(
                     f"""
@@ -360,7 +362,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
                     "id": item["item"]["value"].split("/")[-1],
                     "url": item["item"]["value"],
                     "label": item["itemLabel"]["value"],
-                    "type": type_value,
+                    "type": "other",
                 }
                 for item in self.run_query(
                     f"""
@@ -420,7 +422,6 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
                     self.cache.setdefault("regions", {}).setdefault("code", {})[code] = None
                 self.cache.setdefault("regions", {}).setdefault("name", {})[region] = items[0]
                 self._save_cache()
-                print(555)
                 return items[0]
 
         for instance_of, type_value in categories:
@@ -487,7 +488,6 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
                     self.cache.setdefault("regions", {}).setdefault("code", {})[code] = None
                 self.cache.setdefault("regions", {}).setdefault("name", {})[region] = items[0]
                 self._save_cache()
-                print(777)
                 return items[0]
 
         if code:
