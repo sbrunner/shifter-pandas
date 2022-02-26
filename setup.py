@@ -36,7 +36,9 @@ def long_description() -> str:
     """
     try:
         with open("README.md", encoding="utf-8") as readme_file:
-            return readme_file.read()
+            result = readme_file.read()
+        result = re.sub(r"```python[^`]*```", '... see it on GitHub', result, flags=re.DOTALL)
+        return result
     except FileNotFoundError:
         return ""
 
@@ -54,6 +56,7 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: BSD License",
         "Typing :: Typed",
@@ -64,5 +67,5 @@ setup(
     url="https://github.com/sbrunner/shifter-pandas",
     packages=find_packages(exclude=["tests", "docs"]),
     install_requires=INSTALL_REQUIRES,
-    package_data={"shifter_pandas": ["py.typed", "*.json"]},
+    package_data={"shifter_pandas": ["py.typed"]},
 )
