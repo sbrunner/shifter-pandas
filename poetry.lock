@@ -335,7 +335,7 @@ testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "prospector"
-version = "1.7.4"
+version = "1.7.6"
 description = ""
 category = "dev"
 optional = false
@@ -973,8 +973,8 @@ pluggy = [
     {file = "pluggy-1.0.0.tar.gz", hash = "sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159"},
 ]
 prospector = [
-    {file = "prospector-1.7.4-py3-none-any.whl", hash = "sha256:1002046d6966262ee798980b16796ab5f675b2bceef0773ee86d8138c9284075"},
-    {file = "prospector-1.7.4.tar.gz", hash = "sha256:a02053b00fb5970e424598c91a02c6d515b5ceec72ea1bf4f26831514bedfaff"},
+    {file = "prospector-1.7.6-py3-none-any.whl", hash = "sha256:67cafe18af2fd9ca0ac459a94fdaa19935fdff9feb21f57c86d4d3fa1271b5b5"},
+    {file = "prospector-1.7.6.tar.gz", hash = "sha256:59140177b1d14a83435e06437370e988a90331f2c6c8321ba613ba33d7bf4654"},
 ]
 py = [
     {file = "py-1.11.0-py2.py3-none-any.whl", hash = "sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378"},
