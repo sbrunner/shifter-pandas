@@ -42,39 +42,41 @@ class BPDatasource:
         self.to_iso_unit: Dict[str, Dict[str, Any]] = {}
 
         # 1 metric tonne = 2204.62 lb.
-        self.to_iso_unit["lb"] = {"unit": "tonnes", "factor": 1 / 2204.62}
+        self.to_iso_unit["lb"] = {"unit": "tonnes", "factor": 2204.62}
         # = 1.1023 short tons
-        self.to_iso_unit["short tons"] = {"unit": "tonnes", "factor": 1 / 1.1023}
+        self.to_iso_unit["short tons"] = {"unit": "tonnes", "factor": 1.1023}
         # 1 kilolitre = 6.2898 barrels
-        self.to_iso_unit["barrels"] = {"unit": "m³", "factor": 1 / 6.2898}
+        self.to_iso_unit["barrels"] = {"unit": "m³", "factor": 6.2898}
         # 1 kilolitre = 1 cubic metre
-        self.to_iso_unit["litres"] = {"unit": "m³", "factor": 1 / 1000}
+        self.to_iso_unit["litres"] = {"unit": "m³", "factor": 1000}
         # 1 kilocalorie (kcal) = 4.1868 kJ = 3.968 Btu
         # 1 kilojoule (kJ) = 1,000 joules = 0.239 kcal = 0.948 Btu
-        self.to_iso_unit["kilocalorie"] = {"unit": "J", "factor": 239}
+        self.to_iso_unit["kilocalorie"] = {"unit": "J", "factor": 1 / 239}
         self.to_iso_unit["kcal"] = self.to_iso_unit["kilocalorie"]
-        self.to_iso_unit["calorie"] = {"unit": "J", "factor": 0.239}
+        self.to_iso_unit["calorie"] = {"unit": "J", "factor": 1 / 0.239}
         self.to_iso_unit["cal"] = self.to_iso_unit["calorie"]
-        self.to_iso_unit["Btu"] = {"unit": "J", "factor": 948}
+        self.to_iso_unit["Btu"] = {"unit": "J", "factor": 1 / 948}
         # 1 British thermal unit (Btu) = 0.252 kcal = 1.055 kJ
         # 1 barrel of oil equivalent (boe) = 5.8 million Btu = 6.119 million kJ
-        self.to_iso_unit["barrel of oil equivalent"] = {"unit": "j", "factor": 1 / 6119000}
+        self.to_iso_unit["barrel of oil equivalent"] = {"unit": "j", "factor": 6119000}
         # 1 kilowatt-hour (kWh) = 860 kcal = 3600 kJ = 3412 Btu
-        self.to_iso_unit["kilowatt-hour"] = {"unit": "J", "factor": 1000 / 3600}
+        self.to_iso_unit["kilowatt-hour"] = {"unit": "J", "factor": 3600 / 1000}
         self.to_iso_unit["kilowatt-hours"] = self.to_iso_unit["kilowatt-hour"]
         self.to_iso_unit["kWh"] = self.to_iso_unit["kilowatt-hour"]
-        self.to_iso_unit["watt-hour"] = {"unit": "J", "factor": 1 / 3600}
+        self.to_iso_unit["watt-hour"] = {"unit": "J", "factor": 3600}
         self.to_iso_unit["watt-hours"] = self.to_iso_unit["watt-hour"]
         self.to_iso_unit["Wh"] = self.to_iso_unit["watt-hour"]
 
         self.to_iso_unit["cubic metres"] = {"unit": "m³", "factor": 1}
         self.to_iso_unit["metres"] = {"unit": "m", "factor": 1}
         self.to_iso_unit["joules"] = {"unit": "J", "factor": 1}
-        self.to_iso_unit["cubic feets"] = {"unit": "m³", "factor": 1 / 35.3146667}
+        self.to_iso_unit["cubic feets"] = {"unit": "m³", "factor": 35.3146667}
         self.to_iso_unit["cubic metre"] = self.to_iso_unit["cubic metres"]
         self.to_iso_unit["metre"] = self.to_iso_unit["metres"]
         self.to_iso_unit["joule"] = self.to_iso_unit["joules"]
         self.to_iso_unit["cubic feet"] = self.to_iso_unit["cubic feets"]
+        self.to_iso_unit["watts"] = {"unit": "W", "factor": 1}
+        self.to_iso_unit["watt"] = self.to_iso_unit["watts"]
 
         for type_index, type_value in enumerate(self.xlsx.sheetnames):
             if type_value == "Approximate conversion factors":
@@ -234,27 +236,40 @@ class BPDatasource:
         """Get the metadata."""
         metadata: List[Dict[str, Any]] = []
         for type_index, type_value in enumerate(self.xlsx.sheetnames):
-            if type_value.endswith(" - TWh"):
-                type_value = type_value[:-6]
-            if type_value.endswith(" - EJ"):
-                type_value = type_value[:-5]
-            if type_value.endswith(" - PJ"):
-                type_value = type_value[:-5]
+            nice_type = type_value
+            for postfix in (
+                " - TWh",
+                " - EJ",
+                " - PJ",
+                " - Cons capita",
+                " - Barrels",
+                " - Tonnes",
+                " - Kboed",
+            ):
+                if type_value.endswith(postfix):
+                    nice_type = type_value[: -len(postfix)]
 
-            if isinstance(self.xlsx.worksheets[type_index].cell(3, 2).value, int):
+            row_index = -1
+            for index in (3, 4):
+                value = self.xlsx.worksheets[type_index].cell(index, 2).value
+                if isinstance(value, int) and 1800 < value < 2100:
+                    row_index = index
+                    break
+
+            if row_index >= 0:
                 # Year
                 years = []
                 index = 2
                 while True:
-                    value = self.xlsx.worksheets[type_index].cell(3, index).value
-                    if self.xlsx.worksheets[type_index].cell(2, index).value is not None:
+                    value = self.xlsx.worksheets[type_index].cell(row_index, index).value
+                    if self.xlsx.worksheets[type_index].cell(row_index - 1, index).value is not None:
                         break
                     years.append({"label": value, "index": index})
                     index += 1
 
                 # Country
                 regions = []
-                index = 5
+                index = row_index + 2
                 nb_empty_cells = 0
                 while True:
                     value = self.xlsx.worksheets[type_index].cell(index, 1).value
@@ -265,7 +280,7 @@ class BPDatasource:
                     if nb_empty_cells > 5:
                         break
                     index += 1
-                unit = {"original": self.xlsx.worksheets[type_index].cell(3, 1).value.strip()}
+                unit = {"original": self.xlsx.worksheets[type_index].cell(row_index, 1).value.strip()}
                 unit["normalized"] = self.normalize_unit(unit["original"])
                 iso_unit, postfix, factor = self._iso_unit(unit["normalized"])
                 unit["iso"] = iso_unit
@@ -273,11 +288,23 @@ class BPDatasource:
                 unit["iso_postfix"] = postfix
                 metadata.append(
                     {
-                        "label": type_value,
+                        "type": type_value,
+                        "label": nice_type,
                         "index": type_index,
                         "unit": unit,
                         "years": years,
                         "regions": regions,
+                        "supported": True,
+                        "row_index": row_index,
+                    }
+                )
+            else:
+                metadata.append(
+                    {
+                        "type": type_value,
+                        "label": nice_type,
+                        "index": type_index,
+                        "supported": False,
                     }
                 )
 
@@ -316,12 +343,15 @@ class BPDatasource:
                 )
         data_frame = pd.DataFrame(columns=columns)
         for type_ in self.metadata():
+            if not type_["supported"]:
+                continue
             type_index = type_["index"]
+            type_type = type_["type"]
             type_label = type_["label"]
             years = type_["years"]
             regions = type_["regions"]
 
-            if types_filter is not None and type_label not in types_filter:
+            if types_filter is not None and type_type not in types_filter:
                 continue
 
             for year in years:
@@ -354,7 +384,7 @@ class BPDatasource:
                         "Value": value,
                         "Year": year["label"],
                         "Region": region["label"],
-                        "Type": type_label,
+                        "Type": type_type,
                         "Unit": f"{unit}{unit_postfix}",
                         "TypeUnit": f"{type_label} [{unit}]{unit_postfix}",
                     }

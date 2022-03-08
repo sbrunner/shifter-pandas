@@ -37,7 +37,7 @@ def long_description() -> str:
     try:
         with open("README.md", encoding="utf-8") as readme_file:
             result = readme_file.read()
-        result = re.sub(r"```python[^`]*```", '... see it on GitHub', result, flags=re.DOTALL)
+        result = re.sub(r"```python[^`]*```", "... see it on GitHub", result, flags=re.DOTALL)
         return result
     except FileNotFoundError:
         return ""

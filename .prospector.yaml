@@ -15,12 +15,12 @@ pylint:
     - too-few-public-methods
     - no-else-return
 
-pep8:
+pycodestyle:
   disable:
     - E203 # whitespace before ':'
     - E501 # line too long
 
-pep257:
+pydocstyle:
   disable:
     - D104 # Missing docstring in public package
     - D200 # One-line docstring should fit on one line with quotes (found 3)
