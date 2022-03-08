@@ -21,4 +21,4 @@ prospector: requirements-dev.txt
 
 .PHONY: pyprest
 pytest: requirements-dev.txt
-	./.venv/bin/pytest --verbose tests
+	./.venv/bin/pytest --verbose -vv tests

@@ -245,6 +245,7 @@ class BPDatasource:
                 " - Barrels",
                 " - Tonnes",
                 " - Kboed",
+                " - Prices",
             ):
                 if type_value.endswith(postfix):
                     nice_type = type_value[: -len(postfix)]
@@ -302,7 +303,6 @@ class BPDatasource:
                 metadata.append(
                     {
                         "type": type_value,
-                        "label": nice_type,
                         "index": type_index,
                         "supported": False,
                     }
@@ -315,7 +315,7 @@ class BPDatasource:
         types_filter: Optional[List[str]] = None,
         regions_filter: Optional[List[str]] = None,
         units_filter: Optional[List[str]] = None,
-        years_filter: Optional[List[str]] = None,
+        years_filter: Optional[List[int]] = None,
         years_factor: Optional[int] = None,
         units: str = "iso",
         wikidata_id: bool = False,
