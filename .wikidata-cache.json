@@ -1,0 +1,4020 @@
+{
+  "regions": {
+    "name": {
+      "Canada": {
+        "id": "Q16",
+        "url": "http://www.wikidata.org/entity/Q16",
+        "label": "Canada",
+        "type": "country"
+      },
+      "Mexico": {
+        "id": "Q96",
+        "url": "http://www.wikidata.org/entity/Q96",
+        "label": "Mexico",
+        "type": "country"
+      },
+      "US": {
+        "id": "Q30",
+        "url": "http://www.wikidata.org/entity/Q30",
+        "label": "United States of America",
+        "type": "country"
+      },
+      "North America": {
+        "id": "Q49",
+        "url": "http://www.wikidata.org/entity/Q49",
+        "label": "North America",
+        "type": "continent"
+      },
+      "Argentina": {
+        "id": "Q414",
+        "url": "http://www.wikidata.org/entity/Q414",
+        "label": "Argentina",
+        "type": "country"
+      },
+      "Brazil": {
+        "id": "Q155",
+        "url": "http://www.wikidata.org/entity/Q155",
+        "label": "Brazil",
+        "type": "country"
+      },
+      "Chile": {
+        "id": "Q298",
+        "url": "http://www.wikidata.org/entity/Q298",
+        "label": "Chile",
+        "type": "country"
+      },
+      "Colombia": {
+        "id": "Q739",
+        "url": "http://www.wikidata.org/entity/Q739",
+        "label": "Colombia",
+        "type": "country"
+      },
+      "Ecuador": {
+        "id": "Q736",
+        "url": "http://www.wikidata.org/entity/Q736",
+        "label": "Ecuador",
+        "type": "country"
+      },
+      "Peru": {
+        "id": "Q419",
+        "url": "http://www.wikidata.org/entity/Q419",
+        "label": "Peru",
+        "type": "country"
+      },
+      "Trinidad & Tobago": {
+        "id": "Q754",
+        "url": "http://www.wikidata.org/entity/Q754",
+        "label": "Trinidad and Tobago",
+        "type": "country"
+      },
+      "Venezuela": {
+        "id": "Q717",
+        "url": "http://www.wikidata.org/entity/Q717",
+        "label": "Venezuela",
+        "type": "country"
+      },
+      "Central America": {
+        "id": "Q27611",
+        "url": "http://www.wikidata.org/entity/Q27611",
+        "label": "Central America",
+        "type": "subcontinent"
+      },
+      "Other Caribbean": null,
+      "Other South America": null,
+      "S. & Cent. America": null,
+      "Austria": {
+        "id": "Q40",
+        "url": "http://www.wikidata.org/entity/Q40",
+        "label": "Austria",
+        "type": "country"
+      },
+      "Belgium": {
+        "id": "Q31",
+        "url": "http://www.wikidata.org/entity/Q31",
+        "label": "Belgium",
+        "type": "country"
+      },
+      "Bulgaria": {
+        "id": "Q219",
+        "url": "http://www.wikidata.org/entity/Q219",
+        "label": "Bulgaria",
+        "type": "country"
+      },
+      "Croatia": {
+        "id": "Q224",
+        "url": "http://www.wikidata.org/entity/Q224",
+        "label": "Croatia",
+        "type": "country"
+      },
+      "Cyprus": {
+        "id": "Q229",
+        "url": "http://www.wikidata.org/entity/Q229",
+        "label": "Cyprus",
+        "type": "country"
+      },
+      "Czech Republic": {
+        "id": "Q213",
+        "url": "http://www.wikidata.org/entity/Q213",
+        "label": "Czech Republic",
+        "type": "country"
+      },
+      "Denmark": {
+        "id": "Q35",
+        "url": "http://www.wikidata.org/entity/Q35",
+        "label": "Denmark",
+        "type": "country"
+      },
+      "Estonia": {
+        "id": "Q191",
+        "url": "http://www.wikidata.org/entity/Q191",
+        "label": "Estonia",
+        "type": "country"
+      },
+      "Finland": {
+        "id": "Q33",
+        "url": "http://www.wikidata.org/entity/Q33",
+        "label": "Finland",
+        "type": "country"
+      },
+      "France": {
+        "id": "Q142",
+        "url": "http://www.wikidata.org/entity/Q142",
+        "label": "France",
+        "type": "country"
+      },
+      "Germany": {
+        "id": "Q183",
+        "url": "http://www.wikidata.org/entity/Q183",
+        "label": "Germany",
+        "type": "country"
+      },
+      "Greece": {
+        "id": "Q41",
+        "url": "http://www.wikidata.org/entity/Q41",
+        "label": "Greece",
+        "type": "country"
+      },
+      "Hungary": {
+        "id": "Q28",
+        "url": "http://www.wikidata.org/entity/Q28",
+        "label": "Hungary",
+        "type": "country"
+      },
+      "Iceland": {
+        "id": "Q189",
+        "url": "http://www.wikidata.org/entity/Q189",
+        "label": "Iceland",
+        "type": "country"
+      },
+      "Italy": {
+        "id": "Q38",
+        "url": "http://www.wikidata.org/entity/Q38",
+        "label": "Italy",
+        "type": "country"
+      },
+      "Latvia": {
+        "id": "Q211",
+        "url": "http://www.wikidata.org/entity/Q211",
+        "label": "Latvia",
+        "type": "country"
+      },
+      "Lithuania": {
+        "id": "Q37",
+        "url": "http://www.wikidata.org/entity/Q37",
+        "label": "Lithuania",
+        "type": "country"
+      },
+      "Luxembourg": {
+        "id": "Q32",
+        "url": "http://www.wikidata.org/entity/Q32",
+        "label": "Luxembourg",
+        "type": "country"
+      },
+      "Netherlands": {
+        "id": "Q55",
+        "url": "http://www.wikidata.org/entity/Q55",
+        "label": "Netherlands",
+        "type": "country"
+      },
+      "North Macedonia": {
+        "id": "Q221",
+        "url": "http://www.wikidata.org/entity/Q221",
+        "label": "North Macedonia",
+        "type": "country"
+      },
+      "Norway": {
+        "id": "Q20",
+        "url": "http://www.wikidata.org/entity/Q20",
+        "label": "Norway",
+        "type": "country"
+      },
+      "Poland": {
+        "id": "Q36",
+        "url": "http://www.wikidata.org/entity/Q36",
+        "label": "Poland",
+        "type": "country"
+      },
+      "Portugal": {
+        "id": "Q45",
+        "url": "http://www.wikidata.org/entity/Q45",
+        "label": "Portugal",
+        "type": "country"
+      },
+      "Romania": {
+        "id": "Q218",
+        "url": "http://www.wikidata.org/entity/Q218",
+        "label": "Romania",
+        "type": "country"
+      },
+      "Slovakia": {
+        "id": "Q214",
+        "url": "http://www.wikidata.org/entity/Q214",
+        "label": "Slovakia",
+        "type": "country"
+      },
+      "Slovenia": {
+        "id": "Q215",
+        "url": "http://www.wikidata.org/entity/Q215",
+        "label": "Slovenia",
+        "type": "country"
+      },
+      "Spain": {
+        "id": "Q29",
+        "url": "http://www.wikidata.org/entity/Q29",
+        "label": "Spain",
+        "type": "country"
+      },
+      "Sweden": {
+        "id": "Q34",
+        "url": "http://www.wikidata.org/entity/Q34",
+        "label": "Sweden",
+        "type": "country"
+      },
+      "Switzerland": {
+        "id": "Q39",
+        "url": "http://www.wikidata.org/entity/Q39",
+        "label": "Switzerland",
+        "type": "country"
+      },
+      "Turkey": {
+        "id": "Q43",
+        "url": "http://www.wikidata.org/entity/Q43",
+        "label": "Turkey",
+        "type": "country"
+      },
+      "Ukraine": {
+        "id": "Q212",
+        "url": "http://www.wikidata.org/entity/Q212",
+        "label": "Ukraine",
+        "type": "country"
+      },
+      "United Kingdom": {
+        "id": "Q145",
+        "url": "http://www.wikidata.org/entity/Q145",
+        "label": "United Kingdom",
+        "type": "country"
+      },
+      "Other Europe": null,
+      "Europe": {
+        "id": "Q46",
+        "url": "http://www.wikidata.org/entity/Q46",
+        "label": "Europe",
+        "type": "continent"
+      },
+      "Azerbaijan": {
+        "id": "Q227",
+        "url": "http://www.wikidata.org/entity/Q227",
+        "label": "Azerbaijan",
+        "type": "country"
+      },
+      "Belarus": {
+        "id": "Q184",
+        "url": "http://www.wikidata.org/entity/Q184",
+        "label": "Belarus",
+        "type": "country"
+      },
+      "Kazakhstan": {
+        "id": "Q232",
+        "url": "http://www.wikidata.org/entity/Q232",
+        "label": "Kazakhstan",
+        "type": "country"
+      },
+      "Russian Federation": {
+        "id": "Q159",
+        "url": "http://www.wikidata.org/entity/Q159",
+        "label": "Russia",
+        "type": "country"
+      },
+      "Turkmenistan": {
+        "id": "Q874",
+        "url": "http://www.wikidata.org/entity/Q874",
+        "label": "Turkmenistan",
+        "type": "country"
+      },
+      "Uzbekistan": {
+        "id": "Q265",
+        "url": "http://www.wikidata.org/entity/Q265",
+        "label": "Uzbekistan",
+        "type": "country"
+      },
+      "Other CIS": null,
+      "CIS": null,
+      "Iran": {
+        "id": "Q794",
+        "url": "http://www.wikidata.org/entity/Q794",
+        "label": "Iran",
+        "type": "country"
+      },
+      "Iraq": {
+        "id": "Q796",
+        "url": "http://www.wikidata.org/entity/Q796",
+        "label": "Iraq",
+        "type": "country"
+      },
+      "Israel": {
+        "id": "Q801",
+        "url": "http://www.wikidata.org/entity/Q801",
+        "label": "Israel",
+        "type": "country"
+      },
+      "Kuwait": {
+        "id": "Q817",
+        "url": "http://www.wikidata.org/entity/Q817",
+        "label": "Kuwait",
+        "type": "country"
+      },
+      "Oman": {
+        "id": "Q842",
+        "url": "http://www.wikidata.org/entity/Q842",
+        "label": "Oman",
+        "type": "country"
+      },
+      "Qatar": {
+        "id": "Q846",
+        "url": "http://www.wikidata.org/entity/Q846",
+        "label": "Qatar",
+        "type": "country"
+      },
+      "Saudi Arabia": {
+        "id": "Q851",
+        "url": "http://www.wikidata.org/entity/Q851",
+        "label": "Saudi Arabia",
+        "type": "country"
+      },
+      "United Arab Emirates": {
+        "id": "Q878",
+        "url": "http://www.wikidata.org/entity/Q878",
+        "label": "United Arab Emirates",
+        "type": "country"
+      },
+      "Other Middle East": null,
+      "Middle East": {
+        "id": "Q7204",
+        "url": "http://www.wikidata.org/entity/Q7204",
+        "label": "Middle East",
+        "type": "geographic region"
+      },
+      "Algeria": {
+        "id": "Q262",
+        "url": "http://www.wikidata.org/entity/Q262",
+        "label": "Algeria",
+        "type": "country"
+      },
+      "Egypt": {
+        "id": "Q79",
+        "url": "http://www.wikidata.org/entity/Q79",
+        "label": "Egypt",
+        "type": "country"
+      },
+      "Morocco": {
+        "id": "Q1028",
+        "url": "http://www.wikidata.org/entity/Q1028",
+        "label": "Morocco",
+        "type": "country"
+      },
+      "South Africa": {
+        "id": "Q258",
+        "url": "http://www.wikidata.org/entity/Q258",
+        "label": "South Africa",
+        "type": "country"
+      },
+      "Eastern Africa": {
+        "id": "Q27407",
+        "url": "http://www.wikidata.org/entity/Q27407",
+        "label": "East Africa",
+        "type": "geographic region"
+      },
+      "Middle Africa": {
+        "id": "Q22583595",
+        "url": "http://www.wikidata.org/entity/Q22583595",
+        "label": "Middle Africa",
+        "type": "subregion"
+      },
+      "Western Africa": {
+        "id": "Q4412",
+        "url": "http://www.wikidata.org/entity/Q4412",
+        "label": "West Africa",
+        "type": "geographic region"
+      },
+      "Other Northern Africa": null,
+      "Other Southern Africa": null,
+      "Africa": {
+        "id": "Q15",
+        "url": "http://www.wikidata.org/entity/Q15",
+        "label": "Africa",
+        "type": "continent"
+      },
+      "Australia": {
+        "id": "Q3960",
+        "url": "http://www.wikidata.org/entity/Q3960",
+        "label": "Australia",
+        "type": "continent"
+      },
+      "Bangladesh": {
+        "id": "Q902",
+        "url": "http://www.wikidata.org/entity/Q902",
+        "label": "Bangladesh",
+        "type": "country"
+      },
+      "China": {
+        "id": "Q148",
+        "url": "http://www.wikidata.org/entity/Q148",
+        "label": "People's Republic of China",
+        "type": "country"
+      },
+      "India": {
+        "id": "Q668",
+        "url": "http://www.wikidata.org/entity/Q668",
+        "label": "India",
+        "type": "country"
+      },
+      "Indonesia": {
+        "id": "Q252",
+        "url": "http://www.wikidata.org/entity/Q252",
+        "label": "Indonesia",
+        "type": "country"
+      },
+      "Japan": {
+        "id": "Q17",
+        "url": "http://www.wikidata.org/entity/Q17",
+        "label": "Japan",
+        "type": "country"
+      },
+      "Malaysia": {
+        "id": "Q833",
+        "url": "http://www.wikidata.org/entity/Q833",
+        "label": "Malaysia",
+        "type": "country"
+      },
+      "New Zealand": {
+        "id": "Q664",
+        "url": "http://www.wikidata.org/entity/Q664",
+        "label": "New Zealand",
+        "type": "country"
+      },
+      "Pakistan": {
+        "id": "Q843",
+        "url": "http://www.wikidata.org/entity/Q843",
+        "label": "Pakistan",
+        "type": "country"
+      },
+      "Philippines": {
+        "id": "Q928",
+        "url": "http://www.wikidata.org/entity/Q928",
+        "label": "Philippines",
+        "type": "country"
+      },
+      "Singapore": {
+        "id": "Q334",
+        "url": "http://www.wikidata.org/entity/Q334",
+        "label": "Singapore",
+        "type": "country"
+      },
+      "South Korea": {
+        "id": "Q884",
+        "url": "http://www.wikidata.org/entity/Q884",
+        "label": "South Korea",
+        "type": "country"
+      },
+      "Sri Lanka": {
+        "id": "Q854",
+        "url": "http://www.wikidata.org/entity/Q854",
+        "label": "Sri Lanka",
+        "type": "country"
+      },
+      "Taiwan": {
+        "id": "Q865",
+        "url": "http://www.wikidata.org/entity/Q865",
+        "label": "Taiwan",
+        "type": "country"
+      },
+      "Thailand": {
+        "id": "Q869",
+        "url": "http://www.wikidata.org/entity/Q869",
+        "label": "Thailand",
+        "type": "country"
+      },
+      "Vietnam": {
+        "id": "Q881",
+        "url": "http://www.wikidata.org/entity/Q881",
+        "label": "Vietnam",
+        "type": "country"
+      },
+      "Other Asia Pacific": null,
+      "Asia Pacific": {
+        "id": "Q1070940",
+        "url": "http://www.wikidata.org/entity/Q1070940",
+        "label": "Asia-Pacific",
+        "type": "geographic region"
+      },
+      "of which: OECD": null,
+      "Non-OECD": null,
+      "European Union": {
+        "id": "Q458",
+        "url": "http://www.wikidata.org/entity/Q458",
+        "label": "European Union",
+        "type": "political territorial entity"
+      },
+      "Asia": {
+        "id": "Q48",
+        "url": "http://www.wikidata.org/entity/Q48",
+        "label": "Asia",
+        "type": "continent"
+      },
+      "High income": null,
+      "International": null,
+      "Kosovo": {
+        "id": "Q1246",
+        "url": "http://www.wikidata.org/entity/Q1246",
+        "label": "Kosovo",
+        "type": "country"
+      },
+      "Low income": null,
+      "Lower middle income": null,
+      "Northern Cyprus": null,
+      "Oceania": {
+        "id": "Q55643",
+        "url": "http://www.wikidata.org/entity/Q55643",
+        "label": "Oceania",
+        "type": "geographic region"
+      },
+      "South America": {
+        "id": "Q18",
+        "url": "http://www.wikidata.org/entity/Q18",
+        "label": "South America",
+        "type": "continent"
+      },
+      "Upper middle income": null,
+      "Africa Eastern and Southern": null,
+      "Africa Western and Central": null,
+      "Arab World": {
+        "id": "Q143487",
+        "url": "http://www.wikidata.org/entity/Q143487",
+        "label": "Arab world",
+        "type": "geographic region"
+      },
+      "Central Europe and the Baltics": null,
+      "Caribbean small states": null,
+      "East Asia & Pacific (excluding high income)": null,
+      "Early-demographic dividend": null,
+      "East Asia & Pacific": null,
+      "Europe & Central Asia (excluding high income)": null,
+      "Europe & Central Asia": null,
+      "Fragile and conflict affected situations": null,
+      "Heavily indebted poor countries (HIPC)": null,
+      "IBRD only": null,
+      "IDA & IBRD total": null,
+      "IDA total": null,
+      "IDA blend": null,
+      "IDA only": null,
+      "Latin America & Caribbean (excluding high income)": null,
+      "Latin America & Caribbean": null,
+      "Least developed countries: UN classification": null,
+      "Low & middle income": null,
+      "Late-demographic dividend": null,
+      "Middle East & North Africa": null,
+      "Middle income": null,
+      "Middle East & North Africa (excluding high income)": null,
+      "Other small states": null,
+      "Pre-demographic dividend": null,
+      "Pacific island small states": null,
+      "Post-demographic dividend": null,
+      "South Asia": {
+        "id": "Q771405",
+        "url": "http://www.wikidata.org/entity/Q771405",
+        "label": "South Asia",
+        "type": "geographic region"
+      },
+      "Sub-Saharan Africa (excluding high income)": null,
+      "Sub-Saharan Africa": {
+        "id": "Q132959",
+        "url": "http://www.wikidata.org/entity/Q132959",
+        "label": "Sub-Saharan Africa",
+        "type": "geographic region"
+      },
+      "Small states": null,
+      "East Asia & Pacific (IDA & IBRD countries)": null,
+      "Europe & Central Asia (IDA & IBRD countries)": null,
+      "Latin America & the Caribbean (IDA & IBRD countries)": null,
+      "Middle East & North Africa (IDA & IBRD countries)": null,
+      "South Asia (IDA & IBRD)": null,
+      "Sub-Saharan Africa (IDA & IBRD countries)": null,
+      "Yemen": {
+        "id": "Q805",
+        "url": "http://www.wikidata.org/entity/Q805",
+        "label": "Yemen",
+        "type": "country"
+      },
+      "ABW": {
+        "id": "Q21203",
+        "url": "http://www.wikidata.org/entity/Q21203",
+        "label": "Aruba",
+        "type": "country"
+      },
+      "AFE": null,
+      "AFG": {
+        "id": "Q889",
+        "url": "http://www.wikidata.org/entity/Q889",
+        "label": "Afghanistan",
+        "type": "country"
+      },
+      "AFW": null,
+      "AGO": {
+        "id": "Q916",
+        "url": "http://www.wikidata.org/entity/Q916",
+        "label": "Angola",
+        "type": "country"
+      },
+      "ALB": {
+        "id": "Q222",
+        "url": "http://www.wikidata.org/entity/Q222",
+        "label": "Albania",
+        "type": "country"
+      },
+      "AND": {
+        "id": "Q228",
+        "url": "http://www.wikidata.org/entity/Q228",
+        "label": "Andorra",
+        "type": "country"
+      },
+      "ARB": null,
+      "ARE": {
+        "id": "Q878",
+        "url": "http://www.wikidata.org/entity/Q878",
+        "label": "United Arab Emirates",
+        "type": "country"
+      },
+      "ARG": {
+        "id": "Q414",
+        "url": "http://www.wikidata.org/entity/Q414",
+        "label": "Argentina",
+        "type": "country"
+      },
+      "ARM": {
+        "id": "Q399",
+        "url": "http://www.wikidata.org/entity/Q399",
+        "label": "Armenia",
+        "type": "country"
+      },
+      "ASM": {
+        "id": "Q16641",
+        "url": "http://www.wikidata.org/entity/Q16641",
+        "label": "American Samoa",
+        "type": "country"
+      },
+      "ATG": {
+        "id": "Q781",
+        "url": "http://www.wikidata.org/entity/Q781",
+        "label": "Antigua and Barbuda",
+        "type": "country"
+      },
+      "AUS": {
+        "id": "Q408",
+        "url": "http://www.wikidata.org/entity/Q408",
+        "label": "Australia",
+        "type": "country"
+      },
+      "AUT": {
+        "id": "Q40",
+        "url": "http://www.wikidata.org/entity/Q40",
+        "label": "Austria",
+        "type": "country"
+      },
+      "AZE": {
+        "id": "Q227",
+        "url": "http://www.wikidata.org/entity/Q227",
+        "label": "Azerbaijan",
+        "type": "country"
+      },
+      "BDI": {
+        "id": "Q967",
+        "url": "http://www.wikidata.org/entity/Q967",
+        "label": "Burundi",
+        "type": "country"
+      },
+      "BEL": {
+        "id": "Q31",
+        "url": "http://www.wikidata.org/entity/Q31",
+        "label": "Belgium",
+        "type": "country"
+      },
+      "BEN": {
+        "id": "Q962",
+        "url": "http://www.wikidata.org/entity/Q962",
+        "label": "Benin",
+        "type": "country"
+      },
+      "BFA": {
+        "id": "Q965",
+        "url": "http://www.wikidata.org/entity/Q965",
+        "label": "Burkina Faso",
+        "type": "country"
+      },
+      "BGD": {
+        "id": "Q902",
+        "url": "http://www.wikidata.org/entity/Q902",
+        "label": "Bangladesh",
+        "type": "country"
+      },
+      "BGR": {
+        "id": "Q219",
+        "url": "http://www.wikidata.org/entity/Q219",
+        "label": "Bulgaria",
+        "type": "country"
+      },
+      "BHR": {
+        "id": "Q398",
+        "url": "http://www.wikidata.org/entity/Q398",
+        "label": "Bahrain",
+        "type": "country"
+      },
+      "BHS": {
+        "id": "Q778",
+        "url": "http://www.wikidata.org/entity/Q778",
+        "label": "The Bahamas",
+        "type": "country"
+      },
+      "BIH": {
+        "id": "Q225",
+        "url": "http://www.wikidata.org/entity/Q225",
+        "label": "Bosnia and Herzegovina",
+        "type": "country"
+      },
+      "BLR": {
+        "id": "Q184",
+        "url": "http://www.wikidata.org/entity/Q184",
+        "label": "Belarus",
+        "type": "country"
+      },
+      "BLZ": {
+        "id": "Q242",
+        "url": "http://www.wikidata.org/entity/Q242",
+        "label": "Belize",
+        "type": "country"
+      },
+      "BMU": {
+        "id": "Q23635",
+        "url": "http://www.wikidata.org/entity/Q23635",
+        "label": "Bermuda",
+        "type": "other"
+      },
+      "BOL": {
+        "id": "Q750",
+        "url": "http://www.wikidata.org/entity/Q750",
+        "label": "Bolivia",
+        "type": "country"
+      },
+      "BRA": {
+        "id": "Q155",
+        "url": "http://www.wikidata.org/entity/Q155",
+        "label": "Brazil",
+        "type": "country"
+      },
+      "BRB": {
+        "id": "Q244",
+        "url": "http://www.wikidata.org/entity/Q244",
+        "label": "Barbados",
+        "type": "country"
+      },
+      "BRN": {
+        "id": "Q921",
+        "url": "http://www.wikidata.org/entity/Q921",
+        "label": "Brunei",
+        "type": "country"
+      },
+      "BTN": {
+        "id": "Q917",
+        "url": "http://www.wikidata.org/entity/Q917",
+        "label": "Bhutan",
+        "type": "country"
+      },
+      "BWA": {
+        "id": "Q963",
+        "url": "http://www.wikidata.org/entity/Q963",
+        "label": "Botswana",
+        "type": "country"
+      },
+      "CAF": {
+        "id": "Q929",
+        "url": "http://www.wikidata.org/entity/Q929",
+        "label": "Central African Republic",
+        "type": "country"
+      },
+      "CAN": {
+        "id": "Q16",
+        "url": "http://www.wikidata.org/entity/Q16",
+        "label": "Canada",
+        "type": "country"
+      },
+      "CEB": null,
+      "CHE": {
+        "id": "Q39",
+        "url": "http://www.wikidata.org/entity/Q39",
+        "label": "Switzerland",
+        "type": "country"
+      },
+      "CHL": {
+        "id": "Q298",
+        "url": "http://www.wikidata.org/entity/Q298",
+        "label": "Chile",
+        "type": "country"
+      },
+      "CHN": {
+        "id": "Q148",
+        "url": "http://www.wikidata.org/entity/Q148",
+        "label": "People's Republic of China",
+        "type": "country"
+      },
+      "CIV": {
+        "id": "Q1008",
+        "url": "http://www.wikidata.org/entity/Q1008",
+        "label": "C\u00f4te d'Ivoire",
+        "type": "country"
+      },
+      "CMR": {
+        "id": "Q1009",
+        "url": "http://www.wikidata.org/entity/Q1009",
+        "label": "Cameroon",
+        "type": "country"
+      },
+      "COD": {
+        "id": "Q974",
+        "url": "http://www.wikidata.org/entity/Q974",
+        "label": "Democratic Republic of the Congo",
+        "type": "country"
+      },
+      "COG": {
+        "id": "Q971",
+        "url": "http://www.wikidata.org/entity/Q971",
+        "label": "Republic of the Congo",
+        "type": "country"
+      },
+      "COL": {
+        "id": "Q739",
+        "url": "http://www.wikidata.org/entity/Q739",
+        "label": "Colombia",
+        "type": "country"
+      },
+      "COM": {
+        "id": "Q970",
+        "url": "http://www.wikidata.org/entity/Q970",
+        "label": "Comoros",
+        "type": "country"
+      },
+      "CPV": {
+        "id": "Q1011",
+        "url": "http://www.wikidata.org/entity/Q1011",
+        "label": "Cape Verde",
+        "type": "country"
+      },
+      "CRI": {
+        "id": "Q800",
+        "url": "http://www.wikidata.org/entity/Q800",
+        "label": "Costa Rica",
+        "type": "country"
+      },
+      "CSS": null,
+      "CUB": {
+        "id": "Q241",
+        "url": "http://www.wikidata.org/entity/Q241",
+        "label": "Cuba",
+        "type": "country"
+      },
+      "CUW": {
+        "id": "Q25279",
+        "url": "http://www.wikidata.org/entity/Q25279",
+        "label": "Cura\u00e7ao",
+        "type": "country"
+      },
+      "CYM": {
+        "id": "Q5785",
+        "url": "http://www.wikidata.org/entity/Q5785",
+        "label": "Cayman Islands",
+        "type": "other"
+      },
+      "CYP": {
+        "id": "Q229",
+        "url": "http://www.wikidata.org/entity/Q229",
+        "label": "Cyprus",
+        "type": "country"
+      },
+      "CZE": {
+        "id": "Q213",
+        "url": "http://www.wikidata.org/entity/Q213",
+        "label": "Czech Republic",
+        "type": "country"
+      },
+      "DEU": {
+        "id": "Q183",
+        "url": "http://www.wikidata.org/entity/Q183",
+        "label": "Germany",
+        "type": "country"
+      },
+      "DJI": {
+        "id": "Q977",
+        "url": "http://www.wikidata.org/entity/Q977",
+        "label": "Djibouti",
+        "type": "country"
+      },
+      "DMA": {
+        "id": "Q784",
+        "url": "http://www.wikidata.org/entity/Q784",
+        "label": "Dominica",
+        "type": "country"
+      },
+      "DNK": {
+        "id": "Q756617",
+        "url": "http://www.wikidata.org/entity/Q756617",
+        "label": "Kingdom of Denmark",
+        "type": "country"
+      },
+      "DOM": {
+        "id": "Q786",
+        "url": "http://www.wikidata.org/entity/Q786",
+        "label": "Dominican Republic",
+        "type": "country"
+      },
+      "DZA": {
+        "id": "Q262",
+        "url": "http://www.wikidata.org/entity/Q262",
+        "label": "Algeria",
+        "type": "country"
+      },
+      "EAP": null,
+      "EAR": null,
+      "EAS": null,
+      "ECA": null,
+      "ECS": null,
+      "ECU": {
+        "id": "Q736",
+        "url": "http://www.wikidata.org/entity/Q736",
+        "label": "Ecuador",
+        "type": "country"
+      },
+      "EGY": {
+        "id": "Q79",
+        "url": "http://www.wikidata.org/entity/Q79",
+        "label": "Egypt",
+        "type": "country"
+      },
+      "EMU": null,
+      "ERI": {
+        "id": "Q986",
+        "url": "http://www.wikidata.org/entity/Q986",
+        "label": "Eritrea",
+        "type": "country"
+      },
+      "ESP": {
+        "id": "Q29",
+        "url": "http://www.wikidata.org/entity/Q29",
+        "label": "Spain",
+        "type": "country"
+      },
+      "EST": {
+        "id": "Q191",
+        "url": "http://www.wikidata.org/entity/Q191",
+        "label": "Estonia",
+        "type": "country"
+      },
+      "ETH": {
+        "id": "Q115",
+        "url": "http://www.wikidata.org/entity/Q115",
+        "label": "Ethiopia",
+        "type": "country"
+      },
+      "EUU": {
+        "id": "Q30",
+        "url": "http://www.wikidata.org/entity/Q30",
+        "label": "United States of America",
+        "type": "country"
+      },
+      "FCS": null,
+      "FIN": {
+        "id": "Q33",
+        "url": "http://www.wikidata.org/entity/Q33",
+        "label": "Finland",
+        "type": "country"
+      },
+      "FJI": {
+        "id": "Q712",
+        "url": "http://www.wikidata.org/entity/Q712",
+        "label": "Fiji",
+        "type": "country"
+      },
+      "FRA": {
+        "id": "Q142",
+        "url": "http://www.wikidata.org/entity/Q142",
+        "label": "France",
+        "type": "country"
+      },
+      "FRO": {
+        "id": "Q4628",
+        "url": "http://www.wikidata.org/entity/Q4628",
+        "label": "Faroe Islands",
+        "type": "other"
+      },
+      "FSM": {
+        "id": "Q702",
+        "url": "http://www.wikidata.org/entity/Q702",
+        "label": "Federated States of Micronesia",
+        "type": "country"
+      },
+      "GAB": {
+        "id": "Q1000",
+        "url": "http://www.wikidata.org/entity/Q1000",
+        "label": "Gabon",
+        "type": "country"
+      },
+      "GBR": {
+        "id": "Q145",
+        "url": "http://www.wikidata.org/entity/Q145",
+        "label": "United Kingdom",
+        "type": "country"
+      },
+      "GEO": {
+        "id": "Q230",
+        "url": "http://www.wikidata.org/entity/Q230",
+        "label": "Georgia",
+        "type": "country"
+      },
+      "GHA": {
+        "id": "Q117",
+        "url": "http://www.wikidata.org/entity/Q117",
+        "label": "Ghana",
+        "type": "country"
+      },
+      "GIN": {
+        "id": "Q1006",
+        "url": "http://www.wikidata.org/entity/Q1006",
+        "label": "Guinea",
+        "type": "country"
+      },
+      "GMB": {
+        "id": "Q1005",
+        "url": "http://www.wikidata.org/entity/Q1005",
+        "label": "The Gambia",
+        "type": "country"
+      },
+      "GNB": {
+        "id": "Q1007",
+        "url": "http://www.wikidata.org/entity/Q1007",
+        "label": "Guinea-Bissau",
+        "type": "country"
+      },
+      "GNQ": {
+        "id": "Q983",
+        "url": "http://www.wikidata.org/entity/Q983",
+        "label": "Equatorial Guinea",
+        "type": "country"
+      },
+      "GRC": {
+        "id": "Q41",
+        "url": "http://www.wikidata.org/entity/Q41",
+        "label": "Greece",
+        "type": "country"
+      },
+      "GRD": {
+        "id": "Q769",
+        "url": "http://www.wikidata.org/entity/Q769",
+        "label": "Grenada",
+        "type": "country"
+      },
+      "GRL": {
+        "id": "Q223",
+        "url": "http://www.wikidata.org/entity/Q223",
+        "label": "Greenland",
+        "type": "other"
+      },
+      "GTM": {
+        "id": "Q774",
+        "url": "http://www.wikidata.org/entity/Q774",
+        "label": "Guatemala",
+        "type": "country"
+      },
+      "GUM": {
+        "id": "Q16635",
+        "url": "http://www.wikidata.org/entity/Q16635",
+        "label": "Guam",
+        "type": "other"
+      },
+      "GUY": {
+        "id": "Q734",
+        "url": "http://www.wikidata.org/entity/Q734",
+        "label": "Guyana",
+        "type": "country"
+      },
+      "HIC": null,
+      "HKG": {
+        "id": "Q8646",
+        "url": "http://www.wikidata.org/entity/Q8646",
+        "label": "Hong Kong",
+        "type": "other"
+      },
+      "HND": {
+        "id": "Q783",
+        "url": "http://www.wikidata.org/entity/Q783",
+        "label": "Honduras",
+        "type": "country"
+      },
+      "HPC": null,
+      "HRV": {
+        "id": "Q224",
+        "url": "http://www.wikidata.org/entity/Q224",
+        "label": "Croatia",
+        "type": "country"
+      },
+      "HTI": {
+        "id": "Q790",
+        "url": "http://www.wikidata.org/entity/Q790",
+        "label": "Haiti",
+        "type": "country"
+      },
+      "HUN": {
+        "id": "Q28",
+        "url": "http://www.wikidata.org/entity/Q28",
+        "label": "Hungary",
+        "type": "country"
+      },
+      "IBD": null,
+      "IBT": null,
+      "IDA": null,
+      "IDB": null,
+      "IDN": {
+        "id": "Q252",
+        "url": "http://www.wikidata.org/entity/Q252",
+        "label": "Indonesia",
+        "type": "country"
+      },
+      "IDX": null,
+      "IMN": {
+        "id": "Q9676",
+        "url": "http://www.wikidata.org/entity/Q9676",
+        "label": "Isle of Man",
+        "type": "other"
+      },
+      "IND": {
+        "id": "Q668",
+        "url": "http://www.wikidata.org/entity/Q668",
+        "label": "India",
+        "type": "country"
+      },
+      "IRL": {
+        "id": "Q27",
+        "url": "http://www.wikidata.org/entity/Q27",
+        "label": "Republic of Ireland",
+        "type": "country"
+      },
+      "IRN": {
+        "id": "Q794",
+        "url": "http://www.wikidata.org/entity/Q794",
+        "label": "Iran",
+        "type": "country"
+      },
+      "IRQ": {
+        "id": "Q796",
+        "url": "http://www.wikidata.org/entity/Q796",
+        "label": "Iraq",
+        "type": "country"
+      },
+      "ISL": {
+        "id": "Q189",
+        "url": "http://www.wikidata.org/entity/Q189",
+        "label": "Iceland",
+        "type": "country"
+      },
+      "ISR": {
+        "id": "Q801",
+        "url": "http://www.wikidata.org/entity/Q801",
+        "label": "Israel",
+        "type": "country"
+      },
+      "ITA": {
+        "id": "Q38",
+        "url": "http://www.wikidata.org/entity/Q38",
+        "label": "Italy",
+        "type": "country"
+      },
+      "JAM": {
+        "id": "Q766",
+        "url": "http://www.wikidata.org/entity/Q766",
+        "label": "Jamaica",
+        "type": "country"
+      },
+      "JOR": {
+        "id": "Q810",
+        "url": "http://www.wikidata.org/entity/Q810",
+        "label": "Jordan",
+        "type": "country"
+      },
+      "JPN": {
+        "id": "Q17",
+        "url": "http://www.wikidata.org/entity/Q17",
+        "label": "Japan",
+        "type": "country"
+      },
+      "KAZ": {
+        "id": "Q232",
+        "url": "http://www.wikidata.org/entity/Q232",
+        "label": "Kazakhstan",
+        "type": "country"
+      },
+      "KEN": {
+        "id": "Q114",
+        "url": "http://www.wikidata.org/entity/Q114",
+        "label": "Kenya",
+        "type": "country"
+      },
+      "KGZ": {
+        "id": "Q813",
+        "url": "http://www.wikidata.org/entity/Q813",
+        "label": "Kyrgyzstan",
+        "type": "country"
+      },
+      "KHM": {
+        "id": "Q424",
+        "url": "http://www.wikidata.org/entity/Q424",
+        "label": "Cambodia",
+        "type": "country"
+      },
+      "KIR": {
+        "id": "Q710",
+        "url": "http://www.wikidata.org/entity/Q710",
+        "label": "Kiribati",
+        "type": "country"
+      },
+      "KNA": {
+        "id": "Q763",
+        "url": "http://www.wikidata.org/entity/Q763",
+        "label": "Saint Kitts and Nevis",
+        "type": "country"
+      },
+      "KOR": {
+        "id": "Q884",
+        "url": "http://www.wikidata.org/entity/Q884",
+        "label": "South Korea",
+        "type": "country"
+      },
+      "KWT": {
+        "id": "Q817",
+        "url": "http://www.wikidata.org/entity/Q817",
+        "label": "Kuwait",
+        "type": "country"
+      },
+      "LAC": {
+        "id": "Q72829598",
+        "url": "http://www.wikidata.org/entity/Q72829598",
+        "label": "Latin America and the Caribbean",
+        "type": "geographic region"
+      },
+      "LAO": {
+        "id": "Q819",
+        "url": "http://www.wikidata.org/entity/Q819",
+        "label": "Laos",
+        "type": "country"
+      },
+      "LBN": {
+        "id": "Q822",
+        "url": "http://www.wikidata.org/entity/Q822",
+        "label": "Lebanon",
+        "type": "country"
+      },
+      "LBR": {
+        "id": "Q1014",
+        "url": "http://www.wikidata.org/entity/Q1014",
+        "label": "Liberia",
+        "type": "country"
+      },
+      "LBY": {
+        "id": "Q1016",
+        "url": "http://www.wikidata.org/entity/Q1016",
+        "label": "Libya",
+        "type": "country"
+      },
+      "LCA": {
+        "id": "Q760",
+        "url": "http://www.wikidata.org/entity/Q760",
+        "label": "Saint Lucia",
+        "type": "country"
+      },
+      "LCN": null,
+      "LDC": {
+        "id": "Q177323",
+        "url": "http://www.wikidata.org/entity/Q177323",
+        "label": "developing country",
+        "type": "geographic region"
+      },
+      "LIC": null,
+      "LIE": {
+        "id": "Q347",
+        "url": "http://www.wikidata.org/entity/Q347",
+        "label": "Liechtenstein",
+        "type": "country"
+      },
+      "LKA": {
+        "id": "Q854",
+        "url": "http://www.wikidata.org/entity/Q854",
+        "label": "Sri Lanka",
+        "type": "country"
+      },
+      "LMC": null,
+      "LMY": null,
+      "LSO": {
+        "id": "Q1013",
+        "url": "http://www.wikidata.org/entity/Q1013",
+        "label": "Lesotho",
+        "type": "country"
+      },
+      "LTE": null,
+      "LTU": {
+        "id": "Q37",
+        "url": "http://www.wikidata.org/entity/Q37",
+        "label": "Lithuania",
+        "type": "country"
+      },
+      "LUX": {
+        "id": "Q32",
+        "url": "http://www.wikidata.org/entity/Q32",
+        "label": "Luxembourg",
+        "type": "country"
+      },
+      "LVA": {
+        "id": "Q211",
+        "url": "http://www.wikidata.org/entity/Q211",
+        "label": "Latvia",
+        "type": "country"
+      },
+      "MAC": {
+        "id": "Q14773",
+        "url": "http://www.wikidata.org/entity/Q14773",
+        "label": "Macau",
+        "type": "other"
+      },
+      "MAR": {
+        "id": "Q1028",
+        "url": "http://www.wikidata.org/entity/Q1028",
+        "label": "Morocco",
+        "type": "country"
+      },
+      "MCO": {
+        "id": "Q235",
+        "url": "http://www.wikidata.org/entity/Q235",
+        "label": "Monaco",
+        "type": "country"
+      },
+      "MDA": {
+        "id": "Q217",
+        "url": "http://www.wikidata.org/entity/Q217",
+        "label": "Moldova",
+        "type": "country"
+      },
+      "MDG": {
+        "id": "Q1019",
+        "url": "http://www.wikidata.org/entity/Q1019",
+        "label": "Madagascar",
+        "type": "country"
+      },
+      "MDV": {
+        "id": "Q826",
+        "url": "http://www.wikidata.org/entity/Q826",
+        "label": "Maldives",
+        "type": "country"
+      },
+      "MEA": null,
+      "MEX": {
+        "id": "Q96",
+        "url": "http://www.wikidata.org/entity/Q96",
+        "label": "Mexico",
+        "type": "country"
+      },
+      "MHL": {
+        "id": "Q709",
+        "url": "http://www.wikidata.org/entity/Q709",
+        "label": "Marshall Islands",
+        "type": "country"
+      },
+      "MIC": null,
+      "MKD": {
+        "id": "Q221",
+        "url": "http://www.wikidata.org/entity/Q221",
+        "label": "North Macedonia",
+        "type": "country"
+      },
+      "MLI": {
+        "id": "Q912",
+        "url": "http://www.wikidata.org/entity/Q912",
+        "label": "Mali",
+        "type": "country"
+      },
+      "MLT": {
+        "id": "Q233",
+        "url": "http://www.wikidata.org/entity/Q233",
+        "label": "Malta",
+        "type": "country"
+      },
+      "MMR": {
+        "id": "Q836",
+        "url": "http://www.wikidata.org/entity/Q836",
+        "label": "Myanmar",
+        "type": "country"
+      },
+      "MNA": null,
+      "MNE": {
+        "id": "Q236",
+        "url": "http://www.wikidata.org/entity/Q236",
+        "label": "Montenegro",
+        "type": "country"
+      },
+      "MNG": {
+        "id": "Q711",
+        "url": "http://www.wikidata.org/entity/Q711",
+        "label": "Mongolia",
+        "type": "country"
+      },
+      "MNP": {
+        "id": "Q16644",
+        "url": "http://www.wikidata.org/entity/Q16644",
+        "label": "Northern Mariana Islands",
+        "type": "country"
+      },
+      "MOZ": {
+        "id": "Q1029",
+        "url": "http://www.wikidata.org/entity/Q1029",
+        "label": "Mozambique",
+        "type": "country"
+      },
+      "MRT": {
+        "id": "Q1025",
+        "url": "http://www.wikidata.org/entity/Q1025",
+        "label": "Mauritania",
+        "type": "country"
+      },
+      "MUS": {
+        "id": "Q1027",
+        "url": "http://www.wikidata.org/entity/Q1027",
+        "label": "Mauritius",
+        "type": "country"
+      },
+      "MWI": {
+        "id": "Q1020",
+        "url": "http://www.wikidata.org/entity/Q1020",
+        "label": "Malawi",
+        "type": "country"
+      },
+      "MYS": {
+        "id": "Q833",
+        "url": "http://www.wikidata.org/entity/Q833",
+        "label": "Malaysia",
+        "type": "country"
+      },
+      "NAC": null,
+      "NAM": {
+        "id": "Q1030",
+        "url": "http://www.wikidata.org/entity/Q1030",
+        "label": "Namibia",
+        "type": "country"
+      },
+      "NCL": {
+        "id": "Q33788",
+        "url": "http://www.wikidata.org/entity/Q33788",
+        "label": "New Caledonia",
+        "type": "other"
+      },
+      "NER": {
+        "id": "Q1032",
+        "url": "http://www.wikidata.org/entity/Q1032",
+        "label": "Niger",
+        "type": "country"
+      },
+      "NGA": {
+        "id": "Q1033",
+        "url": "http://www.wikidata.org/entity/Q1033",
+        "label": "Nigeria",
+        "type": "country"
+      },
+      "NIC": {
+        "id": "Q811",
+        "url": "http://www.wikidata.org/entity/Q811",
+        "label": "Nicaragua",
+        "type": "country"
+      },
+      "NLD": {
+        "id": "Q55",
+        "url": "http://www.wikidata.org/entity/Q55",
+        "label": "Netherlands",
+        "type": "country"
+      },
+      "NOR": {
+        "id": "Q20",
+        "url": "http://www.wikidata.org/entity/Q20",
+        "label": "Norway",
+        "type": "country"
+      },
+      "NPL": {
+        "id": "Q837",
+        "url": "http://www.wikidata.org/entity/Q837",
+        "label": "Nepal",
+        "type": "country"
+      },
+      "NRU": {
+        "id": "Q697",
+        "url": "http://www.wikidata.org/entity/Q697",
+        "label": "Nauru",
+        "type": "country"
+      },
+      "NZL": {
+        "id": "Q664",
+        "url": "http://www.wikidata.org/entity/Q664",
+        "label": "New Zealand",
+        "type": "country"
+      },
+      "OED": null,
+      "OMN": {
+        "id": "Q842",
+        "url": "http://www.wikidata.org/entity/Q842",
+        "label": "Oman",
+        "type": "country"
+      },
+      "OSS": null,
+      "PAK": {
+        "id": "Q843",
+        "url": "http://www.wikidata.org/entity/Q843",
+        "label": "Pakistan",
+        "type": "country"
+      },
+      "PAN": {
+        "id": "Q804",
+        "url": "http://www.wikidata.org/entity/Q804",
+        "label": "Panama",
+        "type": "country"
+      },
+      "PER": {
+        "id": "Q419",
+        "url": "http://www.wikidata.org/entity/Q419",
+        "label": "Peru",
+        "type": "country"
+      },
+      "PHL": {
+        "id": "Q928",
+        "url": "http://www.wikidata.org/entity/Q928",
+        "label": "Philippines",
+        "type": "country"
+      },
+      "PLW": {
+        "id": "Q695",
+        "url": "http://www.wikidata.org/entity/Q695",
+        "label": "Palau",
+        "type": "country"
+      },
+      "PNG": {
+        "id": "Q691",
+        "url": "http://www.wikidata.org/entity/Q691",
+        "label": "Papua New Guinea",
+        "type": "country"
+      },
+      "POL": {
+        "id": "Q36",
+        "url": "http://www.wikidata.org/entity/Q36",
+        "label": "Poland",
+        "type": "country"
+      },
+      "PRE": null,
+      "PRI": {
+        "id": "Q1183",
+        "url": "http://www.wikidata.org/entity/Q1183",
+        "label": "Puerto Rico",
+        "type": "other"
+      },
+      "PRT": {
+        "id": "Q45",
+        "url": "http://www.wikidata.org/entity/Q45",
+        "label": "Portugal",
+        "type": "country"
+      },
+      "PRY": {
+        "id": "Q733",
+        "url": "http://www.wikidata.org/entity/Q733",
+        "label": "Paraguay",
+        "type": "country"
+      },
+      "PSE": {
+        "id": "Q407199",
+        "url": "http://www.wikidata.org/entity/Q407199",
+        "label": "Palestinian territories",
+        "type": "other"
+      },
+      "PSS": null,
+      "PST": null,
+      "QAT": {
+        "id": "Q846",
+        "url": "http://www.wikidata.org/entity/Q846",
+        "label": "Qatar",
+        "type": "country"
+      },
+      "ROU": {
+        "id": "Q218",
+        "url": "http://www.wikidata.org/entity/Q218",
+        "label": "Romania",
+        "type": "country"
+      },
+      "RUS": {
+        "id": "Q159",
+        "url": "http://www.wikidata.org/entity/Q159",
+        "label": "Russia",
+        "type": "country"
+      },
+      "RWA": {
+        "id": "Q1037",
+        "url": "http://www.wikidata.org/entity/Q1037",
+        "label": "Rwanda",
+        "type": "country"
+      },
+      "SAS": null,
+      "SAU": {
+        "id": "Q851",
+        "url": "http://www.wikidata.org/entity/Q851",
+        "label": "Saudi Arabia",
+        "type": "country"
+      },
+      "SDN": {
+        "id": "Q1049",
+        "url": "http://www.wikidata.org/entity/Q1049",
+        "label": "Sudan",
+        "type": "country"
+      },
+      "SEN": {
+        "id": "Q1041",
+        "url": "http://www.wikidata.org/entity/Q1041",
+        "label": "Senegal",
+        "type": "country"
+      },
+      "SGP": {
+        "id": "Q334",
+        "url": "http://www.wikidata.org/entity/Q334",
+        "label": "Singapore",
+        "type": "country"
+      },
+      "SLB": {
+        "id": "Q685",
+        "url": "http://www.wikidata.org/entity/Q685",
+        "label": "Solomon Islands",
+        "type": "country"
+      },
+      "SLE": {
+        "id": "Q1044",
+        "url": "http://www.wikidata.org/entity/Q1044",
+        "label": "Sierra Leone",
+        "type": "country"
+      },
+      "SLV": {
+        "id": "Q792",
+        "url": "http://www.wikidata.org/entity/Q792",
+        "label": "El Salvador",
+        "type": "country"
+      },
+      "SMR": {
+        "id": "Q238",
+        "url": "http://www.wikidata.org/entity/Q238",
+        "label": "San Marino",
+        "type": "country"
+      },
+      "SOM": {
+        "id": "Q1045",
+        "url": "http://www.wikidata.org/entity/Q1045",
+        "label": "Somalia",
+        "type": "country"
+      },
+      "SRB": {
+        "id": "Q403",
+        "url": "http://www.wikidata.org/entity/Q403",
+        "label": "Serbia",
+        "type": "country"
+      },
+      "SSA": {
+        "id": "Q30",
+        "url": "http://www.wikidata.org/entity/Q30",
+        "label": "United States of America",
+        "type": "country"
+      },
+      "SSD": {
+        "id": "Q958",
+        "url": "http://www.wikidata.org/entity/Q958",
+        "label": "South Sudan",
+        "type": "country"
+      },
+      "SSF": null,
+      "SST": null,
+      "STP": {
+        "id": "Q1039",
+        "url": "http://www.wikidata.org/entity/Q1039",
+        "label": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+        "type": "country"
+      },
+      "SUR": {
+        "id": "Q730",
+        "url": "http://www.wikidata.org/entity/Q730",
+        "label": "Suriname",
+        "type": "country"
+      },
+      "SVK": {
+        "id": "Q214",
+        "url": "http://www.wikidata.org/entity/Q214",
+        "label": "Slovakia",
+        "type": "country"
+      },
+      "SVN": {
+        "id": "Q215",
+        "url": "http://www.wikidata.org/entity/Q215",
+        "label": "Slovenia",
+        "type": "country"
+      },
+      "SWE": {
+        "id": "Q34",
+        "url": "http://www.wikidata.org/entity/Q34",
+        "label": "Sweden",
+        "type": "country"
+      },
+      "SWZ": {
+        "id": "Q1050",
+        "url": "http://www.wikidata.org/entity/Q1050",
+        "label": "Eswatini",
+        "type": "other"
+      },
+      "SXM": {
+        "id": "Q26273",
+        "url": "http://www.wikidata.org/entity/Q26273",
+        "label": "Sint Maarten",
+        "type": "country"
+      },
+      "SYC": {
+        "id": "Q1042",
+        "url": "http://www.wikidata.org/entity/Q1042",
+        "label": "Seychelles",
+        "type": "country"
+      },
+      "SYR": {
+        "id": "Q858",
+        "url": "http://www.wikidata.org/entity/Q858",
+        "label": "Syria",
+        "type": "country"
+      },
+      "TCA": {
+        "id": "Q18221",
+        "url": "http://www.wikidata.org/entity/Q18221",
+        "label": "Turks and Caicos Islands",
+        "type": "other"
+      },
+      "TCD": {
+        "id": "Q657",
+        "url": "http://www.wikidata.org/entity/Q657",
+        "label": "Chad",
+        "type": "country"
+      },
+      "TEA": null,
+      "TEC": null,
+      "TGO": {
+        "id": "Q945",
+        "url": "http://www.wikidata.org/entity/Q945",
+        "label": "Togo",
+        "type": "country"
+      },
+      "THA": {
+        "id": "Q869",
+        "url": "http://www.wikidata.org/entity/Q869",
+        "label": "Thailand",
+        "type": "country"
+      },
+      "TJK": {
+        "id": "Q863",
+        "url": "http://www.wikidata.org/entity/Q863",
+        "label": "Tajikistan",
+        "type": "country"
+      },
+      "TKM": {
+        "id": "Q874",
+        "url": "http://www.wikidata.org/entity/Q874",
+        "label": "Turkmenistan",
+        "type": "country"
+      },
+      "TLA": null,
+      "TLS": {
+        "id": "Q574",
+        "url": "http://www.wikidata.org/entity/Q574",
+        "label": "East Timor",
+        "type": "country"
+      },
+      "TMN": null,
+      "TON": {
+        "id": "Q678",
+        "url": "http://www.wikidata.org/entity/Q678",
+        "label": "Tonga",
+        "type": "country"
+      },
+      "TSA": null,
+      "TSS": null,
+      "TTO": {
+        "id": "Q754",
+        "url": "http://www.wikidata.org/entity/Q754",
+        "label": "Trinidad and Tobago",
+        "type": "country"
+      },
+      "TUN": {
+        "id": "Q948",
+        "url": "http://www.wikidata.org/entity/Q948",
+        "label": "Tunisia",
+        "type": "country"
+      },
+      "TUR": {
+        "id": "Q43",
+        "url": "http://www.wikidata.org/entity/Q43",
+        "label": "Turkey",
+        "type": "country"
+      },
+      "TUV": {
+        "id": "Q672",
+        "url": "http://www.wikidata.org/entity/Q672",
+        "label": "Tuvalu",
+        "type": "country"
+      },
+      "TZA": {
+        "id": "Q924",
+        "url": "http://www.wikidata.org/entity/Q924",
+        "label": "Tanzania",
+        "type": "country"
+      },
+      "UGA": {
+        "id": "Q1036",
+        "url": "http://www.wikidata.org/entity/Q1036",
+        "label": "Uganda",
+        "type": "country"
+      },
+      "UKR": {
+        "id": "Q212",
+        "url": "http://www.wikidata.org/entity/Q212",
+        "label": "Ukraine",
+        "type": "country"
+      },
+      "UMC": null,
+      "URY": {
+        "id": "Q77",
+        "url": "http://www.wikidata.org/entity/Q77",
+        "label": "Uruguay",
+        "type": "country"
+      },
+      "USA": {
+        "id": "Q30",
+        "url": "http://www.wikidata.org/entity/Q30",
+        "label": "United States of America",
+        "type": "country"
+      },
+      "UZB": {
+        "id": "Q265",
+        "url": "http://www.wikidata.org/entity/Q265",
+        "label": "Uzbekistan",
+        "type": "country"
+      },
+      "VCT": {
+        "id": "Q757",
+        "url": "http://www.wikidata.org/entity/Q757",
+        "label": "Saint Vincent and the Grenadines",
+        "type": "country"
+      },
+      "VIR": {
+        "id": "Q11703",
+        "url": "http://www.wikidata.org/entity/Q11703",
+        "label": "United States Virgin Islands",
+        "type": "other"
+      },
+      "VNM": {
+        "id": "Q881",
+        "url": "http://www.wikidata.org/entity/Q881",
+        "label": "Vietnam",
+        "type": "country"
+      },
+      "VUT": {
+        "id": "Q686",
+        "url": "http://www.wikidata.org/entity/Q686",
+        "label": "Vanuatu",
+        "type": "country"
+      },
+      "WSM": {
+        "id": "Q683",
+        "url": "http://www.wikidata.org/entity/Q683",
+        "label": "Samoa",
+        "type": "country"
+      },
+      "XKX": {
+        "id": "Q1246",
+        "url": "http://www.wikidata.org/entity/Q1246",
+        "label": "Kosovo",
+        "type": "country"
+      },
+      "YEM": {
+        "id": "Q805",
+        "url": "http://www.wikidata.org/entity/Q805",
+        "label": "Yemen",
+        "type": "country"
+      },
+      "ZAF": {
+        "id": "Q258",
+        "url": "http://www.wikidata.org/entity/Q258",
+        "label": "South Africa",
+        "type": "country"
+      },
+      "ZMB": {
+        "id": "Q953",
+        "url": "http://www.wikidata.org/entity/Q953",
+        "label": "Zambia",
+        "type": "country"
+      },
+      "ZWE": {
+        "id": "Q954",
+        "url": "http://www.wikidata.org/entity/Q954",
+        "label": "Zimbabwe",
+        "type": "country"
+      }
+    },
+    "code": {
+      "AFG": {
+        "id": "Q889",
+        "url": "http://www.wikidata.org/entity/Q889",
+        "label": "Afghanistan",
+        "type": "country"
+      },
+      "ALB": {
+        "id": "Q222",
+        "url": "http://www.wikidata.org/entity/Q222",
+        "label": "Albania",
+        "type": "country"
+      },
+      "AND": {
+        "id": "Q228",
+        "url": "http://www.wikidata.org/entity/Q228",
+        "label": "Andorra",
+        "type": "country"
+      },
+      "AGO": {
+        "id": "Q916",
+        "url": "http://www.wikidata.org/entity/Q916",
+        "label": "Angola",
+        "type": "country"
+      },
+      "AIA": {
+        "id": "Q25228",
+        "url": "http://www.wikidata.org/entity/Q25228",
+        "label": "Anguilla",
+        "type": "other"
+      },
+      "ATG": {
+        "id": "Q781",
+        "url": "http://www.wikidata.org/entity/Q781",
+        "label": "Antigua and Barbuda",
+        "type": "country"
+      },
+      "ARM": {
+        "id": "Q399",
+        "url": "http://www.wikidata.org/entity/Q399",
+        "label": "Armenia",
+        "type": "country"
+      },
+      "ABW": {
+        "id": "Q21203",
+        "url": "http://www.wikidata.org/entity/Q21203",
+        "label": "Aruba",
+        "type": "country"
+      },
+      "OWID_ASI": null,
+      "BHS": {
+        "id": "Q778",
+        "url": "http://www.wikidata.org/entity/Q778",
+        "label": "The Bahamas",
+        "type": "country"
+      },
+      "BHR": {
+        "id": "Q398",
+        "url": "http://www.wikidata.org/entity/Q398",
+        "label": "Bahrain",
+        "type": "country"
+      },
+      "BRB": {
+        "id": "Q244",
+        "url": "http://www.wikidata.org/entity/Q244",
+        "label": "Barbados",
+        "type": "country"
+      },
+      "BLZ": {
+        "id": "Q242",
+        "url": "http://www.wikidata.org/entity/Q242",
+        "label": "Belize",
+        "type": "country"
+      },
+      "BEN": {
+        "id": "Q962",
+        "url": "http://www.wikidata.org/entity/Q962",
+        "label": "Benin",
+        "type": "country"
+      },
+      "BMU": {
+        "id": "Q23635",
+        "url": "http://www.wikidata.org/entity/Q23635",
+        "label": "Bermuda",
+        "type": "other"
+      },
+      "BTN": {
+        "id": "Q917",
+        "url": "http://www.wikidata.org/entity/Q917",
+        "label": "Bhutan",
+        "type": "country"
+      },
+      "BOL": {
+        "id": "Q750",
+        "url": "http://www.wikidata.org/entity/Q750",
+        "label": "Bolivia",
+        "type": "country"
+      },
+      "BIH": {
+        "id": "Q225",
+        "url": "http://www.wikidata.org/entity/Q225",
+        "label": "Bosnia and Herzegovina",
+        "type": "country"
+      },
+      "BWA": {
+        "id": "Q963",
+        "url": "http://www.wikidata.org/entity/Q963",
+        "label": "Botswana",
+        "type": "country"
+      },
+      "VGB": {
+        "id": "Q25305",
+        "url": "http://www.wikidata.org/entity/Q25305",
+        "label": "British Virgin Islands",
+        "type": "other"
+      },
+      "BRN": {
+        "id": "Q921",
+        "url": "http://www.wikidata.org/entity/Q921",
+        "label": "Brunei",
+        "type": "country"
+      },
+      "BFA": {
+        "id": "Q965",
+        "url": "http://www.wikidata.org/entity/Q965",
+        "label": "Burkina Faso",
+        "type": "country"
+      },
+      "BDI": {
+        "id": "Q967",
+        "url": "http://www.wikidata.org/entity/Q967",
+        "label": "Burundi",
+        "type": "country"
+      },
+      "KHM": {
+        "id": "Q424",
+        "url": "http://www.wikidata.org/entity/Q424",
+        "label": "Cambodia",
+        "type": "country"
+      },
+      "CMR": {
+        "id": "Q1009",
+        "url": "http://www.wikidata.org/entity/Q1009",
+        "label": "Cameroon",
+        "type": "country"
+      },
+      "CPV": {
+        "id": "Q1011",
+        "url": "http://www.wikidata.org/entity/Q1011",
+        "label": "Cape Verde",
+        "type": "country"
+      },
+      "CYM": {
+        "id": "Q5785",
+        "url": "http://www.wikidata.org/entity/Q5785",
+        "label": "Cayman Islands",
+        "type": "other"
+      },
+      "CAF": {
+        "id": "Q929",
+        "url": "http://www.wikidata.org/entity/Q929",
+        "label": "Central African Republic",
+        "type": "country"
+      },
+      "TCD": {
+        "id": "Q657",
+        "url": "http://www.wikidata.org/entity/Q657",
+        "label": "Chad",
+        "type": "country"
+      },
+      "COM": {
+        "id": "Q970",
+        "url": "http://www.wikidata.org/entity/Q970",
+        "label": "Comoros",
+        "type": "country"
+      },
+      "COG": {
+        "id": "Q971",
+        "url": "http://www.wikidata.org/entity/Q971",
+        "label": "Republic of the Congo",
+        "type": "country"
+      },
+      "COK": {
+        "id": "Q26988",
+        "url": "http://www.wikidata.org/entity/Q26988",
+        "label": "Cook Islands",
+        "type": "country"
+      },
+      "CRI": {
+        "id": "Q800",
+        "url": "http://www.wikidata.org/entity/Q800",
+        "label": "Costa Rica",
+        "type": "country"
+      },
+      "CIV": {
+        "id": "Q1008",
+        "url": "http://www.wikidata.org/entity/Q1008",
+        "label": "C\u00f4te d'Ivoire",
+        "type": "country"
+      },
+      "CUB": {
+        "id": "Q241",
+        "url": "http://www.wikidata.org/entity/Q241",
+        "label": "Cuba",
+        "type": "country"
+      },
+      "CUW": {
+        "id": "Q25279",
+        "url": "http://www.wikidata.org/entity/Q25279",
+        "label": "Cura\u00e7ao",
+        "type": "country"
+      },
+      "CZE": {
+        "id": "Q213",
+        "url": "http://www.wikidata.org/entity/Q213",
+        "label": "Czech Republic",
+        "type": "country"
+      },
+      "COD": {
+        "id": "Q974",
+        "url": "http://www.wikidata.org/entity/Q974",
+        "label": "Democratic Republic of the Congo",
+        "type": "country"
+      },
+      "DJI": {
+        "id": "Q977",
+        "url": "http://www.wikidata.org/entity/Q977",
+        "label": "Djibouti",
+        "type": "country"
+      },
+      "DMA": {
+        "id": "Q784",
+        "url": "http://www.wikidata.org/entity/Q784",
+        "label": "Dominica",
+        "type": "country"
+      },
+      "DOM": {
+        "id": "Q786",
+        "url": "http://www.wikidata.org/entity/Q786",
+        "label": "Dominican Republic",
+        "type": "country"
+      },
+      "SLV": {
+        "id": "Q792",
+        "url": "http://www.wikidata.org/entity/Q792",
+        "label": "El Salvador",
+        "type": "country"
+      },
+      "GNQ": {
+        "id": "Q983",
+        "url": "http://www.wikidata.org/entity/Q983",
+        "label": "Equatorial Guinea",
+        "type": "country"
+      },
+      "ERI": {
+        "id": "Q986",
+        "url": "http://www.wikidata.org/entity/Q986",
+        "label": "Eritrea",
+        "type": "country"
+      },
+      "SWZ": {
+        "id": "Q1050",
+        "url": "http://www.wikidata.org/entity/Q1050",
+        "label": "Eswatini",
+        "type": "other"
+      },
+      "ETH": {
+        "id": "Q115",
+        "url": "http://www.wikidata.org/entity/Q115",
+        "label": "Ethiopia",
+        "type": "country"
+      },
+      "FRO": {
+        "id": "Q4628",
+        "url": "http://www.wikidata.org/entity/Q4628",
+        "label": "Faroe Islands",
+        "type": "other"
+      },
+      "FLK": {
+        "id": "Q9648",
+        "url": "http://www.wikidata.org/entity/Q9648",
+        "label": "Falkland Islands",
+        "type": "other"
+      },
+      "FJI": {
+        "id": "Q712",
+        "url": "http://www.wikidata.org/entity/Q712",
+        "label": "Fiji",
+        "type": "country"
+      },
+      "PYF": {
+        "id": "Q30971",
+        "url": "http://www.wikidata.org/entity/Q30971",
+        "label": "French Polynesia",
+        "type": "other"
+      },
+      "GAB": {
+        "id": "Q1000",
+        "url": "http://www.wikidata.org/entity/Q1000",
+        "label": "Gabon",
+        "type": "country"
+      },
+      "GMB": {
+        "id": "Q1005",
+        "url": "http://www.wikidata.org/entity/Q1005",
+        "label": "The Gambia",
+        "type": "country"
+      },
+      "GEO": {
+        "id": "Q230",
+        "url": "http://www.wikidata.org/entity/Q230",
+        "label": "Georgia",
+        "type": "country"
+      },
+      "GHA": {
+        "id": "Q117",
+        "url": "http://www.wikidata.org/entity/Q117",
+        "label": "Ghana",
+        "type": "country"
+      },
+      "GIB": {
+        "id": "Q1410",
+        "url": "http://www.wikidata.org/entity/Q1410",
+        "label": "Gibraltar",
+        "type": "other"
+      },
+      "GRL": {
+        "id": "Q223",
+        "url": "http://www.wikidata.org/entity/Q223",
+        "label": "Greenland",
+        "type": "other"
+      },
+      "GRD": {
+        "id": "Q769",
+        "url": "http://www.wikidata.org/entity/Q769",
+        "label": "Grenada",
+        "type": "country"
+      },
+      "GTM": {
+        "id": "Q774",
+        "url": "http://www.wikidata.org/entity/Q774",
+        "label": "Guatemala",
+        "type": "country"
+      },
+      "GGY": {
+        "id": "Q25230",
+        "url": "http://www.wikidata.org/entity/Q25230",
+        "label": "Guernsey",
+        "type": "other"
+      },
+      "GIN": {
+        "id": "Q1006",
+        "url": "http://www.wikidata.org/entity/Q1006",
+        "label": "Guinea",
+        "type": "country"
+      },
+      "GNB": {
+        "id": "Q1007",
+        "url": "http://www.wikidata.org/entity/Q1007",
+        "label": "Guinea-Bissau",
+        "type": "country"
+      },
+      "GUY": {
+        "id": "Q734",
+        "url": "http://www.wikidata.org/entity/Q734",
+        "label": "Guyana",
+        "type": "country"
+      },
+      "HTI": {
+        "id": "Q790",
+        "url": "http://www.wikidata.org/entity/Q790",
+        "label": "Haiti",
+        "type": "country"
+      },
+      "OWID_HIC": null,
+      "HND": {
+        "id": "Q783",
+        "url": "http://www.wikidata.org/entity/Q783",
+        "label": "Honduras",
+        "type": "country"
+      },
+      "HKG": {
+        "id": "Q8646",
+        "url": "http://www.wikidata.org/entity/Q8646",
+        "label": "Hong Kong",
+        "type": "other"
+      },
+      "OWID_INT": null,
+      "IMN": {
+        "id": "Q9676",
+        "url": "http://www.wikidata.org/entity/Q9676",
+        "label": "Isle of Man",
+        "type": "other"
+      },
+      "JAM": {
+        "id": "Q766",
+        "url": "http://www.wikidata.org/entity/Q766",
+        "label": "Jamaica",
+        "type": "country"
+      },
+      "JEY": {
+        "id": "Q785",
+        "url": "http://www.wikidata.org/entity/Q785",
+        "label": "Jersey",
+        "type": "other"
+      },
+      "JOR": {
+        "id": "Q810",
+        "url": "http://www.wikidata.org/entity/Q810",
+        "label": "Jordan",
+        "type": "country"
+      },
+      "KEN": {
+        "id": "Q114",
+        "url": "http://www.wikidata.org/entity/Q114",
+        "label": "Kenya",
+        "type": "country"
+      },
+      "KIR": {
+        "id": "Q710",
+        "url": "http://www.wikidata.org/entity/Q710",
+        "label": "Kiribati",
+        "type": "country"
+      },
+      "OWID_KOS": null,
+      "KGZ": {
+        "id": "Q813",
+        "url": "http://www.wikidata.org/entity/Q813",
+        "label": "Kyrgyzstan",
+        "type": "country"
+      },
+      "LAO": {
+        "id": "Q819",
+        "url": "http://www.wikidata.org/entity/Q819",
+        "label": "Laos",
+        "type": "country"
+      },
+      "LBN": {
+        "id": "Q822",
+        "url": "http://www.wikidata.org/entity/Q822",
+        "label": "Lebanon",
+        "type": "country"
+      },
+      "LSO": {
+        "id": "Q1013",
+        "url": "http://www.wikidata.org/entity/Q1013",
+        "label": "Lesotho",
+        "type": "country"
+      },
+      "LBR": {
+        "id": "Q1014",
+        "url": "http://www.wikidata.org/entity/Q1014",
+        "label": "Liberia",
+        "type": "country"
+      },
+      "LBY": {
+        "id": "Q1016",
+        "url": "http://www.wikidata.org/entity/Q1016",
+        "label": "Libya",
+        "type": "country"
+      },
+      "LIE": {
+        "id": "Q347",
+        "url": "http://www.wikidata.org/entity/Q347",
+        "label": "Liechtenstein",
+        "type": "country"
+      },
+      "OWID_LIC": null,
+      "OWID_LMC": null,
+      "MAC": {
+        "id": "Q14773",
+        "url": "http://www.wikidata.org/entity/Q14773",
+        "label": "Macau",
+        "type": "other"
+      },
+      "MDG": {
+        "id": "Q1019",
+        "url": "http://www.wikidata.org/entity/Q1019",
+        "label": "Madagascar",
+        "type": "country"
+      },
+      "MWI": {
+        "id": "Q1020",
+        "url": "http://www.wikidata.org/entity/Q1020",
+        "label": "Malawi",
+        "type": "country"
+      },
+      "MDV": {
+        "id": "Q826",
+        "url": "http://www.wikidata.org/entity/Q826",
+        "label": "Maldives",
+        "type": "country"
+      },
+      "MLI": {
+        "id": "Q912",
+        "url": "http://www.wikidata.org/entity/Q912",
+        "label": "Mali",
+        "type": "country"
+      },
+      "MLT": {
+        "id": "Q233",
+        "url": "http://www.wikidata.org/entity/Q233",
+        "label": "Malta",
+        "type": "country"
+      },
+      "MHL": {
+        "id": "Q709",
+        "url": "http://www.wikidata.org/entity/Q709",
+        "label": "Marshall Islands",
+        "type": "country"
+      },
+      "MRT": {
+        "id": "Q1025",
+        "url": "http://www.wikidata.org/entity/Q1025",
+        "label": "Mauritania",
+        "type": "country"
+      },
+      "MUS": {
+        "id": "Q1027",
+        "url": "http://www.wikidata.org/entity/Q1027",
+        "label": "Mauritius",
+        "type": "country"
+      },
+      "FSM": {
+        "id": "Q702",
+        "url": "http://www.wikidata.org/entity/Q702",
+        "label": "Federated States of Micronesia",
+        "type": "country"
+      },
+      "MDA": {
+        "id": "Q217",
+        "url": "http://www.wikidata.org/entity/Q217",
+        "label": "Moldova",
+        "type": "country"
+      },
+      "MCO": {
+        "id": "Q235",
+        "url": "http://www.wikidata.org/entity/Q235",
+        "label": "Monaco",
+        "type": "country"
+      },
+      "MNG": {
+        "id": "Q711",
+        "url": "http://www.wikidata.org/entity/Q711",
+        "label": "Mongolia",
+        "type": "country"
+      },
+      "MNE": {
+        "id": "Q236",
+        "url": "http://www.wikidata.org/entity/Q236",
+        "label": "Montenegro",
+        "type": "country"
+      },
+      "MSR": {
+        "id": "Q13353",
+        "url": "http://www.wikidata.org/entity/Q13353",
+        "label": "Montserrat",
+        "type": "other"
+      },
+      "MOZ": {
+        "id": "Q1029",
+        "url": "http://www.wikidata.org/entity/Q1029",
+        "label": "Mozambique",
+        "type": "country"
+      },
+      "MMR": {
+        "id": "Q836",
+        "url": "http://www.wikidata.org/entity/Q836",
+        "label": "Myanmar",
+        "type": "country"
+      },
+      "NAM": {
+        "id": "Q1030",
+        "url": "http://www.wikidata.org/entity/Q1030",
+        "label": "Namibia",
+        "type": "country"
+      },
+      "NRU": {
+        "id": "Q697",
+        "url": "http://www.wikidata.org/entity/Q697",
+        "label": "Nauru",
+        "type": "country"
+      },
+      "NPL": {
+        "id": "Q837",
+        "url": "http://www.wikidata.org/entity/Q837",
+        "label": "Nepal",
+        "type": "country"
+      },
+      "NCL": {
+        "id": "Q33788",
+        "url": "http://www.wikidata.org/entity/Q33788",
+        "label": "New Caledonia",
+        "type": "other"
+      },
+      "NIC": {
+        "id": "Q811",
+        "url": "http://www.wikidata.org/entity/Q811",
+        "label": "Nicaragua",
+        "type": "country"
+      },
+      "NER": {
+        "id": "Q1032",
+        "url": "http://www.wikidata.org/entity/Q1032",
+        "label": "Niger",
+        "type": "country"
+      },
+      "NGA": {
+        "id": "Q1033",
+        "url": "http://www.wikidata.org/entity/Q1033",
+        "label": "Nigeria",
+        "type": "country"
+      },
+      "NIU": {
+        "id": "Q34020",
+        "url": "http://www.wikidata.org/entity/Q34020",
+        "label": "Niue",
+        "type": "country"
+      },
+      "OWID_CYN": null,
+      "OWID_OCE": null,
+      "PLW": {
+        "id": "Q695",
+        "url": "http://www.wikidata.org/entity/Q695",
+        "label": "Palau",
+        "type": "country"
+      },
+      "PSE": {
+        "id": "Q407199",
+        "url": "http://www.wikidata.org/entity/Q407199",
+        "label": "Palestinian territories",
+        "type": "other"
+      },
+      "PAN": {
+        "id": "Q804",
+        "url": "http://www.wikidata.org/entity/Q804",
+        "label": "Panama",
+        "type": "country"
+      },
+      "PNG": {
+        "id": "Q691",
+        "url": "http://www.wikidata.org/entity/Q691",
+        "label": "Papua New Guinea",
+        "type": "country"
+      },
+      "PRY": {
+        "id": "Q733",
+        "url": "http://www.wikidata.org/entity/Q733",
+        "label": "Paraguay",
+        "type": "country"
+      },
+      "PCN": {
+        "id": "Q35672",
+        "url": "http://www.wikidata.org/entity/Q35672",
+        "label": "Pitcairn Islands",
+        "type": "other"
+      },
+      "RUS": {
+        "id": "Q159",
+        "url": "http://www.wikidata.org/entity/Q159",
+        "label": "Russia",
+        "type": "country"
+      },
+      "RWA": {
+        "id": "Q1037",
+        "url": "http://www.wikidata.org/entity/Q1037",
+        "label": "Rwanda",
+        "type": "country"
+      },
+      "SHN": {
+        "id": "Q192184",
+        "url": "http://www.wikidata.org/entity/Q192184",
+        "label": "Saint Helena, Ascension and Tristan da Cunha",
+        "type": "other"
+      },
+      "KNA": {
+        "id": "Q763",
+        "url": "http://www.wikidata.org/entity/Q763",
+        "label": "Saint Kitts and Nevis",
+        "type": "country"
+      },
+      "LCA": {
+        "id": "Q760",
+        "url": "http://www.wikidata.org/entity/Q760",
+        "label": "Saint Lucia",
+        "type": "country"
+      },
+      "SPM": {
+        "id": "Q34617",
+        "url": "http://www.wikidata.org/entity/Q34617",
+        "label": "Saint Pierre and Miquelon",
+        "type": "other"
+      },
+      "VCT": {
+        "id": "Q757",
+        "url": "http://www.wikidata.org/entity/Q757",
+        "label": "Saint Vincent and the Grenadines",
+        "type": "country"
+      },
+      "WSM": {
+        "id": "Q683",
+        "url": "http://www.wikidata.org/entity/Q683",
+        "label": "Samoa",
+        "type": "country"
+      },
+      "SMR": {
+        "id": "Q238",
+        "url": "http://www.wikidata.org/entity/Q238",
+        "label": "San Marino",
+        "type": "country"
+      },
+      "STP": {
+        "id": "Q1039",
+        "url": "http://www.wikidata.org/entity/Q1039",
+        "label": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+        "type": "country"
+      },
+      "SEN": {
+        "id": "Q1041",
+        "url": "http://www.wikidata.org/entity/Q1041",
+        "label": "Senegal",
+        "type": "country"
+      },
+      "SRB": {
+        "id": "Q403",
+        "url": "http://www.wikidata.org/entity/Q403",
+        "label": "Serbia",
+        "type": "country"
+      },
+      "SYC": {
+        "id": "Q1042",
+        "url": "http://www.wikidata.org/entity/Q1042",
+        "label": "Seychelles",
+        "type": "country"
+      },
+      "SLE": {
+        "id": "Q1044",
+        "url": "http://www.wikidata.org/entity/Q1044",
+        "label": "Sierra Leone",
+        "type": "country"
+      },
+      "SXM": {
+        "id": "Q26273",
+        "url": "http://www.wikidata.org/entity/Q26273",
+        "label": "Sint Maarten",
+        "type": "country"
+      },
+      "SLB": {
+        "id": "Q685",
+        "url": "http://www.wikidata.org/entity/Q685",
+        "label": "Solomon Islands",
+        "type": "country"
+      },
+      "SOM": {
+        "id": "Q1045",
+        "url": "http://www.wikidata.org/entity/Q1045",
+        "label": "Somalia",
+        "type": "country"
+      },
+      "OWID_SAM": null,
+      "SSD": {
+        "id": "Q958",
+        "url": "http://www.wikidata.org/entity/Q958",
+        "label": "South Sudan",
+        "type": "country"
+      },
+      "SDN": {
+        "id": "Q1049",
+        "url": "http://www.wikidata.org/entity/Q1049",
+        "label": "Sudan",
+        "type": "country"
+      },
+      "SUR": {
+        "id": "Q730",
+        "url": "http://www.wikidata.org/entity/Q730",
+        "label": "Suriname",
+        "type": "country"
+      },
+      "SYR": {
+        "id": "Q858",
+        "url": "http://www.wikidata.org/entity/Q858",
+        "label": "Syria",
+        "type": "country"
+      },
+      "TJK": {
+        "id": "Q863",
+        "url": "http://www.wikidata.org/entity/Q863",
+        "label": "Tajikistan",
+        "type": "country"
+      },
+      "TZA": {
+        "id": "Q924",
+        "url": "http://www.wikidata.org/entity/Q924",
+        "label": "Tanzania",
+        "type": "country"
+      },
+      "TLS": {
+        "id": "Q574",
+        "url": "http://www.wikidata.org/entity/Q574",
+        "label": "East Timor",
+        "type": "country"
+      },
+      "TGO": {
+        "id": "Q945",
+        "url": "http://www.wikidata.org/entity/Q945",
+        "label": "Togo",
+        "type": "country"
+      },
+      "TKL": {
+        "id": "Q36823",
+        "url": "http://www.wikidata.org/entity/Q36823",
+        "label": "Tokelau",
+        "type": "other"
+      },
+      "TON": {
+        "id": "Q678",
+        "url": "http://www.wikidata.org/entity/Q678",
+        "label": "Tonga",
+        "type": "country"
+      },
+      "TTO": {
+        "id": "Q754",
+        "url": "http://www.wikidata.org/entity/Q754",
+        "label": "Trinidad and Tobago",
+        "type": "country"
+      },
+      "TUN": {
+        "id": "Q948",
+        "url": "http://www.wikidata.org/entity/Q948",
+        "label": "Tunisia",
+        "type": "country"
+      },
+      "TCA": {
+        "id": "Q18221",
+        "url": "http://www.wikidata.org/entity/Q18221",
+        "label": "Turks and Caicos Islands",
+        "type": "other"
+      },
+      "TUV": {
+        "id": "Q672",
+        "url": "http://www.wikidata.org/entity/Q672",
+        "label": "Tuvalu",
+        "type": "country"
+      },
+      "UGA": {
+        "id": "Q1036",
+        "url": "http://www.wikidata.org/entity/Q1036",
+        "label": "Uganda",
+        "type": "country"
+      },
+      "USA": {
+        "id": "Q30",
+        "url": "http://www.wikidata.org/entity/Q30",
+        "label": "United States of America",
+        "type": "country"
+      },
+      "OWID_UMC": null,
+      "URY": {
+        "id": "Q77",
+        "url": "http://www.wikidata.org/entity/Q77",
+        "label": "Uruguay",
+        "type": "country"
+      },
+      "VUT": {
+        "id": "Q686",
+        "url": "http://www.wikidata.org/entity/Q686",
+        "label": "Vanuatu",
+        "type": "country"
+      },
+      "VAT": {
+        "id": "Q237",
+        "url": "http://www.wikidata.org/entity/Q237",
+        "label": "Vatican City",
+        "type": "country"
+      },
+      "WLF": {
+        "id": "Q35555",
+        "url": "http://www.wikidata.org/entity/Q35555",
+        "label": "Wallis and Futuna",
+        "type": "other"
+      },
+      "YEM": {
+        "id": "Q805",
+        "url": "http://www.wikidata.org/entity/Q805",
+        "label": "Yemen",
+        "type": "country"
+      },
+      "ZMB": {
+        "id": "Q953",
+        "url": "http://www.wikidata.org/entity/Q953",
+        "label": "Zambia",
+        "type": "country"
+      },
+      "ZWE": {
+        "id": "Q954",
+        "url": "http://www.wikidata.org/entity/Q954",
+        "label": "Zimbabwe",
+        "type": "country"
+      },
+      "AFE": null,
+      "AFW": null,
+      "ARB": null,
+      "ASM": {
+        "id": "Q16641",
+        "url": "http://www.wikidata.org/entity/Q16641",
+        "label": "American Samoa",
+        "type": "country"
+      },
+      "CEB": null,
+      "CSS": null,
+      "EAP": null,
+      "EAR": null,
+      "EAS": null,
+      "ECA": null,
+      "ECS": null,
+      "EGY": {
+        "id": "Q79",
+        "url": "http://www.wikidata.org/entity/Q79",
+        "label": "Egypt",
+        "type": "country"
+      },
+      "FCS": null,
+      "GUM": {
+        "id": "Q16635",
+        "url": "http://www.wikidata.org/entity/Q16635",
+        "label": "Guam",
+        "type": "other"
+      },
+      "HPC": null,
+      "IBD": null,
+      "IBT": null,
+      "IDA": null,
+      "IDB": null,
+      "IDX": null,
+      "IRN": {
+        "id": "Q794",
+        "url": "http://www.wikidata.org/entity/Q794",
+        "label": "Iran",
+        "type": "country"
+      },
+      "KOR": {
+        "id": "Q884",
+        "url": "http://www.wikidata.org/entity/Q884",
+        "label": "South Korea",
+        "type": "country"
+      },
+      "LAC": null,
+      "LCN": null,
+      "LDC": null,
+      "LMY": null,
+      "LTE": null,
+      "MEA": null,
+      "MIC": null,
+      "MNA": null,
+      "MNP": {
+        "id": "Q16644",
+        "url": "http://www.wikidata.org/entity/Q16644",
+        "label": "Northern Mariana Islands",
+        "type": "country"
+      },
+      "OSS": null,
+      "PRE": null,
+      "PRI": {
+        "id": "Q1183",
+        "url": "http://www.wikidata.org/entity/Q1183",
+        "label": "Puerto Rico",
+        "type": "other"
+      },
+      "PSS": null,
+      "PST": null,
+      "SAS": null,
+      "SSA": null,
+      "SSF": null,
+      "SST": null,
+      "SVK": {
+        "id": "Q214",
+        "url": "http://www.wikidata.org/entity/Q214",
+        "label": "Slovakia",
+        "type": "country"
+      },
+      "TEA": null,
+      "TEC": null,
+      "TLA": null,
+      "TMN": null,
+      "TSA": null,
+      "TSS": null,
+      "VIR": {
+        "id": "Q11703",
+        "url": "http://www.wikidata.org/entity/Q11703",
+        "label": "United States Virgin Islands",
+        "type": "other"
+      }
+    }
+  },
+  "items": {
+    "Q21203": {
+      "name": "Aruba",
+      "description": "island country in the Caribbean, part of the Kingdom of the Netherlands",
+      "ISO 3166-1 alpha-2 code": "AW"
+    },
+    "Q889": {
+      "name": "Afghanistan",
+      "description": "sovereign state situated at the confluence of Western, Central, and South Asia",
+      "ISO 3166-1 alpha-2 code": "AF"
+    },
+    "Q916": {
+      "name": "Angola",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "AO"
+    },
+    "Q222": {
+      "name": "Albania",
+      "description": "country in southeastern Europe",
+      "ISO 3166-1 alpha-2 code": "AL"
+    },
+    "Q228": {
+      "name": "Andorra",
+      "description": "sovereign microstate between France and Spain, in Western Europe",
+      "ISO 3166-1 alpha-2 code": "AD"
+    },
+    "Q878": {
+      "name": "United Arab Emirates",
+      "description": "sovereign state in Southwest Asia",
+      "ISO 3166-1 alpha-2 code": "AE"
+    },
+    "Q414": {
+      "name": "Argentina",
+      "description": "sovereign state in South America",
+      "ISO 3166-1 alpha-2 code": "AR"
+    },
+    "Q399": {
+      "name": "Armenia",
+      "description": "sovereign state in the South Caucasus region of Eurasia",
+      "ISO 3166-1 alpha-2 code": "AM"
+    },
+    "Q16641": {
+      "name": "American Samoa",
+      "description": "United States territory in the Pacific Ocean",
+      "ISO 3166-1 alpha-2 code": "AS"
+    },
+    "Q781": {
+      "name": "Antigua and Barbuda",
+      "description": "island sovereign state in the Caribbean Sea",
+      "ISO 3166-1 alpha-2 code": "AG"
+    },
+    "Q408": {
+      "name": "Australia",
+      "description": "country in Oceania",
+      "ISO 3166-1 alpha-2 code": "AU"
+    },
+    "Q40": {
+      "name": "Austria",
+      "description": "country in Europe",
+      "ISO 3166-1 alpha-2 code": "AT"
+    },
+    "Q227": {
+      "name": "Azerbaijan",
+      "description": "sovereign state in Western Asia and Eastern Europe",
+      "ISO 3166-1 alpha-2 code": "AZ"
+    },
+    "Q967": {
+      "name": "Burundi",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "BI"
+    },
+    "Q31": {
+      "name": "Belgium",
+      "description": "country in western Europe since 1830",
+      "ISO 3166-1 alpha-2 code": "BE"
+    },
+    "Q962": {
+      "name": "Benin",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "BJ"
+    },
+    "Q965": {
+      "name": "Burkina Faso",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "BF"
+    },
+    "Q902": {
+      "name": "Bangladesh",
+      "description": "sovereign state in South Asia",
+      "ISO 3166-1 alpha-2 code": "BD"
+    },
+    "Q219": {
+      "name": "Bulgaria",
+      "description": "sovereign state in southeastern Europe",
+      "ISO 3166-1 alpha-2 code": "BG"
+    },
+    "Q398": {
+      "name": "Bahrain",
+      "description": "sovereign state in Southwest Asia",
+      "ISO 3166-1 alpha-2 code": "BH"
+    },
+    "Q778": {
+      "name": "The Bahamas",
+      "description": "island sovereign state in the West Indies",
+      "ISO 3166-1 alpha-2 code": "BS"
+    },
+    "Q225": {
+      "name": "Bosnia and Herzegovina",
+      "description": "country in southeastern Europe",
+      "ISO 3166-1 alpha-2 code": "BA"
+    },
+    "Q184": {
+      "name": "Belarus",
+      "description": "country in eastern Europe",
+      "ISO 3166-1 alpha-2 code": "BY"
+    },
+    "Q242": {
+      "name": "Belize",
+      "description": "sovereign state in Central America",
+      "ISO 3166-1 alpha-2 code": "BZ"
+    },
+    "Q23635": {
+      "name": "Bermuda",
+      "description": "British overseas territory in the North Atlantic Ocean",
+      "ISO 3166-1 alpha-2 code": "BM"
+    },
+    "Q750": {
+      "name": "Bolivia",
+      "description": "sovereign state in South America",
+      "ISO 3166-1 alpha-2 code": "BO"
+    },
+    "Q155": {
+      "name": "Brazil",
+      "description": "country in South America",
+      "ISO 3166-1 alpha-2 code": "BR"
+    },
+    "Q244": {
+      "name": "Barbados",
+      "description": "sovereign state situated on an island in the Western Atlantic Ocean",
+      "ISO 3166-1 alpha-2 code": "BB"
+    },
+    "Q921": {
+      "name": "Brunei",
+      "description": "sovereign state in Southeast Asia",
+      "ISO 3166-1 alpha-2 code": "BN"
+    },
+    "Q917": {
+      "name": "Bhutan",
+      "description": "sovereign state in South Asia",
+      "ISO 3166-1 alpha-2 code": "BT"
+    },
+    "Q963": {
+      "name": "Botswana",
+      "description": "sovereign state in Southern Africa",
+      "ISO 3166-1 alpha-2 code": "BW"
+    },
+    "Q929": {
+      "name": "Central African Republic",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "CF"
+    },
+    "Q16": {
+      "name": "Canada",
+      "description": "sovereign state in North America",
+      "ISO 3166-1 alpha-2 code": "CA"
+    },
+    "Q39": {
+      "name": "Switzerland",
+      "description": "federal state in Western Europe",
+      "ISO 3166-1 alpha-2 code": "CH"
+    },
+    "Q298": {
+      "name": "Chile",
+      "description": "sovereign state in South America",
+      "ISO 3166-1 alpha-2 code": "CL"
+    },
+    "Q148": {
+      "name": "People's Republic of China",
+      "description": "state in East Asia",
+      "ISO 3166-1 alpha-2 code": "CN"
+    },
+    "Q1008": {
+      "name": "C\u00f4te d'Ivoire",
+      "description": "sovereign state in West Africa",
+      "ISO 3166-1 alpha-2 code": "CI"
+    },
+    "Q1009": {
+      "name": "Cameroon",
+      "description": "sovereign state in West Africa",
+      "ISO 3166-1 alpha-2 code": "CM"
+    },
+    "Q974": {
+      "name": "Democratic Republic of the Congo",
+      "description": "sovereign state in Central Africa",
+      "ISO 3166-1 alpha-2 code": "CD"
+    },
+    "Q971": {
+      "name": "Republic of the Congo",
+      "description": "sovereign state in Central Africa",
+      "ISO 3166-1 alpha-2 code": "CG"
+    },
+    "Q739": {
+      "name": "Colombia",
+      "description": "sovereign state in South America",
+      "ISO 3166-1 alpha-2 code": "CO"
+    },
+    "Q970": {
+      "name": "Comoros",
+      "description": "sovereign state situated on an archipelago in the Indian Ocean off the eastern coast of Africa",
+      "ISO 3166-1 alpha-2 code": "KM"
+    },
+    "Q1011": {
+      "name": "Cape Verde",
+      "description": "sovereign state comprising ten islands off the Western coast of Africa",
+      "ISO 3166-1 alpha-2 code": "CV"
+    },
+    "Q800": {
+      "name": "Costa Rica",
+      "description": "sovereign state in Central America",
+      "ISO 3166-1 alpha-2 code": "CR"
+    },
+    "Q241": {
+      "name": "Cuba",
+      "description": "sovereign state situated on an island in the Caribbean Sea",
+      "ISO 3166-1 alpha-2 code": "CU"
+    },
+    "Q25279": {
+      "name": "Cura\u00e7ao",
+      "description": "island country in the Caribbean, part of the Kingdom of the Netherlands",
+      "ISO 3166-1 alpha-2 code": "CW"
+    },
+    "Q5785": {
+      "name": "Cayman Islands",
+      "description": "British overseas territory in the Caribbean",
+      "ISO 3166-1 alpha-2 code": "KY"
+    },
+    "Q229": {
+      "name": "Cyprus",
+      "description": "sovereign state situated on an island in the Eastern Mediterranean Sea",
+      "ISO 3166-1 alpha-2 code": "CY"
+    },
+    "Q213": {
+      "name": "Czech Republic",
+      "description": "country in Central Europe",
+      "ISO 3166-1 alpha-2 code": "CZ"
+    },
+    "Q183": {
+      "name": "Germany",
+      "description": "country in Central Europe",
+      "ISO 3166-1 alpha-2 code": "DE"
+    },
+    "Q977": {
+      "name": "Djibouti",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "DJ"
+    },
+    "Q784": {
+      "name": "Dominica",
+      "description": "island sovereign state in the Caribbean Sea",
+      "ISO 3166-1 alpha-2 code": "DM"
+    },
+    "Q756617": {
+      "name": "Kingdom of Denmark",
+      "description": "Denmark proper and its two autonomous territories: the Faroe Islands and Greenland",
+      "ISO 3166-1 alpha-2 code": "DK"
+    },
+    "Q786": {
+      "name": "Dominican Republic",
+      "description": "island sovereign state in the Caribbean Sea",
+      "ISO 3166-1 alpha-2 code": "DO"
+    },
+    "Q262": {
+      "name": "Algeria",
+      "description": "sovereign country in North Africa",
+      "ISO 3166-1 alpha-2 code": "DZ"
+    },
+    "Q736": {
+      "name": "Ecuador",
+      "description": "sovereign state in South America",
+      "ISO 3166-1 alpha-2 code": "EC"
+    },
+    "Q79": {
+      "name": "Egypt",
+      "description": "sovereign state in North Africa and Asia",
+      "ISO 3166-1 alpha-2 code": "EG"
+    },
+    "Q986": {
+      "name": "Eritrea",
+      "description": "sovereign state in the Horn of Africa",
+      "ISO 3166-1 alpha-2 code": "ER"
+    },
+    "Q29": {
+      "name": "Spain",
+      "description": "country in southwestern Europe",
+      "ISO 3166-1 alpha-2 code": "ES"
+    },
+    "Q191": {
+      "name": "Estonia",
+      "description": "sovereign state in northeastern Europe",
+      "ISO 3166-1 alpha-2 code": "EE"
+    },
+    "Q115": {
+      "name": "Ethiopia",
+      "description": "country in East Africa",
+      "ISO 3166-1 alpha-2 code": "ET"
+    },
+    "Q30": {
+      "name": "United States of America",
+      "description": "sovereign state in North America",
+      "ISO 3166-1 alpha-2 code": "US"
+    },
+    "Q33": {
+      "name": "Finland",
+      "description": "country in northern Europe",
+      "ISO 3166-1 alpha-2 code": "FI"
+    },
+    "Q712": {
+      "name": "Fiji",
+      "description": "island sovereign state in Oceania",
+      "ISO 3166-1 alpha-2 code": "FJ"
+    },
+    "Q142": {
+      "name": "France",
+      "description": "country in Western Europe",
+      "ISO 3166-1 alpha-2 code": "FR"
+    },
+    "Q4628": {
+      "name": "Faroe Islands",
+      "description": "autonomous constituent country of the Kingdom of Denmark",
+      "ISO 3166-1 alpha-2 code": "FO"
+    },
+    "Q702": {
+      "name": "Federated States of Micronesia",
+      "description": "island sovereign state in Oceania",
+      "ISO 3166-1 alpha-2 code": "FM"
+    },
+    "Q1000": {
+      "name": "Gabon",
+      "description": "equatorial country in West Africa",
+      "ISO 3166-1 alpha-2 code": "GA"
+    },
+    "Q145": {
+      "name": "United Kingdom",
+      "description": "country in Western Europe",
+      "ISO 3166-1 alpha-2 code": "GB"
+    },
+    "Q230": {
+      "name": "Georgia",
+      "description": "country in the Caucasus in Eastern Europe",
+      "ISO 3166-1 alpha-2 code": "GE"
+    },
+    "Q117": {
+      "name": "Ghana",
+      "description": "sovereign state in West Africa",
+      "ISO 3166-1 alpha-2 code": "GH"
+    },
+    "Q1006": {
+      "name": "Guinea",
+      "description": "sovereign state in West Africa",
+      "ISO 3166-1 alpha-2 code": "GN"
+    },
+    "Q1005": {
+      "name": "The Gambia",
+      "description": "sovereign state in West Africa",
+      "ISO 3166-1 alpha-2 code": "GM"
+    },
+    "Q1007": {
+      "name": "Guinea-Bissau",
+      "description": "sovereign state in Western Africa",
+      "ISO 3166-1 alpha-2 code": "GW"
+    },
+    "Q983": {
+      "name": "Equatorial Guinea",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "GQ"
+    },
+    "Q41": {
+      "name": "Greece",
+      "description": "country in southeastern Europe",
+      "ISO 3166-1 alpha-2 code": "GR"
+    },
+    "Q769": {
+      "name": "Grenada",
+      "description": "island sovereign state in the Caribbean Sea",
+      "ISO 3166-1 alpha-2 code": "GD"
+    },
+    "Q223": {
+      "name": "Greenland",
+      "description": "autonomous country within the Kingdom of Denmark",
+      "ISO 3166-1 alpha-2 code": "GL"
+    },
+    "Q774": {
+      "name": "Guatemala",
+      "description": "sovereign state in Central America",
+      "ISO 3166-1 alpha-2 code": "GT"
+    },
+    "Q16635": {
+      "name": "Guam",
+      "description": "island territory of the United States of America",
+      "ISO 3166-1 alpha-2 code": "GU"
+    },
+    "Q734": {
+      "name": "Guyana",
+      "description": "sovereign state in South America",
+      "ISO 3166-1 alpha-2 code": "GY"
+    },
+    "Q8646": {
+      "name": "Hong Kong",
+      "description": "special administrative region of China",
+      "ISO 3166-1 alpha-2 code": "HK"
+    },
+    "Q783": {
+      "name": "Honduras",
+      "description": "sovereign state in Central America",
+      "ISO 3166-1 alpha-2 code": "HN"
+    },
+    "Q224": {
+      "name": "Croatia",
+      "description": "country in southeastern Europe",
+      "ISO 3166-1 alpha-2 code": "HR"
+    },
+    "Q790": {
+      "name": "Haiti",
+      "description": "island sovereign state in the Caribbean Sea",
+      "ISO 3166-1 alpha-2 code": "HT"
+    },
+    "Q28": {
+      "name": "Hungary",
+      "description": "country in Central Europe",
+      "ISO 3166-1 alpha-2 code": "HU"
+    },
+    "Q252": {
+      "name": "Indonesia",
+      "description": "sovereign state in Southeast Asia situated on more than 17,000 islands",
+      "ISO 3166-1 alpha-2 code": "ID"
+    },
+    "Q9676": {
+      "name": "Isle of Man",
+      "description": "British Crown dependency",
+      "ISO 3166-1 alpha-2 code": "IM"
+    },
+    "Q668": {
+      "name": "India",
+      "description": "sovereign state in South Asia",
+      "ISO 3166-1 alpha-2 code": "IN"
+    },
+    "Q27": {
+      "name": "Republic of Ireland",
+      "description": "sovereign state in northwestern Europe covering five-sixths of the island of Ireland",
+      "ISO 3166-1 alpha-2 code": "IE"
+    },
+    "Q794": {
+      "name": "Iran",
+      "description": "sovereign state in Western Asia",
+      "ISO 3166-1 alpha-2 code": "IR"
+    },
+    "Q796": {
+      "name": "Iraq",
+      "description": "sovereign state in western Asia",
+      "ISO 3166-1 alpha-2 code": "IQ"
+    },
+    "Q189": {
+      "name": "Iceland",
+      "description": "sovereign state in Northern Europe, situated on an island in the far North Atlantic Ocean",
+      "ISO 3166-1 alpha-2 code": "IS"
+    },
+    "Q801": {
+      "name": "Israel",
+      "description": "sovereign state in the Middle East",
+      "ISO 3166-1 alpha-2 code": "IL"
+    },
+    "Q38": {
+      "name": "Italy",
+      "description": "country in Southern Europe",
+      "ISO 3166-1 alpha-2 code": "IT"
+    },
+    "Q766": {
+      "name": "Jamaica",
+      "description": "island sovereign state in the Caribbean Sea",
+      "ISO 3166-1 alpha-2 code": "JM"
+    },
+    "Q810": {
+      "name": "Jordan",
+      "description": "sovereign state in western Asia",
+      "ISO 3166-1 alpha-2 code": "JO"
+    },
+    "Q17": {
+      "name": "Japan",
+      "description": "sovereign state in East Asia",
+      "ISO 3166-1 alpha-2 code": "JP"
+    },
+    "Q232": {
+      "name": "Kazakhstan",
+      "description": "sovereign state in Eastern Europe and Central Asia",
+      "ISO 3166-1 alpha-2 code": "KZ"
+    },
+    "Q114": {
+      "name": "Kenya",
+      "description": "sovereign state in East Africa",
+      "ISO 3166-1 alpha-2 code": "KE"
+    },
+    "Q813": {
+      "name": "Kyrgyzstan",
+      "description": "sovereign state in Central Asia",
+      "ISO 3166-1 alpha-2 code": "KG"
+    },
+    "Q424": {
+      "name": "Cambodia",
+      "description": "sovereign state in Southeast Asia",
+      "ISO 3166-1 alpha-2 code": "KH"
+    },
+    "Q710": {
+      "name": "Kiribati",
+      "description": "island sovereign state in the central Pacific Ocean",
+      "ISO 3166-1 alpha-2 code": "KI"
+    },
+    "Q763": {
+      "name": "Saint Kitts and Nevis",
+      "description": "island sovereign state in the Caribbean Sea",
+      "ISO 3166-1 alpha-2 code": "KN"
+    },
+    "Q884": {
+      "name": "South Korea",
+      "description": "sovereign state in East Asia",
+      "ISO 3166-1 alpha-2 code": "KR"
+    },
+    "Q817": {
+      "name": "Kuwait",
+      "description": "sovereign state in Western Asia",
+      "ISO 3166-1 alpha-2 code": "KW"
+    },
+    "Q72829598": {
+      "name": "Latin America and the Caribbean",
+      "description": "LAC",
+      "ISO 3166-1 alpha-2 code": null
+    },
+    "Q819": {
+      "name": "Laos",
+      "description": "sovereign state in Southeast Asia",
+      "ISO 3166-1 alpha-2 code": "LA"
+    },
+    "Q822": {
+      "name": "Lebanon",
+      "description": "sovereign state in Western Asia",
+      "ISO 3166-1 alpha-2 code": "LB"
+    },
+    "Q1014": {
+      "name": "Liberia",
+      "description": "sovereign state in West Africa",
+      "ISO 3166-1 alpha-2 code": "LR"
+    },
+    "Q1016": {
+      "name": "Libya",
+      "description": "sovereign state in north Africa",
+      "ISO 3166-1 alpha-2 code": "LY"
+    },
+    "Q760": {
+      "name": "Saint Lucia",
+      "description": "island sovereign state in the Caribbean Sea",
+      "ISO 3166-1 alpha-2 code": "LC"
+    },
+    "Q177323": {
+      "name": "developing country",
+      "description": "nation with a low living standard relative to other countries",
+      "ISO 3166-1 alpha-2 code": null
+    },
+    "Q347": {
+      "name": "Liechtenstein",
+      "description": "country in Central Europe",
+      "ISO 3166-1 alpha-2 code": "LI"
+    },
+    "Q854": {
+      "name": "Sri Lanka",
+      "description": "sovereign state in South Asia, situated on an island in the Indian Ocean",
+      "ISO 3166-1 alpha-2 code": "LK"
+    },
+    "Q1013": {
+      "name": "Lesotho",
+      "description": "sovereign state in southern Africa",
+      "ISO 3166-1 alpha-2 code": "LS"
+    },
+    "Q37": {
+      "name": "Lithuania",
+      "description": "sovereign state in northeastern Europe",
+      "ISO 3166-1 alpha-2 code": "LT"
+    },
+    "Q32": {
+      "name": "Luxembourg",
+      "description": "country in Western Europe",
+      "ISO 3166-1 alpha-2 code": "LU"
+    },
+    "Q211": {
+      "name": "Latvia",
+      "description": "sovereign state in northeastern Europe",
+      "ISO 3166-1 alpha-2 code": "LV"
+    },
+    "Q14773": {
+      "name": "Macau",
+      "description": "Special Administrative Region of China",
+      "ISO 3166-1 alpha-2 code": "MO"
+    },
+    "Q1028": {
+      "name": "Morocco",
+      "description": "sovereign state in North Africa",
+      "ISO 3166-1 alpha-2 code": "MA"
+    },
+    "Q235": {
+      "name": "Monaco",
+      "description": "sovereign city-state on the French Riviera",
+      "ISO 3166-1 alpha-2 code": "MC"
+    },
+    "Q217": {
+      "name": "Moldova",
+      "description": "sovereign state in southeastern Europe",
+      "ISO 3166-1 alpha-2 code": "MD"
+    },
+    "Q1019": {
+      "name": "Madagascar",
+      "description": "island sovereign state off the coast of Southeast Africa, in the Indian Ocean",
+      "ISO 3166-1 alpha-2 code": "MG"
+    },
+    "Q826": {
+      "name": "Maldives",
+      "description": "sovereign state in South Asia, situated on an archipelago in the Arabian Sea",
+      "ISO 3166-1 alpha-2 code": "MV"
+    },
+    "Q96": {
+      "name": "Mexico",
+      "description": "sovereign state in North America",
+      "ISO 3166-1 alpha-2 code": "MX"
+    },
+    "Q709": {
+      "name": "Marshall Islands",
+      "description": "island sovereign state in Oceania",
+      "ISO 3166-1 alpha-2 code": "MH"
+    },
+    "Q221": {
+      "name": "North Macedonia",
+      "description": "country in southeastern Europe",
+      "ISO 3166-1 alpha-2 code": "MK"
+    },
+    "Q912": {
+      "name": "Mali",
+      "description": "sovereign state in West Africa",
+      "ISO 3166-1 alpha-2 code": "ML"
+    },
+    "Q233": {
+      "name": "Malta",
+      "description": "sovereign state in Southern Europe situated on an archipelago in the Mediterranean Sea",
+      "ISO 3166-1 alpha-2 code": "MT"
+    },
+    "Q836": {
+      "name": "Myanmar",
+      "description": "sovereign state in Southeast Asia",
+      "ISO 3166-1 alpha-2 code": "MM"
+    },
+    "Q236": {
+      "name": "Montenegro",
+      "description": "country in southeastern Europe",
+      "ISO 3166-1 alpha-2 code": "ME"
+    },
+    "Q711": {
+      "name": "Mongolia",
+      "description": "sovereign state in East Asia",
+      "ISO 3166-1 alpha-2 code": "MN"
+    },
+    "Q16644": {
+      "name": "Northern Mariana Islands",
+      "description": "American-dependent insular area in the western Pacific",
+      "ISO 3166-1 alpha-2 code": "MP"
+    },
+    "Q1029": {
+      "name": "Mozambique",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "MZ"
+    },
+    "Q1025": {
+      "name": "Mauritania",
+      "description": "sovereign state in West Africa and North Africa",
+      "ISO 3166-1 alpha-2 code": "MR"
+    },
+    "Q1027": {
+      "name": "Mauritius",
+      "description": "island sovereign state in the Indian Ocean",
+      "ISO 3166-1 alpha-2 code": "MU"
+    },
+    "Q1020": {
+      "name": "Malawi",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "MW"
+    },
+    "Q833": {
+      "name": "Malaysia",
+      "description": "sovereign state in Southeast Asia",
+      "ISO 3166-1 alpha-2 code": "MY"
+    },
+    "Q1030": {
+      "name": "Namibia",
+      "description": "sovereign state in southern Africa",
+      "ISO 3166-1 alpha-2 code": "NA"
+    },
+    "Q33788": {
+      "name": "New Caledonia",
+      "description": "special collectivity of France in the southwest Pacific Ocean",
+      "ISO 3166-1 alpha-2 code": "NC"
+    },
+    "Q1032": {
+      "name": "Niger",
+      "description": "sovereign state in western Africa",
+      "ISO 3166-1 alpha-2 code": "NE"
+    },
+    "Q1033": {
+      "name": "Nigeria",
+      "description": "sovereign state in West Africa",
+      "ISO 3166-1 alpha-2 code": "NG"
+    },
+    "Q811": {
+      "name": "Nicaragua",
+      "description": "sovereign state in Central America",
+      "ISO 3166-1 alpha-2 code": "NI"
+    },
+    "Q55": {
+      "name": "Netherlands",
+      "description": "country in western Europe",
+      "ISO 3166-1 alpha-2 code": "NL"
+    },
+    "Q20": {
+      "name": "Norway",
+      "description": "country in northern Europe",
+      "ISO 3166-1 alpha-2 code": "NO"
+    },
+    "Q837": {
+      "name": "Nepal",
+      "description": "sovereign state in South Asia",
+      "ISO 3166-1 alpha-2 code": "NP"
+    },
+    "Q697": {
+      "name": "Nauru",
+      "description": "island sovereign state in Oceania",
+      "ISO 3166-1 alpha-2 code": "NR"
+    },
+    "Q664": {
+      "name": "New Zealand",
+      "description": "sovereign state in Oceania, situated on two main and around 600 smaller islands in the southwestern Pacific Ocean",
+      "ISO 3166-1 alpha-2 code": "NZ"
+    },
+    "Q842": {
+      "name": "Oman",
+      "description": "sovereign state in western Asia",
+      "ISO 3166-1 alpha-2 code": "OM"
+    },
+    "Q843": {
+      "name": "Pakistan",
+      "description": "sovereign state in South Asia",
+      "ISO 3166-1 alpha-2 code": "PK"
+    },
+    "Q804": {
+      "name": "Panama",
+      "description": "sovereign state in Central America",
+      "ISO 3166-1 alpha-2 code": "PA"
+    },
+    "Q419": {
+      "name": "Peru",
+      "description": "sovereign state in South America",
+      "ISO 3166-1 alpha-2 code": "PE"
+    },
+    "Q928": {
+      "name": "Philippines",
+      "description": "sovereign state in Southeast Asia",
+      "ISO 3166-1 alpha-2 code": "PH"
+    },
+    "Q695": {
+      "name": "Palau",
+      "description": "island sovereign state in Oceania",
+      "ISO 3166-1 alpha-2 code": "PW"
+    },
+    "Q691": {
+      "name": "Papua New Guinea",
+      "description": "island sovereign state in Oceania",
+      "ISO 3166-1 alpha-2 code": "PG"
+    },
+    "Q36": {
+      "name": "Poland",
+      "description": "country in Central Europe",
+      "ISO 3166-1 alpha-2 code": "PL"
+    },
+    "Q1183": {
+      "name": "Puerto Rico",
+      "description": "unincorporated territory of the United States",
+      "ISO 3166-1 alpha-2 code": "PR"
+    },
+    "Q45": {
+      "name": "Portugal",
+      "description": "country in southwestern Europe",
+      "ISO 3166-1 alpha-2 code": "PT"
+    },
+    "Q733": {
+      "name": "Paraguay",
+      "description": "sovereign state in South America",
+      "ISO 3166-1 alpha-2 code": "PY"
+    },
+    "Q407199": {
+      "name": "Palestinian territories",
+      "description": "West Bank, excluding East Jerusalem,  a part of  the State of Israel Capital, in the status of belligerent occupation, supported by international public law and the High Court of Justice of Israel",
+      "ISO 3166-1 alpha-2 code": null
+    },
+    "Q846": {
+      "name": "Qatar",
+      "description": "sovereign state in western Asia",
+      "ISO 3166-1 alpha-2 code": "QA"
+    },
+    "Q218": {
+      "name": "Romania",
+      "description": "country in Central and Eastern Europe",
+      "ISO 3166-1 alpha-2 code": "RO"
+    },
+    "Q159": {
+      "name": "Russia",
+      "description": "sovereign state in Eastern Europe and Northern Asia since 1991",
+      "ISO 3166-1 alpha-2 code": "RU"
+    },
+    "Q1037": {
+      "name": "Rwanda",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "RW"
+    },
+    "Q851": {
+      "name": "Saudi Arabia",
+      "description": "sovereign state in western Asia",
+      "ISO 3166-1 alpha-2 code": "SA"
+    },
+    "Q1049": {
+      "name": "Sudan",
+      "description": "sovereign state in northeast Africa",
+      "ISO 3166-1 alpha-2 code": "SD"
+    },
+    "Q1041": {
+      "name": "Senegal",
+      "description": "sovereign state in western Africa",
+      "ISO 3166-1 alpha-2 code": "SN"
+    },
+    "Q334": {
+      "name": "Singapore",
+      "description": "sovereign city-state in Southeast Asia",
+      "ISO 3166-1 alpha-2 code": "SG"
+    },
+    "Q685": {
+      "name": "Solomon Islands",
+      "description": "island sovereign state in Oceania",
+      "ISO 3166-1 alpha-2 code": "SB"
+    },
+    "Q1044": {
+      "name": "Sierra Leone",
+      "description": "sovereign state in West Africa",
+      "ISO 3166-1 alpha-2 code": "SL"
+    },
+    "Q792": {
+      "name": "El Salvador",
+      "description": "sovereign state in Central America",
+      "ISO 3166-1 alpha-2 code": "SV"
+    },
+    "Q238": {
+      "name": "San Marino",
+      "description": "sovereign state in southern Europe, enclaved within Italy",
+      "ISO 3166-1 alpha-2 code": "SM"
+    },
+    "Q1045": {
+      "name": "Somalia",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "SO"
+    },
+    "Q403": {
+      "name": "Serbia",
+      "description": "country in southeastern Europe",
+      "ISO 3166-1 alpha-2 code": "RS"
+    },
+    "Q958": {
+      "name": "South Sudan",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "SS"
+    },
+    "Q1039": {
+      "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+      "description": "island sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "ST"
+    },
+    "Q730": {
+      "name": "Suriname",
+      "description": "sovereign state in South America",
+      "ISO 3166-1 alpha-2 code": "SR"
+    },
+    "Q214": {
+      "name": "Slovakia",
+      "description": "country in Central Europe",
+      "ISO 3166-1 alpha-2 code": "SK"
+    },
+    "Q215": {
+      "name": "Slovenia",
+      "description": "country in Central Europe",
+      "ISO 3166-1 alpha-2 code": "SI"
+    },
+    "Q34": {
+      "name": "Sweden",
+      "description": "sovereign state in northern Europe",
+      "ISO 3166-1 alpha-2 code": "SE"
+    },
+    "Q1050": {
+      "name": "Eswatini",
+      "description": "kingdom in southern Africa",
+      "ISO 3166-1 alpha-2 code": "SZ"
+    },
+    "Q26273": {
+      "name": "Sint Maarten",
+      "description": "country on the Caribbean island of Saint Martin, part of the Kingdom of the Netherlands",
+      "ISO 3166-1 alpha-2 code": "SX"
+    },
+    "Q1042": {
+      "name": "Seychelles",
+      "description": "island sovereign state off the eastern coast of Africa",
+      "ISO 3166-1 alpha-2 code": "SC"
+    },
+    "Q858": {
+      "name": "Syria",
+      "description": "sovereign state in western Asia",
+      "ISO 3166-1 alpha-2 code": "SY"
+    },
+    "Q18221": {
+      "name": "Turks and Caicos Islands",
+      "description": "British Overseas Territory in the Caribbean",
+      "ISO 3166-1 alpha-2 code": "TC"
+    },
+    "Q657": {
+      "name": "Chad",
+      "description": "sovereign state in central Africa",
+      "ISO 3166-1 alpha-2 code": "TD"
+    },
+    "Q945": {
+      "name": "Togo",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "TG"
+    },
+    "Q869": {
+      "name": "Thailand",
+      "description": "sovereign state in Southeast Asia",
+      "ISO 3166-1 alpha-2 code": "TH"
+    },
+    "Q863": {
+      "name": "Tajikistan",
+      "description": "sovereign state in Central Asia",
+      "ISO 3166-1 alpha-2 code": "TJ"
+    },
+    "Q874": {
+      "name": "Turkmenistan",
+      "description": "sovereign state in Central Asia",
+      "ISO 3166-1 alpha-2 code": "TM"
+    },
+    "Q574": {
+      "name": "East Timor",
+      "description": "sovereign state situated on several islands in Southeast Asia",
+      "ISO 3166-1 alpha-2 code": "TL"
+    },
+    "Q678": {
+      "name": "Tonga",
+      "description": "sovereign state in Oceania, situated on an archipelago",
+      "ISO 3166-1 alpha-2 code": "TO"
+    },
+    "Q754": {
+      "name": "Trinidad and Tobago",
+      "description": "island sovereign state in the Caribbean",
+      "ISO 3166-1 alpha-2 code": "TT"
+    },
+    "Q948": {
+      "name": "Tunisia",
+      "description": "sovereign state in Northern Africa",
+      "ISO 3166-1 alpha-2 code": "TN"
+    },
+    "Q43": {
+      "name": "Turkey",
+      "description": "sovereign state spanning in Europe and Asia since 1923",
+      "ISO 3166-1 alpha-2 code": "TR"
+    },
+    "Q672": {
+      "name": "Tuvalu",
+      "description": "island sovereign state in Oceania",
+      "ISO 3166-1 alpha-2 code": "TV"
+    },
+    "Q924": {
+      "name": "Tanzania",
+      "description": "sovereign state in Africa",
+      "ISO 3166-1 alpha-2 code": "TZ"
+    },
+    "Q1036": {
+      "name": "Uganda",
+      "description": "sovereign state in East Africa",
+      "ISO 3166-1 alpha-2 code": "UG"
+    },
+    "Q212": {
+      "name": "Ukraine",
+      "description": "sovereign state in Europe",
+      "ISO 3166-1 alpha-2 code": "UA"
+    },
+    "Q77": {
+      "name": "Uruguay",
+      "description": "sovereign state in South America",
+      "ISO 3166-1 alpha-2 code": "UY"
+    },
+    "Q265": {
+      "name": "Uzbekistan",
+      "description": "sovereign state in Central Asia",
+      "ISO 3166-1 alpha-2 code": "UZ"
+    },
+    "Q757": {
+      "name": "Saint Vincent and the Grenadines",
+      "description": "island sovereign state in the Caribbean Sea",
+      "ISO 3166-1 alpha-2 code": "VC"
+    },
+    "Q11703": {
+      "name": "United States Virgin Islands",
+      "description": "group of islands in the Caribbean",
+      "ISO 3166-1 alpha-2 code": "VI"
+    },
+    "Q881": {
+      "name": "Vietnam",
+      "description": "sovereign state in Southeast Asia",
+      "ISO 3166-1 alpha-2 code": "VN"
+    },
+    "Q686": {
+      "name": "Vanuatu",
+      "description": "sovereign state situated on an archipelago in the South Pacific Ocean",
+      "ISO 3166-1 alpha-2 code": "VU"
+    },
+    "Q16502": {
+      "name": "world",
+      "description": "planet Earth and all life upon it, including human civilization",
+      "ISO 3166-1 alpha-2 code": null
+    },
+    "Q683": {
+      "name": "Samoa",
+      "description": "sovereign state made up of six islands in the Pacific Ocean",
+      "ISO 3166-1 alpha-2 code": "WS"
+    },
+    "Q1246": {
+      "name": "Kosovo",
+      "description": "partially recognized country in southeastern Europe",
+      "ISO 3166-1 alpha-2 code": "XK"
+    },
+    "Q805": {
+      "name": "Yemen",
+      "description": "sovereign state in western Asia",
+      "ISO 3166-1 alpha-2 code": "YE"
+    },
+    "Q258": {
+      "name": "South Africa",
+      "description": "sovereign state in Southern Africa",
+      "ISO 3166-1 alpha-2 code": "ZA"
+    },
+    "Q953": {
+      "name": "Zambia",
+      "description": "sovereign state in Southern Africa",
+      "ISO 3166-1 alpha-2 code": "ZM"
+    },
+    "Q954": {
+      "name": "Zimbabwe",
+      "description": "sovereign state in southern Africa",
+      "ISO 3166-1 alpha-2 code": "ZW"
+    }
+  },
+  "properties": {
+    "P297": "ISO 3166-1 alpha-2 code"
+  }
+}

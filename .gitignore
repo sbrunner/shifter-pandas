@@ -4,4 +4,3 @@ __pycache__
 /.ci.requirements
 /requirements.txt
 /requirements-dev.txt
-/.wikidata-cache.json
