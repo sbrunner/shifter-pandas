@@ -3,7 +3,7 @@ Tests of BP Datasource.
 """
 
 
-from shifter_pandas.bp import BPDatasource, UNITS_ENERGY
+from shifter_pandas.bp import UNITS_ENERGY, BPDatasource
 
 
 def test_bp() -> None:
