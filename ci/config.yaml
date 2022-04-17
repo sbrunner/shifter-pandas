@@ -11,3 +11,6 @@ checks:
   black:
     ignore_patterns_re:
       - README\.md
+publish:
+  docker:
+    dispatch: false
