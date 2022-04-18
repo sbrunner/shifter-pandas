@@ -1,6 +1,3 @@
 __pycache__
 /shifter_pandas.egg-info/
-/.venv
-/.ci.requirements
-/requirements.txt
-/requirements-dev.txt
+/.poetry.timestamps
