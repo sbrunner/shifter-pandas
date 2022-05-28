@@ -36,5 +36,8 @@ bandit:
   options:
     config: .bandit.yaml
 
+pyroma:
+  run: true
+
 mccabe:
   run: false
