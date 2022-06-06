@@ -62,9 +62,9 @@ prospector = { version = "1.7.7", extras = [
     "with_pyroma"
 ] }
 pytest = "7.1.2"
-coverage = "6.4"
+coverage = "6.4.1"
 types-toml = "0.10.7"
-types-requests = "2.27.29"
+types-requests = "2.27.30"
 
 [build-system]
 requires = [
