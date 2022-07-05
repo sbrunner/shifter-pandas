@@ -10,6 +10,7 @@
 
 #### :wrench: Build, CI, Tests, Code style
 
+- Update the changelog [\#70](https://github.com/sbrunner/shifter-pandas/pull/70) ([github-actions[bot]](https://github.com/apps/github-actions))
 - Update the changelog [\#69](https://github.com/sbrunner/shifter-pandas/pull/69) ([github-actions[bot]](https://github.com/apps/github-actions))
 - Don't run 2 CI jobs in a pull request [\#60](https://github.com/sbrunner/shifter-pandas/pull/60) ([sbrunner](https://github.com/sbrunner))
 - Add pyroma check [\#53](https://github.com/sbrunner/shifter-pandas/pull/53) ([sbrunner](https://github.com/sbrunner))
@@ -19,6 +20,7 @@
 
 #### :package: Dependencies update
 
+- Lock file maintenance [\#71](https://github.com/sbrunner/shifter-pandas/pull/71) ([renovate[bot]](https://github.com/apps/renovate))
 - Lock file maintenance [\#63](https://github.com/sbrunner/shifter-pandas/pull/63) ([renovate[bot]](https://github.com/apps/renovate))
 - Lock file maintenance [\#62](https://github.com/sbrunner/shifter-pandas/pull/62) ([renovate[bot]](https://github.com/apps/renovate))
 - Lock file maintenance [\#61](https://github.com/sbrunner/shifter-pandas/pull/61) ([renovate[bot]](https://github.com/apps/renovate))
