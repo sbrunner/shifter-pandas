@@ -50,7 +50,7 @@ packages = [
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
 requests = "2.27.1"
-pandas = "1.4.2"
+pandas = "1.4.3"
 openpyxl = "3.0.10"
 wikidata = "0.7.0"
 toml = "0.10.2"
@@ -62,9 +62,9 @@ prospector = { version = "1.7.7", extras = [
     "with_pyroma"
 ] }
 pytest = "7.1.2"
-coverage = "6.4.1"
-types-toml = "0.10.7"
-types-requests = "2.27.30"
+coverage = "6.4.2"
+types-toml = "0.10.8"
+types-requests = "2.27.31"
 
 [build-system]
 requires = [
