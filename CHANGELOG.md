@@ -10,6 +10,8 @@
 
 #### :wrench: Build, CI, Tests, Code style
 
+- Remove hourly limit [\#77](https://github.com/sbrunner/shifter-pandas/pull/77) ([sbrunner](https://github.com/sbrunner))
+- Update the changelog [\#70](https://github.com/sbrunner/shifter-pandas/pull/70) ([github-actions[bot]](https://github.com/apps/github-actions))
 - Update the changelog [\#69](https://github.com/sbrunner/shifter-pandas/pull/69) ([github-actions[bot]](https://github.com/apps/github-actions))
 - Don't run 2 CI jobs in a pull request [\#60](https://github.com/sbrunner/shifter-pandas/pull/60) ([sbrunner](https://github.com/sbrunner))
 - Add pyroma check [\#53](https://github.com/sbrunner/shifter-pandas/pull/53) ([sbrunner](https://github.com/sbrunner))
@@ -19,6 +21,13 @@
 
 #### :package: Dependencies update
 
+- Lock file maintenance [\#80](https://github.com/sbrunner/shifter-pandas/pull/80) ([renovate[bot]](https://github.com/apps/renovate))
+- Lock file maintenance [\#79](https://github.com/sbrunner/shifter-pandas/pull/79) ([renovate[bot]](https://github.com/apps/renovate))
+- Update all minor versions to v2.28.1 \(minor\) [\#76](https://github.com/sbrunner/shifter-pandas/pull/76) ([renovate[bot]](https://github.com/apps/renovate))
+- Update all patch versions \(patch\) [\#75](https://github.com/sbrunner/shifter-pandas/pull/75) ([renovate[bot]](https://github.com/apps/renovate))
+- Lock file maintenance [\#74](https://github.com/sbrunner/shifter-pandas/pull/74) ([renovate[bot]](https://github.com/apps/renovate))
+- Lock file maintenance [\#73](https://github.com/sbrunner/shifter-pandas/pull/73) ([renovate[bot]](https://github.com/apps/renovate))
+- Lock file maintenance [\#71](https://github.com/sbrunner/shifter-pandas/pull/71) ([renovate[bot]](https://github.com/apps/renovate))
 - Lock file maintenance [\#63](https://github.com/sbrunner/shifter-pandas/pull/63) ([renovate[bot]](https://github.com/apps/renovate))
 - Lock file maintenance [\#62](https://github.com/sbrunner/shifter-pandas/pull/62) ([renovate[bot]](https://github.com/apps/renovate))
 - Lock file maintenance [\#61](https://github.com/sbrunner/shifter-pandas/pull/61) ([renovate[bot]](https://github.com/apps/renovate))
