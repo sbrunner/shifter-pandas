@@ -19,7 +19,7 @@ class OFSDatasource:
 
     def metadata(self) -> Dict[str, Any]:
         """Get the metadata."""
-        response = requests.get(self.url)
+        response = requests.get(self.url, timeout=120)
         if not response.ok:
             print(f"Error on query {self.url}: {response.status_code}")
             print(response.text)
@@ -40,7 +40,7 @@ class OFSDatasource:
             wikidata_properties = []
         wikidata = wikidata_id or wikidata_name or wikidata_properties
 
-        response = requests.post(self.url, json=query)
+        response = requests.post(self.url, json=query, timeout=120)
         if not response.ok:
             print(f"Error on query {self.url}: {response.status_code}")
             print(response.text)

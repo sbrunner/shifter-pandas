@@ -68,7 +68,7 @@ class WikidataDatasource:
             "query": query,
             "format": "json",
         }
-        response = requests.get(self.endpoint_url, params=payload, headers=self.headers)
+        response = requests.get(self.endpoint_url, params=payload, headers=self.headers, timeout=120)
         if not response.ok:
             print(f"Error on query {self.endpoint_url}: {response.status_code}")
             print(response.text)
