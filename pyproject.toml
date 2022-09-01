@@ -50,7 +50,7 @@ packages = [
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
 requests = "2.28.1"
-pandas = "1.4.3"
+pandas = "1.4.4"
 openpyxl = "3.0.10"
 wikidata = "0.7.0"
 toml = "0.10.2"
