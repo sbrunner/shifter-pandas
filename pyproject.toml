@@ -55,7 +55,7 @@ openpyxl = "3.0.10"
 wikidata = "0.7.0"
 toml = "0.10.2"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 prospector = { version = "1.7.7", extras = [
     "with_bandit",
     "with_mypy",
