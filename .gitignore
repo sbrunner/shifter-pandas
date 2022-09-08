@@ -1,3 +1,4 @@
 __pycache__
 /shifter_pandas.egg-info/
 /.poetry.timestamps
+/.github/changelog-generator-cache
