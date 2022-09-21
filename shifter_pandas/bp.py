@@ -47,7 +47,7 @@ class BPDatasource:
         self.to_iso_unit["short tons"] = {"unit": "tonnes", "factor": 1.1023}
         # 1 kilolitre = 6.2898 barrels
         self.to_iso_unit["barrels"] = {"unit": "m³", "factor": 6.2898}
-        # 1 kilolitre = 1 cubic metre
+        # 1 kilolitre = 1 cubic meter
         self.to_iso_unit["litres"] = {"unit": "m³", "factor": 1000}
         # 1 kilocalorie (kcal) = 4.1868 kJ = 3.968 Btu
         # 1 kilojoule (kJ) = 1,000 joules = 0.239 kcal = 0.948 Btu
@@ -67,12 +67,12 @@ class BPDatasource:
         self.to_iso_unit["watt-hours"] = self.to_iso_unit["watt-hour"]
         self.to_iso_unit["Wh"] = self.to_iso_unit["watt-hour"]
 
-        self.to_iso_unit["cubic metres"] = {"unit": "m³", "factor": 1}
-        self.to_iso_unit["metres"] = {"unit": "m", "factor": 1}
+        self.to_iso_unit["cubic meters"] = {"unit": "m³", "factor": 1}
+        self.to_iso_unit["meters"] = {"unit": "m", "factor": 1}
         self.to_iso_unit["joules"] = {"unit": "J", "factor": 1}
         self.to_iso_unit["cubic feets"] = {"unit": "m³", "factor": 35.3146667}
-        self.to_iso_unit["cubic metre"] = self.to_iso_unit["cubic metres"]
-        self.to_iso_unit["metre"] = self.to_iso_unit["metres"]
+        self.to_iso_unit["cubic meter"] = self.to_iso_unit["cubic meters"]
+        self.to_iso_unit["meter"] = self.to_iso_unit["meters"]
         self.to_iso_unit["joule"] = self.to_iso_unit["joules"]
         self.to_iso_unit["cubic feet"] = self.to_iso_unit["cubic feets"]
         self.to_iso_unit["watts"] = {"unit": "W", "factor": 1}

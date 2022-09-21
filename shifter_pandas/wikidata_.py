@@ -7,9 +7,9 @@ from typing import Any, Dict, List, Optional, cast
 
 import pandas as pd
 import requests
-from wikidata.client import Client
 import wikidata.entity
 import wikidata.quantity
+from wikidata.client import Client
 
 from shifter_pandas import standardize_property
 
