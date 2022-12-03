@@ -3,5 +3,5 @@ poetry==1.2.2
 poetry-core==1.4.0
 poetry-plugin-tweak-dependencies-version==1.1.0
 poetry-dynamic-versioning==0.21.1
-setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools==65.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
 pip==22.3.1
