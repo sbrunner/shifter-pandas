@@ -5,4 +5,4 @@ poetry-plugin-tweak-dependencies-version==1.2.1
 poetry-dynamic-versioning==0.21.3
 setuptools==65.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
 pip==22.3.1
-certifi>=2022.12.7 # not directly required, pinned by Snyk to avoid a vulnerability
+certifi==2022.12.7 # not directly required, pinned by Snyk to avoid a vulnerability
