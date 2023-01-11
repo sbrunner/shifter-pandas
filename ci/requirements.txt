@@ -6,3 +6,4 @@ poetry-dynamic-versioning==0.21.3
 setuptools==65.6.3 # not directly required, pinned by Snyk to avoid a vulnerability
 pip==22.3.1
 certifi>=2022.12.7 # not directly required, pinned by Snyk to avoid a vulnerability
+pre-commit==2.21.0
