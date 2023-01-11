@@ -54,7 +54,7 @@ toml = "0.10.2"
 certifi = "2022.12.7"
 
 [tool.poetry.dev-dependencies]
-prospector = { version = "1.7.7", extras = ["with_bandit", "with_mypy", "with_pyroma"] }
+prospector = { version = "1.8.4", extras = ["with_bandit", "with_mypy", "with_pyroma"] }
 pytest = "7.2.0"
 coverage = "7.0.2"
 types-toml = "0.10.8.1"
