@@ -51,7 +51,6 @@ class WorldbankDatasource:
         for index_y, header in headers:
             data[header] = []
         for row in self.table[5:]:
-
             for index_y, year in years:
                 value = row[index_y]
                 if value:
