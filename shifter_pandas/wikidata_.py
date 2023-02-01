@@ -115,7 +115,6 @@ class WikidataDatasource:
         Get the items id from an alias.
         """
         if code not in self.cache.get("fromAlias", {}).get(lang, {}).get(instance_of, {}):
-
             items = [
                 {
                     "id": item["item"]["value"].split("/")[-1],
