@@ -1,10 +1,10 @@
-c2cciutils[checks,publish]==1.4.10
+c2cciutils[checks,publish]==1.5.0
 poetry==1.4.0
 poetry-core==1.5.1
 poetry-plugin-tweak-dependencies-version==1.2.1
 poetry-dynamic-versioning==0.21.4
-setuptools==67.1.0 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools==67.4.0 # not directly required, pinned by Snyk to avoid a vulnerability
 pip==23.0.1
 certifi>=2022.12.7 # not directly required, pinned by Snyk to avoid a vulnerability
-pre-commit==3.0.4
+pre-commit==3.1.1
 cryptography>=39.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
