@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           ref: ${{ matrix.branch }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN }}
 
       - run: git config --global user.email "sbrunner@ci.org"
       - run: git config --global user.name "Snyk auto-fix"
