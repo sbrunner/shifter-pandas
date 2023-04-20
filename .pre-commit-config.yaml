@@ -36,7 +36,12 @@ repos:
     rev: v2.2.4
     hooks:
       - id: codespell
-        exclude: (shifter_pandas/wikidata_\.py|tests/test_get_region\.py|^(.*/)?poetry\.lock$)
+        exclude: |-
+          (?x)(
+            shifter_pandas/wikidata_\.py
+            |tests/test_get_region\.py
+            |^(.*/)?poetry\.lock$
+          )
         args:
           - --ignore-words=.github/spell-ignore-words.txt
   - repo: https://github.com/pre-commit/mirrors-prettier
