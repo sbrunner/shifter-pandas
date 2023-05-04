@@ -54,9 +54,9 @@ jobs:
       - run: make pytest
 
       - name: Init pypi
-        run: |
+        run: |-
           echo "[pypi]" > ~/.pypirc
-          echo "username = sbrunner" >> ~/.pypirc
+          echo "username = ${{ secrets.PYPI_USERNAME }}" >> ~/.pypirc
           echo "password = ${{ secrets.PYPI_PASSWORD }}" >> ~/.pypirc
         if: env.HAS_SECRETS == 'HAS_SECRETS'
       - name: Publish
