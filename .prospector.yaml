@@ -1,10 +1,11 @@
+inherits:
+  - duplicated
 strictness: veryhigh
 doc-warnings: true
 max-line-length: 110
 
 pylint:
   disable:
-    - wrong-import-order
     - too-many-arguments
     - too-many-branches
     - too-many-locals
@@ -14,11 +15,8 @@ pylint:
     - too-many-lines
     - too-few-public-methods
     - no-else-return
-    - superfluous-parens # In conflict with Black
-
 pycodestyle:
   disable:
-    - E203 # whitespace before ':'
     - E501 # line too long
 
 pydocstyle:
