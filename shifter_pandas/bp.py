@@ -1,6 +1,6 @@
 """Datasource builder for data from British Petroleum."""
 
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Optional
 
 import openpyxl
 import pandas as pd
@@ -29,17 +29,17 @@ class BPDatasource:
         self.wdds = WikidataDatasource()
         self.wdds.set_alias("World", "World", "Q16502", "World")
         # Crude oil: oil_units_conversion[<from unit>][<to unit>] = <factor>
-        self.oil_units_conversion: Dict[str, Dict[str, float]] = {}
+        self.oil_units_conversion: dict[str, dict[str, float]] = {}
         # Oil products: oil_products_units_conversion[<product>][<from unit>][<to unit>] = <factor>
-        self.oil_products_units_conversion: Dict[str, Dict[str, Dict[str, float]]] = {}
+        self.oil_products_units_conversion: dict[str, dict[str, dict[str, float]]] = {}
         # Natural gas (NG) and liquefied natural gas (LNG):
         # gaz_units_conversion[<from unit>][<to unit>] = <factor>
-        self.gaz_units_conversion: Dict[str, Dict[str, float]] = {}
+        self.gaz_units_conversion: dict[str, dict[str, float]] = {}
 
         # to_iso_unit[<from_unit>] = {"unit": <to_unit>, "factor": <factor>}
         # tones is considered as ISO because it's more convenient to use
         # then J, m³, tonnes (day, capita).
-        self.to_iso_unit: Dict[str, Dict[str, Any]] = {}
+        self.to_iso_unit: dict[str, dict[str, Any]] = {}
 
         # 1 metric tonne = 2204.62 lb.
         self.to_iso_unit["lb"] = {"unit": "tonnes", "factor": 2204.62}
@@ -148,7 +148,7 @@ class BPDatasource:
         unit = unit.replace(" daily", " per day")
         return unit
 
-    def _iso_unit(self, unit: str) -> Tuple[str, str, float]:
+    def _iso_unit(self, unit: str) -> tuple[str, str, float]:
         if "/" not in unit:
             return self._single_iso_unit(unit)
         else:
@@ -158,7 +158,7 @@ class BPDatasource:
             lower_unit, postfix, lower_factor = self._single_iso_unit(lower.strip())
             return f"{unit} / {lower_unit}", postfix, factor / lower_factor
 
-    def _single_iso_unit(self, unit: str) -> Tuple[str, str, float]:
+    def _single_iso_unit(self, unit: str) -> tuple[str, str, float]:
         unit_postfix = ""
         postfix = ""
         for postfix_candidate in ("*",):
@@ -232,9 +232,9 @@ class BPDatasource:
 
         return unit + unit_postfix, postfix, factor
 
-    def metadata(self) -> List[Dict[str, Any]]:
+    def metadata(self) -> list[dict[str, Any]]:
         """Get the metadata."""
-        metadata: List[Dict[str, Any]] = []
+        metadata: list[dict[str, Any]] = []
         for type_index, type_value in enumerate(self.xlsx.sheetnames):
             nice_type = type_value
             for postfix in (
@@ -312,16 +312,16 @@ class BPDatasource:
 
     def datasource(
         self,
-        types_filter: Optional[List[str]] = None,
-        regions_filter: Optional[List[str]] = None,
-        units_filter: Optional[List[str]] = None,
-        years_filter: Optional[List[int]] = None,
+        types_filter: Optional[list[str]] = None,
+        regions_filter: Optional[list[str]] = None,
+        units_filter: Optional[list[str]] = None,
+        years_filter: Optional[list[int]] = None,
         years_factor: Optional[int] = None,
         units: str = "iso",
         wikidata_id: bool = False,
         wikidata_type: bool = False,
         wikidata_name: bool = False,
-        wikidata_properties: Optional[List[str]] = None,
+        wikidata_properties: Optional[list[str]] = None,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
 
@@ -412,7 +412,7 @@ class BPDatasource:
     ) -> pd.DataFrame:
         """Get the Datasource used to convert non fossil electricity to primary energy as DataFrame."""
 
-        data: Dict[str, List[float]] = {
+        data: dict[str, list[float]] = {
             "Year": [],
             "Factor": [],
         }

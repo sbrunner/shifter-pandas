@@ -3,7 +3,7 @@
 import json
 import os
 import shutil
-from typing import Any, Dict, List, Optional, cast
+from typing import Any, Optional, cast
 
 import pandas as pd
 import requests
@@ -47,9 +47,9 @@ class WikidataDatasource:
                 self.cache = json.load(file)
         else:
             self.cache = {}
-        self.memory_cache: Dict[str, wikidata.entity.Entity] = {}
+        self.memory_cache: dict[str, wikidata.entity.Entity] = {}
 
-        self.custom_aliases: Dict[str, Dict[str, Dict[str, str]]] = {}
+        self.custom_aliases: dict[str, dict[str, dict[str, str]]] = {}
 
         self.client = Client()
 
@@ -58,7 +58,7 @@ class WikidataDatasource:
             file.write(json.dumps(self.cache, indent=2))
         shutil.move(".wikidata-cache.json.new", os.environ.get("WIKIDATA_CACHE_FILE", ".wikidata-cache.json"))
 
-    def run_query(self, query: str) -> Dict[str, Any]:
+    def run_query(self, query: str) -> dict[str, Any]:
         """
         Run a SPARQL query against the Wikidata SPARQL endpoint.
 
@@ -74,7 +74,7 @@ class WikidataDatasource:
             print(response.text)
             print(query)
             response.raise_for_status()
-        return cast(Dict[str, Any], response.json())
+        return cast(dict[str, Any], response.json())
 
     def get_property_name(self, property_id: str) -> str:
         """Get the name of a property."""
@@ -110,7 +110,7 @@ class WikidataDatasource:
 
     def get_from_alias(
         self, instance_of: str, code: str, lang: str = "en", limit: int = 10
-    ) -> List[Dict[str, str]]:
+    ) -> list[dict[str, str]]:
         """
         Get the items id from an alias.
         """
@@ -138,7 +138,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
                 )["results"]["bindings"]
             ]
 
-            def _get_id(item: Dict[str, Any]) -> str:
+            def _get_id(item: dict[str, Any]) -> str:
                 return cast(str, item["id"])
 
             items = sorted(items, key=_get_id)
@@ -148,7 +148,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
 
             self.cache["fromAlias"][lang][instance_of][code].sort(key=lambda x: int(x["id"][1:]))
             self._save_cache()
-        return cast(List[Dict[str, str]], self.cache["fromAlias"][lang][instance_of][code])
+        return cast(list[dict[str, str]], self.cache["fromAlias"][lang][instance_of][code])
 
     def _get_item_obj(self, item_id: wikidata.entity.EntityId) -> wikidata.entity.Entity:
         if item_id not in self.memory_cache:
@@ -158,12 +158,12 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
     def get_item(
         self,
         item_id: Optional[str],
-        properties: Optional[List[str]] = None,
+        properties: Optional[list[str]] = None,
         with_id: bool = False,
         with_name: bool = True,
         with_description: bool = False,
         prefix: str = "",
-    ) -> Dict[str, Any]:
+    ) -> dict[str, Any]:
         """
         Get the item with the given item_id as a JSON object.
         """
@@ -208,7 +208,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
 
         return result
 
-    def get_region(self, region: Optional[str], code: Optional[str] = None) -> Optional[Dict[str, str]]:
+    def get_region(self, region: Optional[str], code: Optional[str] = None) -> Optional[dict[str, str]]:
         """Get the region informations."""
 
         none_match = False
@@ -227,12 +227,12 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
             if self.cache["regions"]["code"][code] is None:
                 none_match = True
             else:
-                return cast(Dict[str, str], self.cache["regions"]["code"][code])
+                return cast(dict[str, str], self.cache["regions"]["code"][code])
         if region in self.cache.get("regions", {}).get("name", {}):
             if self.cache["regions"]["name"][region] is None:
                 none_match = True
             else:
-                return cast(Dict[str, str], self.cache["regions"]["name"][region])
+                return cast(dict[str, str], self.cache["regions"]["name"][region])
 
         if none_match:
             return None
@@ -483,7 +483,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
                 )["results"]["bindings"]
             ]
 
-            def _get_id(item: Dict[str, Any]) -> str:
+            def _get_id(item: dict[str, Any]) -> str:
                 return cast(str, item["id"])
 
             items = sorted(items, key=_get_id)
@@ -507,7 +507,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         with_id: bool = False,
         with_description: bool = False,
         with_name: bool = True,
-        properties: Optional[List[str]] = None,
+        properties: Optional[list[str]] = None,
         limit: int = 100,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
@@ -531,7 +531,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         }}"""
             )["results"]["bindings"]
         ]
-        values: Dict[str, List[Any]] = {}
+        values: dict[str, list[Any]] = {}
         for element_id in ids:
             item = self.get_item(
                 element_id,
@@ -550,7 +550,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         wikidata_id: bool = False,
         wikidata_name: bool = False,
         wikidata_type: bool = False,
-        wikidata_properties: Optional[List[str]] = None,
+        wikidata_properties: Optional[list[str]] = None,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame with the codes for Our World in Data."""
         codes = {
@@ -794,7 +794,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
             "ZWE",
         }
 
-        data: Dict[str, List[Any]] = {}
+        data: dict[str, list[Any]] = {}
         for code in codes:
             element_id = self.get_region(None, code)
             if element_id:
