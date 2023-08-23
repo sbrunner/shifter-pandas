@@ -4,7 +4,7 @@ import csv
 import io
 import os
 import re
-from typing import Any, Dict, List, Optional
+from typing import Any, Optional
 from zipfile import ZipFile
 
 import pandas as pd
@@ -31,7 +31,7 @@ class WorldbankDatasource:
         wikidata_id: bool = False,
         wikidata_name: bool = False,
         wikidata_type: bool = False,
-        wikidata_properties: Optional[List[str]] = None,
+        wikidata_properties: Optional[list[str]] = None,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
 
@@ -47,7 +47,7 @@ class WorldbankDatasource:
         ]
         years = [(e[0], int(e[1])) for e in enumerate(self.table[4]) if year_re.match(e[1]) is not None]
 
-        data: Dict[str, List[Any]] = {"Year": [], "Value": []}
+        data: dict[str, list[Any]] = {"Year": [], "Value": []}
         for index_y, header in headers:
             data[header] = []
         for row in self.table[5:]:

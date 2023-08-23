@@ -1,6 +1,6 @@
 """Datasource builder for data from the swiss Office Federal of Statistics."""
 
-from typing import Any, Dict, List, Optional, cast
+from typing import Any, Optional, cast
 
 import pandas as pd
 import requests
@@ -17,22 +17,22 @@ class OFSDatasource:
         self.url = url
         self.wdds = WikidataDatasource()
 
-    def metadata(self) -> Dict[str, Any]:
+    def metadata(self) -> dict[str, Any]:
         """Get the metadata."""
         response = requests.get(self.url, timeout=120)
         if not response.ok:
             print(f"Error on query {self.url}: {response.status_code}")
             print(response.text)
             response.raise_for_status()
-        return cast(Dict[str, Any], response.json())
+        return cast(dict[str, Any], response.json())
 
     def datasource(
         self,
-        query: Dict[str, Any],
+        query: dict[str, Any],
         wikidata_dimension: Optional[str] = None,
         wikidata_id: bool = False,
         wikidata_name: bool = False,
-        wikidata_properties: Optional[List[str]] = None,
+        wikidata_properties: Optional[list[str]] = None,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
 
@@ -71,7 +71,7 @@ class OFSDatasource:
 
         if wikidata and wikidata_dimension:
 
-            def _get_values(canton: str) -> Dict[str, Any]:
+            def _get_values(canton: str) -> dict[str, Any]:
                 element_ids = self.wdds.get_from_alias(ELEMENT_CANTON_CH, canton)
 
                 element = {}
