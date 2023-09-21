@@ -403,7 +403,9 @@ class BPDatasource:
                                 prefix="Wikidata",
                             )
                         )
-                    data_frame = data_frame.append(element, ignore_index=True)
+                    data_frame = pd.concat(
+                        [data_frame, pd.DataFrame({k: [v] for k, v in element.items()})], ignore_index=True
+                    )
 
         return data_frame
 
