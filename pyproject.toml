@@ -43,7 +43,7 @@ keywords = ["shifter", "pandas"]
 packages = [{ include = "shifter_pandas" }, { include = "shifter_pandas/py.typed" }]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<4.0"
+python = ">=3.9,<3.13"
 requests = "2.31.0"
 pandas = "1.5.3"
 openpyxl = "3.1.2"
