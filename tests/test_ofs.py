@@ -27,4 +27,4 @@ def test_ofs():
         "Année",
     ]
     data_field.rename(columns={"Année": "Year"}, inplace=True)
-    assert set(data_field.Year) == {str(e) for e in range(2000, 2021)}
+    assert set(data_field.Year) == {str(e) for e in range(2000, 2022)}
