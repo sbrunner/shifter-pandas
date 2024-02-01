@@ -2,7 +2,6 @@
 Tests of BP Datasource.
 """
 
-
 from shifter_pandas.bp import UNITS_ENERGY, BPDatasource
 
 
