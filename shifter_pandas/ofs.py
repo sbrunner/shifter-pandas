@@ -61,9 +61,9 @@ class OFSDatasource:
             for index_x in range(length):
                 for index_y, value in enumerate(dimension["category"]["label"].values()):
                     for index_z in range(number):
-                        dimension_value[
-                            index_x * current_length * number + index_y * number + index_z
-                        ] = value
+                        dimension_value[index_x * current_length * number + index_y * number + index_z] = (
+                            value
+                        )
 
             values[dimension["label"]] = dimension_value
 
