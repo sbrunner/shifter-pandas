@@ -55,9 +55,9 @@ urllib3 = "2.1.0"
 [tool.poetry.dev-dependencies]
 prospector = { version = "1.10.3", extras = ["with_bandit", "with_mypy", "with_pyroma"] }
 pytest = "7.4.4"
-coverage = "7.4.0"
+coverage = "7.4.1"
 types-toml = "0.10.8.7"
-types-requests = "2.31.0.20231231"
+types-requests = "2.31.0.20240125"
 
 [tool.poetry.group.dev.dependencies]
 prospector-profile-duplicated = "0.5.1"
