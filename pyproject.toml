@@ -45,19 +45,19 @@ packages = [{ include = "shifter_pandas" }, { include = "shifter_pandas/py.typed
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
 requests = "2.31.0"
-pandas = "2.2.0"
+pandas = "2.2.1"
 openpyxl = "3.1.2"
 wikidata = "0.7.0"
 toml = "0.10.2"
 certifi = "2023.11.17"
-urllib3 = "2.2.0"
+urllib3 = "2.2.1"
 
 [tool.poetry.dev-dependencies]
 prospector = { version = "1.10.3", extras = ["with_bandit", "with_mypy", "with_pyroma"] }
-pytest = "8.0.0"
-coverage = "7.4.1"
+pytest = "8.0.2"
+coverage = "7.4.3"
 types-toml = "0.10.8.7"
-types-requests = "2.31.0.20240125"
+types-requests = "2.31.0.20240218"
 
 [tool.poetry.group.dev.dependencies]
 prospector-profile-duplicated = "0.5.1"
