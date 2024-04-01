@@ -54,7 +54,7 @@ repos:
           - prettier-plugin-toml@2.0.1 # npm
           - '@prettier/plugin-xml@0.12.0' # npm
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.9.0.6
+    rev: v0.10.0.1
     hooks:
       - id: shellcheck
   - repo: https://github.com/jumanjihouse/pre-commit-hooks
@@ -82,7 +82,7 @@ repos:
     hooks:
       - id: ripsecrets
   - repo: https://github.com/psf/black
-    rev: 24.2.0
+    rev: 24.3.0
     hooks:
       - id: black
         exclude: README\.md
@@ -108,7 +108,7 @@ repos:
           - --tool=pydocstyle
           - --die-on-tool-error
         additional_dependencies:
-          - prospector-profile-duplicated==1.1.0 # pypi
+          - prospector-profile-duplicated==1.2.0 # pypi
   - repo: https://github.com/sbrunner/jsonschema-validator
     rev: 0.1.0
     hooks:
