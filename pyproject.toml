@@ -44,7 +44,7 @@ packages = [{ include = "shifter_pandas" }, { include = "shifter_pandas/py.typed
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
-requests = "2.31.0"
+requests = "2.32.0"
 pandas = "2.2.2"
 openpyxl = "3.1.2"
 wikidata = "0.7.0"
