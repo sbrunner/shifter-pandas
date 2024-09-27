@@ -22,9 +22,9 @@ def test_ofs():
     assert list(data_field.columns) == [
         "values",
         "Unité de mesure",
-        "Economie et ménages",
+        "Économie et ménages",
         "Agent énergétique",
         "Année",
     ]
     data_field.rename(columns={"Année": "Year"}, inplace=True)
-    assert set(data_field.Year) == {str(e) for e in range(2000, 2022)}
+    assert set(data_field.Year) == {str(e) for e in range(2000, 2023)}
