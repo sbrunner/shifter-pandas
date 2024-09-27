@@ -22,7 +22,7 @@ def test_ofs():
     assert list(data_field.columns) == [
         "values",
         "Unité de mesure",
-        "Economie et ménages",
+        "Économie et ménages",
         "Agent énergétique",
         "Année",
     ]
