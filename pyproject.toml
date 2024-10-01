@@ -51,7 +51,7 @@ wikidata = "0.8.1"
 toml = "0.10.2"
 certifi = "2024.8.30"
 urllib3 = "2.2.3"
-idna = "3.8"
+idna = "3.10"
 
 [tool.poetry.dev-dependencies]
 prospector = { version = "1.10.3", extras = ["with_bandit", "with_mypy", "with_pyroma"] }
