@@ -78,7 +78,6 @@ class WikidataDatasource:
 
     def get_property_name(self, property_id: str) -> str:
         """Get the name of a property."""
-
         if property_id not in self.cache.get("properties", {}):
             self.cache.setdefault("properties", {})[property_id] = str(
                 self._get_item_obj(cast(wikidata.entity.EntityId, property_id)).label
@@ -167,7 +166,6 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
         """
         Get the item with the given item_id as a JSON object.
         """
-
         if properties is None:
             properties = []
 
@@ -209,8 +207,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
         return result
 
     def get_region(self, region: Optional[str], code: Optional[str] = None) -> Optional[dict[str, str]]:
-        """Get the region informations."""
-
+        """Get the region information."""
         none_match = False
         if code in self.custom_aliases.get("code", {}):
             if self.custom_aliases["code"][code] is None:
@@ -511,7 +508,6 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         limit: int = 100,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
-
         if properties is None:
             properties = []
 
