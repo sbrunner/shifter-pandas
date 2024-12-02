@@ -34,9 +34,7 @@ class WikidataDatasource:
     """Datasource builder for data from WikiData."""
 
     def __init__(self, endpoint_url: str = "https://query.wikidata.org/sparql") -> None:
-        """
-        Initialize the WikidataDatasource.
-        """
+        """Initialize the WikidataDatasource."""
         self.endpoint_url = endpoint_url
         self.headers = {"User-Agent": "shifter_pandas - stephane.brunner@gmail.com"}
 
@@ -78,7 +76,6 @@ class WikidataDatasource:
 
     def get_property_name(self, property_id: str) -> str:
         """Get the name of a property."""
-
         if property_id not in self.cache.get("properties", {}):
             self.cache.setdefault("properties", {})[property_id] = str(
                 self._get_item_obj(cast(wikidata.entity.EntityId, property_id)).label
@@ -87,9 +84,7 @@ class WikidataDatasource:
         return cast(str, self.cache["properties"][property_id])
 
     def set_alias(self, instance_of: str, name: str, item_id: str, label: str = "") -> None:
-        """
-        Set an alias in the cache to prevent unwanted match.
-        """
+        """Set an alias in the cache to prevent unwanted match."""
         self.custom_aliases.setdefault("name", {})[name] = {
             "id": item_id,
             "url": f"http://www.wikidata.org/entity/{item_id}",
@@ -98,9 +93,7 @@ class WikidataDatasource:
         }
 
     def set_alias_code(self, instance_of: str, code: str, item_id: str, label: str = "") -> None:
-        """
-        Set an alias in the cache to prevent unwanted match.
-        """
+        """Set an alias in the cache to prevent unwanted match."""
         self.custom_aliases.setdefault("code", {})[code] = {
             "id": item_id,
             "url": f"http://www.wikidata.org/entity/{item_id}",
@@ -111,9 +104,7 @@ class WikidataDatasource:
     def get_from_alias(
         self, instance_of: str, code: str, lang: str = "en", limit: int = 10
     ) -> list[dict[str, str]]:
-        """
-        Get the items id from an alias.
-        """
+        """Get the items id from an alias."""
         if code not in self.cache.get("fromAlias", {}).get(lang, {}).get(instance_of, {}):
             items = [
                 {
@@ -164,10 +155,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
         with_description: bool = False,
         prefix: str = "",
     ) -> dict[str, Any]:
-        """
-        Get the item with the given item_id as a JSON object.
-        """
-
+        """Get the item with the given item_id as a JSON object."""
         if properties is None:
             properties = []
 
@@ -197,7 +185,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
                     item = self._get_item_obj(cast(wikidata.entity.EntityId, item_id))
                 property_value = item.get(self._get_item_obj(cast(wikidata.entity.EntityId, property_id)))
                 if isinstance(property_value, wikidata.quantity.Quantity):
-                    # TODO: handle amount, units, lower_bound, upper_bound
+                    # TODO: handle amount, units, lower_bound, upper_bound # pylint: disable=fixme
                     property_value = property_value.amount
                 json_item[property_name] = property_value
                 dirty_cache = True
@@ -209,8 +197,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
         return result
 
     def get_region(self, region: Optional[str], code: Optional[str] = None) -> Optional[dict[str, str]]:
-        """Get the region informations."""
-
+        """Get the region information."""
         none_match = False
         if code in self.custom_aliases.get("code", {}):
             if self.custom_aliases["code"][code] is None:
@@ -511,7 +498,6 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         limit: int = 100,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
-
         if properties is None:
             properties = []
 

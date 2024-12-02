@@ -324,7 +324,6 @@ class BPDatasource:
         wikidata_properties: Optional[list[str]] = None,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
-
         if wikidata_properties is None:
             wikidata_properties = []
         wikidata = wikidata_id or wikidata_name or wikidata_properties
@@ -413,7 +412,6 @@ class BPDatasource:
         self, from_year: int = 1900
     ) -> pd.DataFrame:
         """Get the Datasource used to convert non fossil electricity to primary energy as DataFrame."""
-
         data: dict[str, list[float]] = {
             "Year": [],
             "Factor": [],

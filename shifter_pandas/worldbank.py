@@ -20,11 +20,13 @@ class WorldbankDatasource:
         """Initialize the datasource builder."""
         self.wdds = WikidataDatasource()
         self.wdds.set_alias("World", "WLD", "Q16502", "World")
-        with ZipFile(zip_filename) as myzip:
-            with myzip.open(os.path.splitext(os.path.basename(zip_filename))[0] + ".csv") as csvfile:
-                self.table = list(
-                    csv.reader(io.TextIOWrapper(csvfile, encoding=None), delimiter=",", quotechar='"')
-                )
+        with (
+            ZipFile(zip_filename) as myzip,
+            myzip.open(os.path.splitext(os.path.basename(zip_filename))[0] + ".csv") as csvfile,
+        ):
+            self.table = list(
+                csv.reader(io.TextIOWrapper(csvfile, encoding=None), delimiter=",", quotechar='"')
+            )
 
     def datasource(
         self,
@@ -34,7 +36,6 @@ class WorldbankDatasource:
         wikidata_properties: Optional[list[str]] = None,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
-
         if wikidata_properties is None:
             wikidata_properties = []
         wikidata = wikidata_id or wikidata_name or wikidata_properties
@@ -48,7 +49,7 @@ class WorldbankDatasource:
         years = [(e[0], int(e[1])) for e in enumerate(self.table[4]) if year_re.match(e[1]) is not None]
 
         data: dict[str, list[Any]] = {"Year": [], "Value": []}
-        for index_y, header in headers:
+        for _, header in headers:
             data[header] = []
         for row in self.table[5:]:
             for index_y, year in years:

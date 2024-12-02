@@ -35,7 +35,6 @@ class OFSDatasource:
         wikidata_properties: Optional[list[str]] = None,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
-
         if wikidata_properties is None:
             wikidata_properties = []
         wikidata = wikidata_id or wikidata_name or wikidata_properties

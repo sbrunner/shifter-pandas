@@ -96,10 +96,12 @@ repos:
     hooks:
       - id: prospector
         args:
-          - --tool=pydocstyle
+          - --tool=ruff
           - --die-on-tool-error
         additional_dependencies:
           - prospector-profile-duplicated==1.8.0 # pypi
+          - prospector-profile-utils==1.13.0 # pypi
+          - ruff==0.8.1 # pypi
   - repo: https://github.com/sbrunner/jsonschema-validator
     rev: 0.3.2
     hooks:
