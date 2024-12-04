@@ -3,3 +3,12 @@ inherits:
   - utils:fix
   - utils:no-design-checks
   - duplicated
+  - utils:unsafe
+
+mypy:
+  options:
+    python-version: '3.13'
+
+ruff:
+  options:
+    target-version: py313

@@ -4,7 +4,7 @@ import csv
 import io
 import os
 import re
-from typing import Any, Optional
+from typing import Any
 from zipfile import ZipFile
 
 import pandas as pd
@@ -33,7 +33,7 @@ class WorldbankDatasource:
         wikidata_id: bool = False,
         wikidata_name: bool = False,
         wikidata_type: bool = False,
-        wikidata_properties: Optional[list[str]] = None,
+        wikidata_properties: list[str] | None = None,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
         if wikidata_properties is None:

@@ -3,7 +3,7 @@
 import json
 import os
 import shutil
-from typing import Any, Optional, cast
+from typing import Any, cast
 
 import pandas as pd
 import requests
@@ -133,9 +133,9 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
                 return cast(str, item["id"])
 
             items = sorted(items, key=_get_id)
-            self.cache.setdefault("fromAlias", {}).setdefault(lang, {}).setdefault(instance_of, {})[
-                code
-            ] = items
+            self.cache.setdefault("fromAlias", {}).setdefault(lang, {}).setdefault(instance_of, {})[code] = (
+                items
+            )
 
             self.cache["fromAlias"][lang][instance_of][code].sort(key=lambda x: int(x["id"][1:]))
             self._save_cache()
@@ -148,8 +148,8 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
 
     def get_item(
         self,
-        item_id: Optional[str],
-        properties: Optional[list[str]] = None,
+        item_id: str | None,
+        properties: list[str] | None = None,
         with_id: bool = False,
         with_name: bool = True,
         with_description: bool = False,
@@ -196,7 +196,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
 
         return result
 
-    def get_region(self, region: Optional[str], code: Optional[str] = None) -> Optional[dict[str, str]]:
+    def get_region(self, region: str | None, code: str | None = None) -> dict[str, str] | None:
         """Get the region information."""
         none_match = False
         if code in self.custom_aliases.get("code", {}):
@@ -494,7 +494,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         with_id: bool = False,
         with_description: bool = False,
         with_name: bool = True,
-        properties: Optional[list[str]] = None,
+        properties: list[str] | None = None,
         limit: int = 100,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
@@ -536,7 +536,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         wikidata_id: bool = False,
         wikidata_name: bool = False,
         wikidata_type: bool = False,
-        wikidata_properties: Optional[list[str]] = None,
+        wikidata_properties: list[str] | None = None,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame with the codes for Our World in Data."""
         codes = {
