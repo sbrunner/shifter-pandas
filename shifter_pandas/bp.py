@@ -1,6 +1,6 @@
 """Datasource builder for data from British Petroleum."""
 
-from typing import Any, Optional
+from typing import Any
 
 import openpyxl
 import pandas as pd
@@ -92,7 +92,7 @@ class BPDatasource:
                 )
                 to_iso_unit, _, to_iso_factor = self._iso_unit(to_unit)
                 value = self.units_sheet.cell(raw, col).value
-                if isinstance(value, (int, float)) and from_unit != to_unit:
+                if isinstance(value, int | float) and from_unit != to_unit:
                     self.oil_units_conversion.setdefault(from_unit, {})[to_unit] = value
                     self.oil_units_conversion.setdefault(from_iso_unit, {})[to_iso_unit] = (
                         value / from_iso_factor * to_iso_factor
@@ -112,13 +112,13 @@ class BPDatasource:
                 to_unit = self.normalize_unit(self.units_sheet.cell(17, col).value[2:])
                 to_iso_unit, _, to_iso_factor = self._iso_unit(to_unit)
                 value = self.units_sheet.cell(raw, col).value
-                if isinstance(value, (int, float)) and from_unit != to_unit:
+                if isinstance(value, int | float) and from_unit != to_unit:
                     self.oil_products_units_conversion.setdefault(product, {}).setdefault(from_unit, {})[
                         to_unit
                     ] = value
                     self.oil_products_units_conversion.setdefault(product, {}).setdefault(from_iso_unit, {})[
                         to_iso_unit
-                    ] = (value / from_iso_factor * to_iso_factor)
+                    ] = value / from_iso_factor * to_iso_factor
 
         for raw in range(33, 39):
             from_unit = self.normalize_unit(self.units_sheet.cell(raw, 1).value)
@@ -129,7 +129,7 @@ class BPDatasource:
                 )
                 to_iso_unit, _, to_iso_factor = self._iso_unit(to_unit)
                 value = self.units_sheet.cell(raw, col).value
-                if isinstance(value, (int, float)) and from_unit != to_unit:
+                if isinstance(value, int | float) and from_unit != to_unit:
                     self.gaz_units_conversion.setdefault(from_unit, {})[to_unit] = value
                     self.gaz_units_conversion.setdefault(from_iso_unit, {})[to_iso_unit] = (
                         value / from_iso_factor * to_iso_factor
@@ -312,16 +312,16 @@ class BPDatasource:
 
     def datasource(
         self,
-        types_filter: Optional[list[str]] = None,
-        regions_filter: Optional[list[str]] = None,
-        units_filter: Optional[list[str]] = None,
-        years_filter: Optional[list[int]] = None,
-        years_factor: Optional[int] = None,
+        types_filter: list[str] | None = None,
+        regions_filter: list[str] | None = None,
+        units_filter: list[str] | None = None,
+        years_filter: list[int] | None = None,
+        years_factor: int | None = None,
         units: str = "iso",
         wikidata_id: bool = False,
         wikidata_type: bool = False,
         wikidata_name: bool = False,
-        wikidata_properties: Optional[list[str]] = None,
+        wikidata_properties: list[str] | None = None,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
         if wikidata_properties is None:

@@ -1,6 +1,6 @@
 """Datasource builder for data from the swiss Office Federal of Statistics."""
 
-from typing import Any, Optional, cast
+from typing import Any, cast
 
 import pandas as pd
 import requests
@@ -29,10 +29,10 @@ class OFSDatasource:
     def datasource(
         self,
         query: dict[str, Any],
-        wikidata_dimension: Optional[str] = None,
+        wikidata_dimension: str | None = None,
         wikidata_id: bool = False,
         wikidata_name: bool = False,
-        wikidata_properties: Optional[list[str]] = None,
+        wikidata_properties: list[str] | None = None,
     ) -> pd.DataFrame:
         """Get the Datasource as DataFrame."""
         if wikidata_properties is None:
