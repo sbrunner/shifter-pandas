@@ -6,7 +6,7 @@
     'github>camptocamp/gs-renovate-config-preset:python.json5#0.3.3',
     'github>camptocamp/gs-renovate-config-preset:json-schema.json5#0.3.3',
     'github>camptocamp/gs-renovate-config-preset:shellcheck.json5#0.3.3',
-    'github>camptocamp/gs-renovate-config-preset:preset.json5#0.3.3',
+    'github>camptocamp/gs-renovate-config-preset:preset.json5#0.4.0',
   ],
   osvVulnerabilityAlerts: true,
   vulnerabilityAlerts: {
