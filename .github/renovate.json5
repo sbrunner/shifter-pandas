@@ -24,18 +24,4 @@
       customType: 'regex',
     },
   ],
-  packageRules: [
-    /** Auto merge the dev dependency update */
-    {
-      matchDepTypes: ['devDependencies'],
-      automerge: true,
-    },
-    /** Group Poetry packages */
-    {
-      groupName: 'Poetry',
-      automerge: true,
-      matchDepNames: ['poetry', 'pip'],
-      matchPackageNames: ['/^poetry\\-.*/'],
-    },
-  ],
 }
