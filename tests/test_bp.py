@@ -1,15 +1,10 @@
-"""
-Tests of BP Datasource.
-"""
+"""Tests of BP Datasource."""
 
 from shifter_pandas.bp import UNITS_ENERGY, BPDatasource
 
 
 def test_bp() -> None:
-    """
-    Tests of BP Datasource.
-    """
-
+    """Tests of BP Datasource."""
     shifter_ds = BPDatasource("tests/bp-stats-review-2021-all-data.xlsx")
     metadata = shifter_ds.metadata()
     assert metadata[1]["regions"][:5] == [
