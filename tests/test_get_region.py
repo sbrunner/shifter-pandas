@@ -620,7 +620,7 @@ WDDS.set_alias_code(
 
 
 @pytest.mark.skipif("CI" in os.environ, reason="Too long for the CI")
-@pytest.mark.parametrize("expected,region", BP_DATA)
+@pytest.mark.parametrize(("expected", "region"), BP_DATA)
 def test_bp(expected, region):
     if region.startswith("Total "):
         region = region[6:]
@@ -631,7 +631,7 @@ def test_bp(expected, region):
 
 
 @pytest.mark.skipif("CI" in os.environ, reason="Too long for the CI")
-@pytest.mark.parametrize("expected,iso_code,continent,location", WORLD_IN_DATA_DATA)
+@pytest.mark.parametrize(("expected", "iso_code", "continent", "location"), WORLD_IN_DATA_DATA)
 def test_world_in_data(expected, iso_code, continent, location):
     result = WDDS.get_region(location, iso_code)
     result = None if result is None else result["label"]
@@ -639,7 +639,7 @@ def test_world_in_data(expected, iso_code, continent, location):
 
 
 @pytest.mark.skipif("CI" in os.environ, reason="Too long for the CI")
-@pytest.mark.parametrize("expected,country_name,country_code", WORLDBANK_DATA)
+@pytest.mark.parametrize(("expected", "country_name", "country_code"), WORLDBANK_DATA)
 def test_worldbank(expected, country_name, country_code):
     result = WDDS.get_region(country_name, country_code)
     result = None if result is None else result["label"]
@@ -647,7 +647,7 @@ def test_worldbank(expected, country_name, country_code):
 
 
 @pytest.mark.parametrize(
-    "expected,country_name,country_code",
+    ("expected", "country_name", "country_code"),
     [
         ("World", "World", None),
         ("Yemen", "Yemen", None),
