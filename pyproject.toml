@@ -37,7 +37,7 @@ idna = "3.10"
 
 [tool.poetry.group.dev.dependencies]
 prospector-profile-duplicated = "1.10.4"
-prospector-profile-utils = "1.20.0"
+prospector-profile-utils = "1.20.1"
 prospector = { version = "1.14.1", extras = ["with_bandit", "with_mypy", "with_pyroma", "with_ruff"] }
 pytest = "8.3.4"
 coverage = "7.6.10"
