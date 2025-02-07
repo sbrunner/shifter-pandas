@@ -3,7 +3,6 @@ inherits:
   - utils:fix
   - utils:no-design-checks
   - duplicated
-  - utils:unsafe
 
 mypy:
   options:

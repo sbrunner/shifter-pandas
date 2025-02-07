@@ -111,12 +111,14 @@ def test_bp() -> None:
     assert set(data_frame.Region) == {"Total World", "Switzerland"}
 
     data_frame = shifter_ds.datasource(
-        regions_filter=["Total World", "Switzerland"], years_filter=[1935, 1945]
+        regions_filter=["Total World", "Switzerland"],
+        years_filter=[1935, 1945],
     )
     assert set(data_frame.Year) == set()
 
     data_frame = shifter_ds.datasource(
-        regions_filter=["Total World", "Switzerland"], years_filter=[1985, 1993]
+        regions_filter=["Total World", "Switzerland"],
+        years_filter=[1985, 1993],
     )
     assert set(data_frame.Year) == {1985, 1993}
 
