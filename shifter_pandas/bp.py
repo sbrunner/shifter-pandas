@@ -88,7 +88,8 @@ class BPDatasource:
             for col in range(4, 9):
                 to_unit_1 = self.units_sheet.cell(4, col).value
                 to_unit = self.normalize_unit(
-                    ((to_unit_1 + " ") if to_unit_1 is not None else "") + self.units_sheet.cell(5, col).value
+                    ((to_unit_1 + " ") if to_unit_1 is not None else "")
+                    + self.units_sheet.cell(5, col).value,
                 )
                 to_iso_unit, _, to_iso_factor = self._iso_unit(to_unit)
                 value = self.units_sheet.cell(raw, col).value
@@ -125,7 +126,7 @@ class BPDatasource:
             from_iso_unit, _, from_iso_factor = self._iso_unit(from_unit)
             for col in range(3, 10):
                 to_unit = self.normalize_unit(
-                    self.units_sheet.cell(29, col).value + " " + self.units_sheet.cell(30, col).value
+                    self.units_sheet.cell(29, col).value + " " + self.units_sheet.cell(30, col).value,
                 )
                 to_iso_unit, _, to_iso_factor = self._iso_unit(to_unit)
                 value = self.units_sheet.cell(raw, col).value
@@ -140,8 +141,7 @@ class BPDatasource:
         """Get normalized unit."""
         unit = unit.strip()
         unit = unit.lower()
-        if unit.startswith("1 "):
-            unit = unit[2:]
+        unit = unit.removeprefix("1 ")
         unit = unit.replace("/", " / ")
         unit = unit.replace("  ", " ")
         unit = unit.replace("equiv.", "equivalent")
@@ -151,12 +151,11 @@ class BPDatasource:
     def _iso_unit(self, unit: str) -> tuple[str, str, float]:
         if "/" not in unit:
             return self._single_iso_unit(unit)
-        else:
-            upper, lower = unit.split("/")
-            unit, upper_postfix, factor = self._single_iso_unit(upper.strip())
-            assert not upper_postfix, f"Upper unit {upper} has a postfix {upper_postfix}"
-            lower_unit, postfix, lower_factor = self._single_iso_unit(lower.strip())
-            return f"{unit} / {lower_unit}", postfix, factor / lower_factor
+        upper, lower = unit.split("/")
+        unit, upper_postfix, factor = self._single_iso_unit(upper.strip())
+        assert not upper_postfix, f"Upper unit {upper} has a postfix {upper_postfix}"
+        lower_unit, postfix, lower_factor = self._single_iso_unit(lower.strip())
+        return f"{unit} / {lower_unit}", postfix, factor / lower_factor
 
     def _single_iso_unit(self, unit: str) -> tuple[str, str, float]:
         unit_postfix = ""
@@ -297,7 +296,7 @@ class BPDatasource:
                         "regions": regions,
                         "supported": True,
                         "row_index": row_index,
-                    }
+                    },
                 )
             else:
                 metadata.append(
@@ -305,7 +304,7 @@ class BPDatasource:
                         "type": type_value,
                         "index": type_index,
                         "supported": False,
-                    }
+                    },
                 )
 
         return metadata
@@ -338,7 +337,7 @@ class BPDatasource:
                 columns.append("WikidataType")
             for wikidata_property in wikidata_properties:
                 columns.append(
-                    f"Wikidata{standardize_property(self.wdds.get_property_name(wikidata_property))}"
+                    f"Wikidata{standardize_property(self.wdds.get_property_name(wikidata_property))}",
                 )
         data_frame = pd.DataFrame(columns=columns)
         for type_ in self.metadata():
@@ -389,8 +388,7 @@ class BPDatasource:
                     }
                     if wikidata:
                         region_label = region["label"]
-                        if region_label.startswith("Total "):
-                            region_label = region_label[6:]
+                        region_label = region_label.removeprefix("Total ")
                         element_id = self.wdds.get_region(region_label)
                         element["WikidataType"] = element_id["type"] if element_id else None
                         element.update(
@@ -400,16 +398,18 @@ class BPDatasource:
                                 with_id=wikidata_id,
                                 properties=wikidata_properties,
                                 prefix="Wikidata",
-                            )
+                            ),
                         )
                     data_frame = pd.concat(
-                        [data_frame, pd.DataFrame({k: [v] for k, v in element.items()})], ignore_index=True
+                        [data_frame, pd.DataFrame({k: [v] for k, v in element.items()})],
+                        ignore_index=True,
                     )
 
         return data_frame
 
     def datasource_non_fossil_electricity_to_primary_energy_factor(
-        self, from_year: int = 1900
+        self,
+        from_year: int = 1900,
     ) -> pd.DataFrame:
         """Get the Datasource used to convert non fossil electricity to primary energy as DataFrame."""
         data: dict[str, list[float]] = {

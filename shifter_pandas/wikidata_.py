@@ -40,7 +40,8 @@ class WikidataDatasource:
 
         if os.path.exists(os.environ.get("WIKIDATA_CACHE_FILE", ".wikidata-cache.json")):
             with open(
-                os.environ.get("WIKIDATA_CACHE_FILE", ".wikidata-cache.json"), encoding="utf-8"
+                os.environ.get("WIKIDATA_CACHE_FILE", ".wikidata-cache.json"),
+                encoding="utf-8",
             ) as file:
                 self.cache = json.load(file)
         else:
@@ -78,7 +79,7 @@ class WikidataDatasource:
         """Get the name of a property."""
         if property_id not in self.cache.get("properties", {}):
             self.cache.setdefault("properties", {})[property_id] = str(
-                self._get_item_obj(cast(wikidata.entity.EntityId, property_id)).label
+                self._get_item_obj(cast(wikidata.entity.EntityId, property_id)).label,
             )
             self._save_cache()
         return cast(str, self.cache["properties"][property_id])
@@ -102,7 +103,11 @@ class WikidataDatasource:
         }
 
     def get_from_alias(
-        self, instance_of: str, code: str, lang: str = "en", limit: int = 10
+        self,
+        instance_of: str,
+        code: str,
+        lang: str = "en",
+        limit: int = 10,
     ) -> list[dict[str, str]]:
         """Get the items id from an alias."""
         if code not in self.cache.get("fromAlias", {}).get(lang, {}).get(instance_of, {}):
@@ -125,7 +130,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
     }}
     LIMIT {limit}
 }}
-        }}"""
+        }}""",
                 )["results"]["bindings"]
             ]
 
@@ -258,7 +263,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         }}
         LIMIT {limit}
     }}
-}}"""
+}}""",
                     )["results"]["bindings"]
                 ]
                 if items:
@@ -290,7 +295,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         }}
         LIMIT {limit}
     }}
-}}"""
+}}""",
                 )["results"]["bindings"]
             ]
             if items:
@@ -331,7 +336,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         }}
         LIMIT {limit}
     }}
-}}"""
+}}""",
                     )["results"]["bindings"]
                 ]
                 if items:
@@ -365,7 +370,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         }}
         LIMIT {limit}
     }}
-}}"""
+}}""",
                 )["results"]["bindings"]
             ]
             if items:
@@ -405,7 +410,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         }}
         LIMIT {limit}
     }}
-}}"""
+}}""",
                 )["results"]["bindings"]
             ]
             if items:
@@ -437,7 +442,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         LIMIT {limit}
     }}
 }}
-ORDER BY DESC(?population)"""
+ORDER BY DESC(?population)""",
                 )["results"]["bindings"]
             ]
             if items:
@@ -466,7 +471,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
         }}
         LIMIT {limit}
     }}
-}}"""
+}}""",
                 )["results"]["bindings"]
             ]
 
@@ -514,7 +519,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
     }}
     LIMIT {limit}
   }}
-        }}"""
+        }}""",
             )["results"]["bindings"]
         ]
         values: dict[str, list[Any]] = {}

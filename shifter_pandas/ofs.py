@@ -82,7 +82,7 @@ class OFSDatasource:
                             properties=wikidata_properties,
                             with_id=wikidata_id,
                             prefix="Wikidata",
-                        )
+                        ),
                     )
 
                 return element

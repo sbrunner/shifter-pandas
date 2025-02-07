@@ -25,7 +25,7 @@ class WorldbankDatasource:
             myzip.open(os.path.splitext(os.path.basename(zip_filename))[0] + ".csv") as csvfile,
         ):
             self.table = list(
-                csv.reader(io.TextIOWrapper(csvfile, encoding=None), delimiter=",", quotechar='"')
+                csv.reader(io.TextIOWrapper(csvfile, encoding=None), delimiter=",", quotechar='"'),
             )
 
     def datasource(
@@ -68,7 +68,7 @@ class WorldbankDatasource:
                         element_id = self.wdds.get_region(country_name)
                         if wikidata_type:
                             data.setdefault("WikidataType", []).append(
-                                element_id["type"] if element_id else None
+                                element_id["type"] if element_id else None,
                             )
                         item = self.wdds.get_item(
                             element_id["id"] if element_id else None,

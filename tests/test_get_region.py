@@ -615,15 +615,17 @@ WDDS.set_alias("country", "Ireland", "Q27", "Republic of Ireland")
 WDDS.set_alias("world", "World", "Q16502", "World")
 WDDS.set_alias("country", "China Hong Kong SAR", "Q8646", "Hong Kong")
 WDDS.set_alias_code(
-    "intergovernmental organization", "OED", "Q8646", "Organisation for Economic Cooperation and Development"
+    "intergovernmental organization",
+    "OED",
+    "Q8646",
+    "Organisation for Economic Cooperation and Development",
 )
 
 
 @pytest.mark.skipif("CI" in os.environ, reason="Too long for the CI")
 @pytest.mark.parametrize(("expected", "region"), BP_DATA)
 def test_bp(expected, region):
-    if region.startswith("Total "):
-        region = region[6:]
+    region = region.removeprefix("Total ")
     region = region.strip(" #")
     result = WDDS.get_region(region)
     result = None if result is None else result["label"]

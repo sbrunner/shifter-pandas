@@ -5,7 +5,7 @@ from shifter_pandas.ofs import OFSDatasource
 
 def test_ofs():
     shifter_ds = OFSDatasource(
-        "https://www.pxweb.bfs.admin.ch/api/v1/fr/px-x-0204000000_106/px-x-0204000000_106.px"
+        "https://www.pxweb.bfs.admin.ch/api/v1/fr/px-x-0204000000_106/px-x-0204000000_106.px",
     )
 
     data_field = shifter_ds.datasource(
@@ -14,10 +14,10 @@ def test_ofs():
                 {
                     "code": "Wirtschaft und Haushalte",
                     "selection": {"filter": "item", "values": ["1"]},
-                }
+                },
             ],
             "response": {"format": "json-stat"},
-        }
+        },
     )
     assert list(data_field.columns) == [
         "values",
