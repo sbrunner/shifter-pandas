@@ -145,8 +145,7 @@ class BPDatasource:
         unit = unit.replace("/", " / ")
         unit = unit.replace("  ", " ")
         unit = unit.replace("equiv.", "equivalent")
-        unit = unit.replace(" daily", " per day")
-        return unit
+        return unit.replace(" daily", " per day")
 
     def _iso_unit(self, unit: str) -> tuple[str, str, float]:
         if "/" not in unit:
@@ -335,10 +334,12 @@ class BPDatasource:
                 columns.append("WikidataName")
             if wikidata_type:
                 columns.append("WikidataType")
-            for wikidata_property in wikidata_properties:
-                columns.append(
-                    f"Wikidata{standardize_property(self.wdds.get_property_name(wikidata_property))}",
-                )
+            columns.extend(
+                [
+                    f"Wikidata{standardize_property(self.wdds.get_property_name(wikidata_property))}"
+                    for wikidata_property in wikidata_properties
+                ],
+            )
         data_frame = pd.DataFrame(columns=columns)
         for type_ in self.metadata():
             if not type_["supported"]:

@@ -3,6 +3,7 @@
 import json
 import os
 import shutil
+from pathlib import Path
 from typing import Any, cast
 
 import pandas as pd
@@ -38,11 +39,9 @@ class WikidataDatasource:
         self.endpoint_url = endpoint_url
         self.headers = {"User-Agent": "shifter_pandas - stephane.brunner@gmail.com"}
 
-        if os.path.exists(os.environ.get("WIKIDATA_CACHE_FILE", ".wikidata-cache.json")):
-            with open(
-                os.environ.get("WIKIDATA_CACHE_FILE", ".wikidata-cache.json"),
-                encoding="utf-8",
-            ) as file:
+        cache_path = Path(os.environ.get("WIKIDATA_CACHE_FILE", ".wikidata-cache.json"))
+        if cache_path.exists():
+            with cache_path.open(encoding="utf-8") as file:
                 self.cache = json.load(file)
         else:
             self.cache = {}
@@ -53,7 +52,7 @@ class WikidataDatasource:
         self.client = Client()
 
     def _save_cache(self) -> None:
-        with open(".wikidata-cache.json.new", "w", encoding="utf-8") as file:
+        with Path(".wikidata-cache.json.new").open("w", encoding="utf-8") as file:
             file.write(json.dumps(self.cache, indent=2))
         shutil.move(".wikidata-cache.json.new", os.environ.get("WIKIDATA_CACHE_FILE", ".wikidata-cache.json"))
 
@@ -190,7 +189,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
                     item = self._get_item_obj(cast(wikidata.entity.EntityId, item_id))
                 property_value = item.get(self._get_item_obj(cast(wikidata.entity.EntityId, property_id)))
                 if isinstance(property_value, wikidata.quantity.Quantity):
-                    # TODO: handle amount, units, lower_bound, upper_bound # pylint: disable=fixme
+                    # TODO: handle amount, units, lower_bound, upper_bound # pylint: disable=fixme # noqa: FIX002, TD002, TD003
                     property_value = property_value.amount
                 json_item[property_name] = property_value
                 dirty_cache = True

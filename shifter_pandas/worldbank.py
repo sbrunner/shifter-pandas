@@ -2,8 +2,8 @@
 
 import csv
 import io
-import os
 import re
+from pathlib import Path
 from typing import Any
 from zipfile import ZipFile
 
@@ -22,7 +22,7 @@ class WorldbankDatasource:
         self.wdds.set_alias("World", "WLD", "Q16502", "World")
         with (
             ZipFile(zip_filename) as myzip,
-            myzip.open(os.path.splitext(os.path.basename(zip_filename))[0] + ".csv") as csvfile,
+            myzip.open(Path(zip_filename).stem + ".csv") as csvfile,
         ):
             self.table = list(
                 csv.reader(io.TextIOWrapper(csvfile, encoding=None), delimiter=",", quotechar='"'),
