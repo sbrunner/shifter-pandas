@@ -189,7 +189,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
                     item = self._get_item_obj(cast(wikidata.entity.EntityId, item_id))
                 property_value = item.get(self._get_item_obj(cast(wikidata.entity.EntityId, property_id)))
                 if isinstance(property_value, wikidata.quantity.Quantity):
-                    # TODO: handle amount, units, lower_bound, upper_bound # pylint: disable=fixme # noqa: FIX002, TD002, TD003
+                    # TODO: handle amount, units, lower_bound, upper_bound # pylint: disable=fixme # noqa: TD003
                     property_value = property_value.amount
                 json_item[property_name] = property_value
                 dirty_cache = True
