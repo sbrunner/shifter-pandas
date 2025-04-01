@@ -24,7 +24,7 @@ class OFSDatasource:
             print(f"Error on query {self.url}: {response.status_code}")
             print(response.text)
             response.raise_for_status()
-        return cast(dict[str, Any], response.json())
+        return cast("dict[str, Any]", response.json())
 
     def datasource(
         self,

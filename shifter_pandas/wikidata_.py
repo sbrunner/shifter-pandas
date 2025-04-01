@@ -72,16 +72,16 @@ class WikidataDatasource:
             print(response.text)
             print(query)
             response.raise_for_status()
-        return cast(dict[str, Any], response.json())
+        return cast("dict[str, Any]", response.json())
 
     def get_property_name(self, property_id: str) -> str:
         """Get the name of a property."""
         if property_id not in self.cache.get("properties", {}):
             self.cache.setdefault("properties", {})[property_id] = str(
-                self._get_item_obj(cast(wikidata.entity.EntityId, property_id)).label,
+                self._get_item_obj(cast("wikidata.entity.EntityId", property_id)).label,
             )
             self._save_cache()
-        return cast(str, self.cache["properties"][property_id])
+        return cast("str", self.cache["properties"][property_id])
 
     def set_alias(self, instance_of: str, name: str, item_id: str, label: str = "") -> None:
         """Set an alias in the cache to prevent unwanted match."""
@@ -134,7 +134,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
             ]
 
             def _get_id(item: dict[str, Any]) -> str:
-                return cast(str, item["id"])
+                return cast("str", item["id"])
 
             items = sorted(items, key=_get_id)
             self.cache.setdefault("fromAlias", {}).setdefault(lang, {}).setdefault(instance_of, {})[code] = (
@@ -143,7 +143,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
 
             self.cache["fromAlias"][lang][instance_of][code].sort(key=lambda x: int(x["id"][1:]))
             self._save_cache()
-        return cast(list[dict[str, str]], self.cache["fromAlias"][lang][instance_of][code])
+        return cast("list[dict[str, str]]", self.cache["fromAlias"][lang][instance_of][code])
 
     def _get_item_obj(self, item_id: wikidata.entity.EntityId) -> wikidata.entity.Entity:
         if item_id not in self.memory_cache:
@@ -167,7 +167,7 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
         item = None
         dirty_cache = False
         if not json_item and item_id:
-            item = self._get_item_obj(cast(wikidata.entity.EntityId, item_id))
+            item = self._get_item_obj(cast("wikidata.entity.EntityId", item_id))
             assert item.label is not None
             json_item["name"] = str(item.label)
             json_item["description"] = str(item.description)
@@ -186,8 +186,8 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
             property_name = self.get_property_name(property_id)
             if property_name not in json_item and item_id:
                 if item is None:
-                    item = self._get_item_obj(cast(wikidata.entity.EntityId, item_id))
-                property_value = item.get(self._get_item_obj(cast(wikidata.entity.EntityId, property_id)))
+                    item = self._get_item_obj(cast("wikidata.entity.EntityId", item_id))
+                property_value = item.get(self._get_item_obj(cast("wikidata.entity.EntityId", property_id)))
                 if isinstance(property_value, wikidata.quantity.Quantity):
                     # TODO: handle amount, units, lower_bound, upper_bound # pylint: disable=fixme # noqa: TD003
                     property_value = property_value.amount
@@ -218,12 +218,12 @@ SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{lang}". }}
             if self.cache["regions"]["code"][code] is None:
                 none_match = True
             else:
-                return cast(dict[str, str], self.cache["regions"]["code"][code])
+                return cast("dict[str, str]", self.cache["regions"]["code"][code])
         if region in self.cache.get("regions", {}).get("name", {}):
             if self.cache["regions"]["name"][region] is None:
                 none_match = True
             else:
-                return cast(dict[str, str], self.cache["regions"]["name"][region])
+                return cast("dict[str, str]", self.cache["regions"]["name"][region])
 
         if none_match:
             return None
@@ -475,7 +475,7 @@ SELECT DISTINCT ?item ?itemLabel WHERE {{
             ]
 
             def _get_id(item: dict[str, Any]) -> str:
-                return cast(str, item["id"])
+                return cast("str", item["id"])
 
             items = sorted(items, key=_get_id)
             if items:
