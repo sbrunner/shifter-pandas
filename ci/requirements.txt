@@ -1,9 +1,9 @@
 c2cciutils==1.7.3
-poetry==2.1.1
+poetry==2.1.2
 poetry-plugin-tweak-dependencies-version==1.5.2
-poetry-dynamic-versioning==1.7.1
+poetry-dynamic-versioning==1.8.2
 pip==25.0.1
-pre-commit==4.1.0
+pre-commit==4.2.0
 importlib-metadata<8.6.2
 setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
 requests>=2.32.0 # not directly required, pinned by Snyk to avoid a vulnerability
