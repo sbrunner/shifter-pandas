@@ -6,30 +6,7 @@ line-length = 110
 convention = "numpy"
 
 [tool.poetry]
-name = "shifter-pandas"
 version = "0.0.0"
-description = "Convert some data into Panda DataFrames"
-readme = "README.md"
-authors = ["Stéphane Brunner <stephane.brunner@gmail.com>"]
-homepage = "https://hub.docker.com/r/sbrunner/shifter-pandas/"
-repository = "https://github.com/sbrunner/shifter-pandas"
-license = "BSD-2-Clause"
-classifiers = [
-    'Development Status :: 4 - Beta',
-    'Environment :: Console',
-    'Intended Audience :: Developers',
-    'License :: OSI Approved :: BSD License',
-    'Operating System :: OS Independent',
-    'Programming Language :: Python',
-    'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.10',
-    'Programming Language :: Python :: 3.11',
-    'Programming Language :: Python :: 3.12',
-    'Programming Language :: Python :: 3.13',
-    'Typing :: Typed',
-]
-keywords = ["shifter", "pandas"]
-packages = [{ include = "shifter_pandas" }, { include = "shifter_pandas/py.typed" }]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.14"
@@ -69,6 +46,35 @@ format-jinja = """
 {{serialize_pep440(bump_version(base), dev=distance)}}
 {%- endif -%}
 """
+
+[project]
+dynamic = ["dependencies", "version"]
+name = "shifter-pandas"
+description = "Convert some data into Panda DataFrames"
+readme = "README.md"
+keywords = ["shifter", "pandas"]
+license = "BSD-2-Clause"
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Environment :: Console',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Typing :: Typed',
+]
+authors = [{name = "Stéphane Brunner",email = "stephane.brunner@gmail.com"}]
+packages = [{ include = "shifter_pandas" }, { include = "shifter_pandas/py.typed" }]
+
+[project.urls]
+homepage = "https://hub.docker.com/r/sbrunner/shifter-pandas/"
+repository = "https://github.com/sbrunner/shifter-pandas"
+"Bug Tracker" = "https://github.com/sbrunner/shifter-pandas/issues"
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-plugin-tweak-dependencies-version", "poetry-dynamic-versioning", "poetry-plugin-drop-python-upper-constraint"]
