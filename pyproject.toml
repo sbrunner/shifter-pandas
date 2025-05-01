@@ -70,6 +70,7 @@ classifiers = [
 ]
 authors = [{name = "Stéphane Brunner",email = "stephane.brunner@gmail.com"}]
 packages = [{ include = "shifter_pandas" }, { include = "shifter_pandas/py.typed" }]
+requires-python = ">=3.10"
 
 [project.urls]
 homepage = "https://hub.docker.com/r/sbrunner/shifter-pandas/"
