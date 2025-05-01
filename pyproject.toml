@@ -16,7 +16,7 @@ openpyxl = "3.1.5"
 wikidata = "0.8.1"
 toml = "0.10.2"
 certifi = "2025.4.26"
-urllib3 = "2.3.0"
+urllib3 = "2.4.0"
 idna = "3.10"
 
 [tool.poetry.group.dev.dependencies]
