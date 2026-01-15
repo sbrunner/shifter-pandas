@@ -31,7 +31,7 @@ urllib3 = "2.6.3"
 idna = "3.11"
 
 [tool.poetry.group.dev.dependencies]
-prospector-profile-duplicated = "1.10.5"
+prospector-profile-duplicated = "1.11.0"
 prospector-profile-utils = "1.26.5"
 prospector = { version = "1.17.3", extras = ["with_bandit", "with_mypy", "with_pyroma", "with_ruff"] }
 pytest = "9.0.2"
