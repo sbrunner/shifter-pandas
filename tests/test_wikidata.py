@@ -1,5 +1,7 @@
 # https://data.worldbank.org/indicator/NY.GDP.MKTP.KD
 
+import pandas as pd
+
 from shifter_pandas.wikidata_ import PROPERTY_ISO_3166_1_ALPHA_2
 from shifter_pandas.worldbank import WorldbankDatasource
 
@@ -24,7 +26,15 @@ def test_wikidata() -> None:
         "WikidataName",
         "WikidataIso3166_1Alpha_2Code",
     ]
-    assert set(data_field.WikidataType) == {None, "country", "World"}
-    assert set(data_field.WikidataId) == {None, "Q16502", "Q30", "Q39"}
-    assert set(data_field.WikidataName) == {None, "United States of America", "world", "Switzerland"}
-    assert set(data_field.WikidataIso3166_1Alpha_2Code) == {None, "US", "CH"}
+    assert {x for x in data_field.WikidataType if pd.notna(x)} == {"country", "World"}
+    assert any(pd.isna(x) for x in data_field.WikidataType)
+    assert {x for x in data_field.WikidataId if pd.notna(x)} == {"Q16502", "Q30", "Q39"}
+    assert any(pd.isna(x) for x in data_field.WikidataId)
+    assert {x for x in data_field.WikidataName if pd.notna(x)} == {
+        "United States of America",
+        "world",
+        "Switzerland",
+    }
+    assert any(pd.isna(x) for x in data_field.WikidataName)
+    assert {x for x in data_field.WikidataIso3166_1Alpha_2Code if pd.notna(x)} == {"US", "CH"}
+    assert any(pd.isna(x) for x in data_field.WikidataIso3166_1Alpha_2Code)
