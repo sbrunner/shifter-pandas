@@ -1,5 +1,5 @@
 [tool.ruff]
-target-version = "py310"
+target-version = "py311"
 line-length = 110
 
 [tool.ruff.lint]
@@ -20,7 +20,7 @@ convention = "numpy"
 version = "0.0.0"
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.14"
+python = ">=3.11,<4"
 requests = "2.32.5"
 pandas = "3.0.0"
 openpyxl = "3.1.5"
@@ -73,7 +73,6 @@ classifiers = [
     'Operating System :: OS Independent',
     'Programming Language :: Python',
     'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
     'Programming Language :: Python :: 3.12',
     'Programming Language :: Python :: 3.13',
@@ -81,7 +80,7 @@ classifiers = [
 ]
 authors = [{name = "Stéphane Brunner",email = "stephane.brunner@gmail.com"}]
 packages = [{ include = "shifter_pandas" }, { include = "shifter_pandas/py.typed" }]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = ["requests", "pandas", "openpyxl", "wikidata", "toml", "certifi", "urllib3", "idna"]
 
 [project.urls]
